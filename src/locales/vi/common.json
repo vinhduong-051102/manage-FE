@@ -1,0 +1,20 @@
+{
+  "submit": "Xác nhận",
+  "info": "Thông tin",
+  "success": "Thành công",
+  "warning": "Cảnh báo",
+  "error": "Lỗi",
+  "dashBoard": "Dash Board",
+  "accountManagement": "Quản lý tài khoản",
+  "logout": "Đăng xuất",
+  "imgAvatar": "Ảnh đại diện",
+  "deleteAvatar": "Xoá ảnh đại diện",
+  "edit": "Chỉnh sửa",
+  "course": "Môn học",
+  "student": "Học sinh",
+  "sttColumnTitle": "STT",
+  "advanceSearch": "Tìm kiếm nâng cao",
+  "close": "Đóng",
+  "resetFilter": "Cài lại bộ lọc"
+
+}

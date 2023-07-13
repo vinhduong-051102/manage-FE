@@ -1,7 +1,7 @@
 // export const REGEX_PASSWORD =
 //   /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[^a-zA-Z0-9\\._]).{8,20}$/;
 
-export const REGEX_PASSWORD = /^(?=.*[a-z])/;
+export const REGEX_PASSWORD = /^(?=.*[A-Z])(?=.*[0-9]).{10,}$/;
 
 export const TEXT_REQUIRE_USER_NAME_PASSWORD =
   'Bạn chưa nhập tên đăng nhập và mật khẩu';

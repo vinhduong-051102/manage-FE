@@ -17,11 +17,11 @@ const TableContainer = styled.div`
   flex-direction: column;
   border-radius: 16px;
   border: 1px solid #c5ced9;
-  ${props => (!props.isTablePopup ? 'border-top: none' : null)};
+  ${(props) => (!props.isTablePopup ? 'border-top: none' : null)};
 `;
 
 const TableEtn = styled(Table)`
-  height: ${props => (props.enablePanigation ? 'calc(100% - 60px)' : '100%')};
+  height: ${(props) => (props.enablePanigation ? 'calc(100% - 60px)' : '100%')};
 
   .ant-spin-nested-loading {
     height: 100%;
@@ -37,7 +37,8 @@ const TableEtn = styled(Table)`
   }
   .ant-table-body {
     //height: calc(100% - 60px);
-    height: ${props => (props.enablePanigation ? 'calc(100% - 60px)' : 'calc(100% - 50px)')};
+    height: ${(props) =>
+      props.enablePanigation ? 'calc(100% - 60px)' : 'calc(100% - 50px)'};
   }
 
   .ant-table-placeholder .ant-table-cell {
@@ -59,7 +60,7 @@ const TableEtn = styled(Table)`
   }
 
   .ant-table {
-    font-size: ${props => props.theme.fontSizes.small};
+    font-size: ${(props) => props.theme.fontSizes.small};
     color: #212529;
     font-weight: 400;
   }
@@ -75,10 +76,13 @@ const TableEtn = styled(Table)`
 
   .ant-table-thead > tr > th {
     font-size: 1em;
-    background-color: ${props => (props.isTablePopup ? props.theme.colors.table.whiteGreen : props.theme.primaryColor)};
+    background-color: ${(props) =>
+      props.isTablePopup
+        ? props.theme.colors.table.whiteGreen
+        : props.theme.primaryColor};
     font-weight: 700;
     height: 50px !important;
-    color: ${props => (props.isTablePopup ? '#222d4b' : 'white')};
+    color: ${(props) => (props.isTablePopup ? '#222d4b' : 'white')};
   }
 
   .ant-table-thead > tr > th,
@@ -157,7 +161,8 @@ const TableEtn = styled(Table)`
   }
 
   .ant-table-row:hover {
-    background: ${props => props.hoverBackgroundColor || TABLE.background.hoverRow};
+    background: ${(props) =>
+      props.hoverBackgroundColor || TABLE.background.hoverRow};
     box-shadow: 0 2px 10px rgb(0 0 0 / 25%);
 
     .listButton {
@@ -236,6 +241,7 @@ const ContainerPagination = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  gap: 10px;
 
   .ant-pagination,
   .ant-pagination-simple .ant-pagination-simple-pager input,

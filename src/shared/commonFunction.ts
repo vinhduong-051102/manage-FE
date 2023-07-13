@@ -116,7 +116,8 @@ export const logOut = () => {
   Cookies.remove(COOKIES.accessToken);
   Cookies.remove(COOKIES.refreshToken);
   Cookies.remove(COOKIES.fullName);
-  Cookies.remove(COOKIES.username);
+  Cookies.remove(COOKIES.email);
+  Cookies.remove(COOKIES.role);
   localStorage.clear();
   history.push(PATH_LOGIN);
   window.location.reload();

@@ -2,14 +2,14 @@ import React, { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import { FlWrapper, InputNumberCustom, Label, RedStar } from '../styled';
 
-const FloatingInputNumber = props => {
+const FloatingInputNumber = (props) => {
   const {
     label,
     disabled,
     isRequired,
     bgcolor,
     defaultValueInput,
-    fixlabel,
+    isfixlabel,
     onFocus,
     onBlur,
     value,
@@ -29,7 +29,9 @@ const FloatingInputNumber = props => {
   delete dataProps.isRequired;
   useEffect(() => {
     const inputDom = FlRef.current && FlRef.current.querySelector('input');
-    const valueEmptySelect = FlRef.current && FlRef.current.querySelector('.ant-select-selection-placeholder');
+    const valueEmptySelect =
+      FlRef.current &&
+      FlRef.current.querySelector('.ant-select-selection-placeholder');
 
     inputDom.addEventListener(
       'focus',
@@ -44,7 +46,9 @@ const FloatingInputNumber = props => {
     };
 
     inputDom.onblur = () => {
-      const valueSelect = FlRef.current && FlRef.current.querySelector('.ant-select-selection-item');
+      const valueSelect =
+        FlRef.current &&
+        FlRef.current.querySelector('.ant-select-selection-item');
       const valueInput = inputDom.getAttribute('value');
       setFl(!!valueSelect || !!valueInput);
     };
@@ -66,7 +70,9 @@ const FloatingInputNumber = props => {
 
   useEffect(() => {
     const inputDom = FlRef.current && FlRef.current.querySelector('input');
-    const valueSelection = FlRef.current && FlRef.current.querySelector('.ant-select-selection-item');
+    const valueSelection =
+      FlRef.current &&
+      FlRef.current.querySelector('.ant-select-selection-item');
     const valueInput = inputDom.getAttribute('value');
 
     setTimeout(() => {
@@ -112,8 +118,12 @@ const FloatingInputNumber = props => {
       {!!label && (
         <Label
           onClick={() => inputRef.current.focus()}
-          bgcolor={disabled && !isFocus && !isFl && !fixlabel && !value ? 'transparent' : bgcolor}
-          isFl={dataProps.placeholder || isFl || !!fixlabel || !!value}
+          bgcolor={
+            disabled && !isFocus && !isFl && !isfixlabel && !value
+              ? 'transparent'
+              : bgcolor
+          }
+          isFl={dataProps.placeholder || isFl || !!isfixlabel || !!value}
           className="fl-label"
           style={{ color: disabled && '#A8B1BD' }}
         >
@@ -129,7 +139,7 @@ FloatingInputNumber.propTypes = {
   label: PropTypes.string,
   bgcolor: PropTypes.string,
   isRequired: PropTypes.bool,
-  fixlabel: PropTypes.bool,
+  isfixlabel: PropTypes.bool,
   children: PropTypes.node,
   disabled: PropTypes.bool,
   defaultValueInput: PropTypes.string,
@@ -144,7 +154,7 @@ FloatingInputNumber.defaultProps = {
   label: undefined,
   bgcolor: 'white',
   isRequired: false,
-  fixlabel: false,
+  isfixlabel: false,
   children: null,
 };
 

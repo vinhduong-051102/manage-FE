@@ -25,8 +25,8 @@ export const REGEX_ONLY_NUMBER = /^\d{10}$/;
 export const COOKIES = {
   accessToken: 'accessToken',
   refreshToken: 'refreshToken',
-  superPass: 'SP_eC',
-  username: 'username',
+  role: 'role',
+  email: 'email',
   fullName: 'fullName',
 };
 
@@ -337,8 +337,8 @@ export const ERROR = {
 };
 
 export const DEFAULT_GET_LIST_PARAMS = {
-  pageSize: 1,
-  pageNumber: 50,
+  pageSize: 50,
+  pageNumber: 1,
 };
 
 export interface DefaultPayloadGetListType {
@@ -350,5 +350,5 @@ export interface DefaultResponseGetListType {
   data: any[];
   totalRecord: number;
   currentPage: number;
-  size: number;
+  pageSize: number;
 }

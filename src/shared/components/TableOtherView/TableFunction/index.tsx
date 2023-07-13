@@ -1,12 +1,25 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { StatusContainer, StatusLabel, StatusProfile } from './styles';
+import { StatusContainer, StatusLabel } from './styles';
 import ButtonFunctionList from '../ButtonFunctionList';
+
+interface PropsType {
+  text: string;
+  record: any;
+  titleEdit?: string;
+  titleCopy?: string;
+  titleDownload?: string;
+  titleHistory?: string;
+  titleDelete?: string;
+  onClickEdit?: () => void;
+  onClickCopy?: () => void;
+  onClickDownload?: () => void;
+  onClickHistory?: () => void;
+  onClickDelete?: () => void;
+}
 
 const TableFunction = ({
   text,
   record,
-  type,
   titleEdit,
   titleCopy,
   titleDownload,
@@ -17,11 +30,10 @@ const TableFunction = ({
   onClickDownload,
   onClickHistory,
   onClickDelete,
-}) => (
+}: PropsType) => (
   <>
     <StatusContainer>
-      {type === 'normal' && <StatusLabel active={record.isActive}>{text}</StatusLabel>}
-      {type === 'profile' && <StatusProfile status={record.profileStatusId}>{text}</StatusProfile>}
+      <StatusLabel active={record.isActive}>{text}</StatusLabel>
       <div className="listButton">
         <ButtonFunctionList
           titleEdit={titleEdit}
@@ -39,20 +51,5 @@ const TableFunction = ({
     </StatusContainer>
   </>
 );
-TableFunction.propTypes = {
-  text: PropTypes.string,
-  record: PropTypes.object,
-  type: PropTypes.string,
-  titleEdit: PropTypes.string,
-  titleCopy: PropTypes.string,
-  titleDownload: PropTypes.string,
-  titleHistory: PropTypes.string,
-  titleDelete: PropTypes.string,
-  onClickEdit: PropTypes.func,
-  onClickCopy: PropTypes.func,
-  onClickDownload: PropTypes.func,
-  onClickHistory: PropTypes.func,
-  onClickDelete: PropTypes.func,
-};
 
 export default TableFunction;

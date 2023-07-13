@@ -2,7 +2,6 @@ import axios from 'axios';
 import { handleError } from '@/utils/handleError';
 import { COOKIES } from '@/utils/constants';
 import Cookies from 'js-cookie';
-import { logOut } from '@/shared/commonFunction';
 
 const instance = axios.create({
   baseURL: `${

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Tooltip } from 'antd';
-import PropTypes from 'prop-types';
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 import { DivFloatLabel, InputText, InputPassword, LabelNormal } from './styles';
 

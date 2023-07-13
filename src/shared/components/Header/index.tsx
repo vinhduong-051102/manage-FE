@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react';
-import PropTypes from 'prop-types';
 import { Tooltip } from 'antd';
 import {
   HeaderEtn,
@@ -19,7 +18,7 @@ interface PropsType {
   logo: string;
   userData: {
     image: string;
-    username: string;
+    email: string;
     fullName: string;
   };
   onClickMenu: () => void;

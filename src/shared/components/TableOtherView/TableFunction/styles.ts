@@ -18,7 +18,7 @@ export const StatusContainer = styled.div`
   //overflow: unset !important;
 `;
 
-export const StatusLabel = styled.div`
+export const StatusLabel = styled.div<{ active: boolean }>`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

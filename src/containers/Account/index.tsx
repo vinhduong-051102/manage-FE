@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import PropTypes from 'prop-types';
 import {
   AvatarView,
   ButtonChangePasswordLayout,
@@ -24,7 +23,7 @@ import IconEditAvatar from '@/images/icon-edit-avatar.svg';
 
 interface PropsType {
   accountInfo: {
-    username: string;
+    email: string;
     fullName: string;
   };
   onClickSignOut: () => void;
@@ -82,7 +81,7 @@ const InformationAccount = ({
               <IconUploadView src={IconTakePhoto} />
             </ButtonUploadAvatar>
           </AvatarView>
-          <UserNameView>{accountInfo.username}</UserNameView>
+          <UserNameView>{accountInfo.email}</UserNameView>
           <FullNameView>{accountInfo.fullName}</FullNameView>
 
           <ButtonLogoutLayout>

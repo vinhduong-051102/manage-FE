@@ -85,6 +85,9 @@ const Table = ({
         isTablePopup={isTablePopup}
         rowSelection={rowSelection}
         columns={columns}
+        rowKey={(row) => {
+          return row.id;
+        }}
         dataSource={data}
         enablePanigation={pagination}
         // scroll={{ x: minWidth || 1200, y: -110 }}
@@ -127,8 +130,10 @@ const Table = ({
               if (onChangePagination) onChangePagination(selected, 1);
             }}
           >
-            {totalList.map((value) => (
-              <Select value={value}>{value}</Select>
+            {totalList.map((value, index) => (
+              <Select.Option key={index} value={value}>
+                {value}
+              </Select.Option>
             ))}
           </Select>
           <Pagination
@@ -160,7 +165,7 @@ Table.propTypes = {
   totalRecord: PropTypes.number,
   onResetPagination: PropTypes.bool,
   disableClickRowExpand: PropTypes.bool,
-  loadingIcon: PropTypes.element,
+  loadingIcon: PropTypes.string,
   headerBackgroundColor: PropTypes.string,
   hoverBackgroundColor: PropTypes.string,
   onClickRow: PropTypes.func,

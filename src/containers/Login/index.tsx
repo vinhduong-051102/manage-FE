@@ -12,8 +12,9 @@ const Login = () => {
       callbackError={(error) => console.log(error)}
       callbackResponse={(response, keepLogin) => {
         Cookies.set(COOKIES.accessToken, response.data[COOKIES.accessToken]);
-        Cookies.set(COOKIES.username, response.data[COOKIES.username]);
+        Cookies.set(COOKIES.email, response.data[COOKIES.email]);
         Cookies.set(COOKIES.fullName, response.data[COOKIES.fullName]);
+        Cookies.set(COOKIES.role, response.data[COOKIES.role]);
         if (keepLogin) {
           Cookies.set(
             COOKIES.refreshToken,

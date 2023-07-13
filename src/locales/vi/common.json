@@ -15,6 +15,12 @@
   "sttColumnTitle": "STT",
   "advanceSearch": "Tìm kiếm nâng cao",
   "close": "Đóng",
-  "resetFilter": "Cài lại bộ lọc"
-
+  "resetFilter": "Cài lại bộ lọc",
+  "closeModal": "Đóng (Esc)",
+  "saveModal": "Lưu (Ctrl + S)",
+  "tooltipEdit": "Chỉnh sửa",
+  "tooltipCopy": "Sao chép",
+  "tooltipDownload": "Tải xuống",
+  "tooltipHistory": "Xem lịch sử",
+  "tooltipDelete": "Xoá"
 }

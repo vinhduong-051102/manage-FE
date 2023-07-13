@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Checkbox } from 'antd';
-import axios, { AxiosError, AxiosResponse } from 'axios';
+import { AxiosError, AxiosResponse } from 'axios';
 import InputLogin from '@/shared/components/InputLogin';
 import ButtonLogin from '@/shared/components/ButtonLoading';
 import {
@@ -96,7 +96,7 @@ const BmosLogin = ({
       });
       setTextError(TEXT_WRONG_ACCOUNT || textWrongAccount);
     }
-  }, [isWrong]);
+  }, [isWrong, textWrongAccount]);
 
   const onSubmitLogin = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -144,6 +144,11 @@ const BmosLogin = ({
     }
   };
 
+  const onChange = useCallback(
+    (value: string) => setDataLogin({ ...dataLogin, password: value }),
+    [dataLogin],
+  );
+
   return (
     <Container>
       <DivLeft>
@@ -170,9 +175,7 @@ const BmosLogin = ({
                 <InputLogin
                   label={LABEL_PASSWORD || labelPassword}
                   type="password"
-                  onChange={(value) =>
-                    setDataLogin({ ...dataLogin, password: value })
-                  }
+                  onChange={onChange}
                   error={error.password}
                   onEnter={() => onLogin()}
                 />

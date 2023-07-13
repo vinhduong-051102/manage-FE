@@ -21,7 +21,13 @@ export default function SvgIcon(props) {
   switch (name) {
     case 'editTypeConfigGray':
       iconElement = (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0_6634_22053)">
             <path
               d="M11.7167 7.51667L12.4833 8.28333L4.93333 15.8333H4.16667V15.0667L11.7167 7.51667V7.51667ZM14.7167 2.5C14.5083 2.5 14.2917 2.58333 14.1333 2.74167L12.6083 4.26667L15.7333 7.39167L17.2583 5.86667C17.5833 5.54167 17.5833 5.01667 17.2583 4.69167L15.3083 2.74167C15.1417 2.575 14.9333 2.5 14.7167 2.5V2.5ZM11.7167 5.15833L2.5 14.375V17.5H5.625L14.8417 8.28333L11.7167 5.15833V5.15833Z"
@@ -39,7 +45,13 @@ export default function SvgIcon(props) {
       break;
     case 'search2':
       iconElement = (
-        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="26"
+          height="24"
+          viewBox="0 0 26 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0_7195_24053)">
             <path
               d="M16.7173 14H15.8896L15.5963 13.73C16.623 12.59 17.2412 11.11 17.2412 9.5C17.2412 5.91 14.1924 3 10.4311 3C6.66989 3 3.62109 5.91 3.62109 9.5C3.62109 13.09 6.66989 16 10.4311 16C12.1179 16 13.6685 15.41 14.8629 14.43L15.1458 14.71V15.5L20.3843 20.49L21.9453 19L16.7173 14V14ZM10.4311 14C7.82236 14 5.71649 11.99 5.71649 9.5C5.71649 7.01 7.82236 5 10.4311 5C13.0399 5 15.1458 7.01 15.1458 9.5C15.1458 11.99 13.0399 14 10.4311 14Z"
@@ -48,7 +60,12 @@ export default function SvgIcon(props) {
           </g>
           <defs>
             <clipPath id="clip0_7195_24053">
-              <rect width="25.1447" height="24" fill="white" transform="translate(0.476562)" />
+              <rect
+                width="25.1447"
+                height="24"
+                fill="white"
+                transform="translate(0.476562)"
+              />
             </clipPath>
           </defs>
         </svg>
@@ -56,7 +73,13 @@ export default function SvgIcon(props) {
       break;
     case 'sign1':
       iconElement = (
-        <svg width="80" height="48" viewBox="0 0 80 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="80"
+          height="48"
+          viewBox="0 0 80 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect width="80" height="48" rx="4" fill="#08B7DD" />
           <path
             d="M49.8304 8H31.983C30.9915 8 30 8.88889 30 9.77778V22.2222C30 23.2 30.8924 24 31.983 24H49.8304C50.8219 24 51.8134 23.1111 51.8134 22.2222V9.77778C51.8134 8.88889 50.8219 8 49.8304 8ZM49.8304 22.1511C49.8106 22.1778 49.7709 22.2044 49.7511 22.2222H31.983V9.84889L32.0624 9.77778H49.7412C49.7709 9.79556 49.8007 9.83111 49.8205 9.84889V22.1511H49.8304ZM39.9152 19.12L37.4364 16.4444L33.9661 20.4444H47.8474L43.3855 15.1111L39.9152 19.12Z"
@@ -70,7 +93,13 @@ export default function SvgIcon(props) {
       break;
     case 'sign2':
       iconElement = (
-        <svg width="80" height="48" viewBox="0 0 80 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="80"
+          height="48"
+          viewBox="0 0 80 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect width="80" height="48" rx="4" fill="#08B7DD" />
           <path
             d="M49.8304 24H31.983C30.9915 24 30 24.8889 30 25.7778V38.2222C30 39.2 30.8924 40 31.983 40H49.8304C50.8219 40 51.8134 39.1111 51.8134 38.2222V25.7778C51.8134 24.8889 50.8219 24 49.8304 24ZM49.8304 38.1511C49.8106 38.1778 49.7709 38.2044 49.7511 38.2222H31.983V25.8489L32.0624 25.7778H49.7412C49.7709 25.7956 49.8007 25.8311 49.8205 25.8489V38.1511H49.8304ZM39.9152 35.12L37.4364 32.4444L33.9661 36.4444H47.8474L43.3855 31.1111L39.9152 35.12Z"
@@ -84,7 +113,13 @@ export default function SvgIcon(props) {
       break;
     case 'sign3':
       iconElement = (
-        <svg width="80" height="48" viewBox="0 0 80 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="80"
+          height="48"
+          viewBox="0 0 80 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect width="80" height="48" rx="4" fill="#08B7DD" />
           <path
             d="M29.8304 16H11.983C10.9915 16 10 16.8889 10 17.7778V30.2222C10 31.2 10.8924 32 11.983 32H29.8304C30.8219 32 31.8134 31.1111 31.8134 30.2222V17.7778C31.8134 16.8889 30.8219 16 29.8304 16ZM29.8304 30.1511C29.8106 30.1778 29.7709 30.2044 29.7511 30.2222H11.983V17.8489L12.0624 17.7778H29.7412C29.7709 17.7956 29.8007 17.8311 29.8205 17.8489V30.1511H29.8304ZM19.9152 27.12L17.4364 24.4444L13.9661 28.4444H27.8474L23.3855 23.1111L19.9152 27.12Z"
@@ -99,7 +134,13 @@ export default function SvgIcon(props) {
       break;
     case 'sign4':
       iconElement = (
-        <svg width="80" height="48" viewBox="0 0 80 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="80"
+          height="48"
+          viewBox="0 0 80 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect width="80" height="48" rx="4" fill="#08B7DD" />
           <path
             d="M67.8295 16H49.9822C48.9907 16 47.9991 16.8889 47.9991 17.7778V30.2222C47.9991 31.2 48.8915 32 49.9822 32H67.8295C68.8211 32 69.8126 31.1111 69.8126 30.2222V17.7778C69.8126 16.8889 68.8211 16 67.8295 16ZM67.8295 30.1511C67.8097 30.1778 67.7701 30.2044 67.7502 30.2222H49.9822V17.8489L50.0615 17.7778H67.7403C67.7701 17.7956 67.7998 17.8311 67.8196 17.8489V30.1511H67.8295ZM57.9143 27.12L55.4355 24.4444L51.9652 28.4444H65.8465L61.3847 23.1111L57.9143 27.12Z"
@@ -114,7 +155,13 @@ export default function SvgIcon(props) {
       break;
     case 'sign5':
       iconElement = (
-        <svg width="80" height="48" viewBox="0 0 80 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="80"
+          height="48"
+          viewBox="0 0 80 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect width="80" height="48" rx="4" fill="#08B7DD" />
           <path
             opacity="0.3"
@@ -130,7 +177,13 @@ export default function SvgIcon(props) {
       break;
     case 'rice-green':
       iconElement = (
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="20" cy="20" r="20" fill="#689F38" />
           <g clipPath="url(#clip0_8003_20683)">
             <path
@@ -176,7 +229,12 @@ export default function SvgIcon(props) {
           </g>
           <defs>
             <clipPath id="clip0_8003_20683">
-              <rect width="24" height="24" fill="white" transform="translate(8 8)" />
+              <rect
+                width="24"
+                height="24"
+                fill="white"
+                transform="translate(8 8)"
+              />
             </clipPath>
           </defs>
         </svg>
@@ -185,7 +243,13 @@ export default function SvgIcon(props) {
 
     case 'sign1gray':
       iconElement = (
-        <svg width="80" height="48" viewBox="0 0 80 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="80"
+          height="48"
+          viewBox="0 0 80 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect width="80" height="48" rx="4" fill="#A8B1BD" />
           <path
             d="M49.8304 8H31.983C30.9915 8 30 8.88889 30 9.77778V22.2222C30 23.2 30.8924 24 31.983 24H49.8304C50.8219 24 51.8134 23.1111 51.8134 22.2222V9.77778C51.8134 8.88889 50.8219 8 49.8304 8ZM49.8304 22.1511C49.8106 22.1778 49.7709 22.2044 49.7511 22.2222H31.983V9.84889L32.0624 9.77778H49.7412C49.7709 9.79556 49.8007 9.83111 49.8205 9.84889V22.1511H49.8304ZM39.9152 19.12L37.4364 16.4444L33.9661 20.4444H47.8474L43.3855 15.1111L39.9152 19.12Z"
@@ -199,7 +263,13 @@ export default function SvgIcon(props) {
       break;
     case 'refreshBlue':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0_8003_19780)">
             <path
               d="M2 12C2 6.5 6.5 2 12 2C15.9 2 19.3 4.2 20.9 7.5"
@@ -245,7 +315,13 @@ export default function SvgIcon(props) {
 
     case 'sign2gray':
       iconElement = (
-        <svg width="80" height="48" viewBox="0 0 80 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="80"
+          height="48"
+          viewBox="0 0 80 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect width="80" height="48" rx="4" fill="#A8B1BD" />
           <path
             d="M49.8304 24H31.983C30.9915 24 30 24.8889 30 25.7778V38.2222C30 39.2 30.8924 40 31.983 40H49.8304C50.8219 40 51.8134 39.1111 51.8134 38.2222V25.7778C51.8134 24.8889 50.8219 24 49.8304 24ZM49.8304 38.1511C49.8106 38.1778 49.7709 38.2044 49.7511 38.2222H31.983V25.8489L32.0624 25.7778H49.7412C49.7709 25.7956 49.8007 25.8311 49.8205 25.8489V38.1511H49.8304ZM39.9152 35.12L37.4364 32.4444L33.9661 36.4444H47.8474L43.3855 31.1111L39.9152 35.12Z"
@@ -259,7 +335,13 @@ export default function SvgIcon(props) {
       break;
     case 'sign3gray':
       iconElement = (
-        <svg width="80" height="48" viewBox="0 0 80 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="80"
+          height="48"
+          viewBox="0 0 80 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect width="80" height="48" rx="4" fill="#A8B1BD" />
           <path
             d="M29.8304 16H11.983C10.9915 16 10 16.8889 10 17.7778V30.2222C10 31.2 10.8924 32 11.983 32H29.8304C30.8219 32 31.8134 31.1111 31.8134 30.2222V17.7778C31.8134 16.8889 30.8219 16 29.8304 16ZM29.8304 30.1511C29.8106 30.1778 29.7709 30.2044 29.7511 30.2222H11.983V17.8489L12.0624 17.7778H29.7412C29.7709 17.7956 29.8007 17.8311 29.8205 17.8489V30.1511H29.8304ZM19.9152 27.12L17.4364 24.4444L13.9661 28.4444H27.8474L23.3855 23.1111L19.9152 27.12Z"
@@ -275,7 +357,13 @@ export default function SvgIcon(props) {
 
     case 'sign4gray':
       iconElement = (
-        <svg width="80" height="48" viewBox="0 0 80 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="80"
+          height="48"
+          viewBox="0 0 80 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect width="80" height="48" rx="4" fill="#A8B1BD" />
           <path
             d="M67.8294 16H49.9821C48.9905 16 47.999 16.8889 47.999 17.7778V30.2222C47.999 31.2 48.8914 32 49.9821 32H67.8294C68.8209 32 69.8125 31.1111 69.8125 30.2222V17.7778C69.8125 16.8889 68.8209 16 67.8294 16ZM67.8294 30.1511C67.8096 30.1778 67.7699 30.2044 67.7501 30.2222H49.9821V17.8489L50.0614 17.7778H67.7402C67.7699 17.7956 67.7997 17.8311 67.8195 17.8489V30.1511H67.8294ZM57.9142 27.12L55.4354 24.4444L51.9651 28.4444H65.8464L61.3845 23.1111L57.9142 27.12Z"
@@ -290,7 +378,13 @@ export default function SvgIcon(props) {
       break;
     case 'sign5gray':
       iconElement = (
-        <svg width="80" height="48" viewBox="0 0 80 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="80"
+          height="48"
+          viewBox="0 0 80 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect width="80" height="48" rx="4" fill="#A8B1BD" />
           <path
             opacity="0.3"
@@ -306,7 +400,13 @@ export default function SvgIcon(props) {
       break;
     case 'onlypicgray':
       iconElement = (
-        <svg width="73" height="40" viewBox="0 0 73 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="73"
+          height="40"
+          viewBox="0 0 73 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect width="73" height="40" rx="4" fill="#A8B1BD" />
           <g clipPath="url(#clip0_7352_27020)">
             <path
@@ -316,7 +416,12 @@ export default function SvgIcon(props) {
           </g>
           <defs>
             <clipPath id="clip0_7352_27020">
-              <rect width="24" height="24" fill="white" transform="translate(25 8)" />
+              <rect
+                width="24"
+                height="24"
+                fill="white"
+                transform="translate(25 8)"
+              />
             </clipPath>
           </defs>
         </svg>
@@ -324,7 +429,13 @@ export default function SvgIcon(props) {
       break;
     case 'onlyPic':
       iconElement = (
-        <svg width="73" height="40" viewBox="0 0 73 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="73"
+          height="40"
+          viewBox="0 0 73 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect width="73" height="40" rx="4" fill="#08B7DD" />
           <g clipPath="url(#clip0_202_66)">
             <path
@@ -334,7 +445,12 @@ export default function SvgIcon(props) {
           </g>
           <defs>
             <clipPath id="clip0_202_66">
-              <rect width="24" height="24" fill="white" transform="translate(25 8)" />
+              <rect
+                width="24"
+                height="24"
+                fill="white"
+                transform="translate(25 8)"
+              />
             </clipPath>
           </defs>
         </svg>
@@ -343,8 +459,22 @@ export default function SvgIcon(props) {
 
     case 'onlytextgray':
       iconElement = (
-        <svg width="73" height="40" viewBox="0 0 73 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="0.5" width="72" height="39" rx="3.5" fill="#A8B1BD" stroke="#A8B1BD" />
+        <svg
+          width="73"
+          height="40"
+          viewBox="0 0 73 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="0.5"
+            y="0.5"
+            width="72"
+            height="39"
+            rx="3.5"
+            fill="#A8B1BD"
+            stroke="#A8B1BD"
+          />
           <rect x="25" y="19" width="24" height="3" fill="white" />
           <rect x="25" y="25" width="24" height="3" fill="white" />
           <rect x="25" y="13" width="10.5455" height="3" fill="white" />
@@ -353,8 +483,22 @@ export default function SvgIcon(props) {
       break;
     case 'onlyText':
       iconElement = (
-        <svg width="73" height="40" viewBox="0 0 73 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="0.5" width="72" height="39" rx="3.5" fill="#08B7DD" stroke="#08B7DD" />
+        <svg
+          width="73"
+          height="40"
+          viewBox="0 0 73 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="0.5"
+            y="0.5"
+            width="72"
+            height="39"
+            rx="3.5"
+            fill="#08B7DD"
+            stroke="#08B7DD"
+          />
           <rect x="25" y="19" width="24" height="3" fill="white" />
           <rect x="25" y="25" width="24" height="3" fill="white" />
           <rect x="25" y="13" width="10.5455" height="3" fill="white" />
@@ -364,7 +508,13 @@ export default function SvgIcon(props) {
 
     case 'pictext':
       iconElement = (
-        <svg width="73" height="40" viewBox="0 0 73 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="73"
+          height="40"
+          viewBox="0 0 73 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect width="73" height="40" rx="4" fill="#08B7DD" />
           <rect x="39" y="19" width="24" height="3" fill="white" />
           <rect x="39" y="25" width="24" height="3" fill="white" />
@@ -377,7 +527,12 @@ export default function SvgIcon(props) {
           </g>
           <defs>
             <clipPath id="clip0_7352_27045">
-              <rect width="24" height="24" fill="white" transform="translate(10 8)" />
+              <rect
+                width="24"
+                height="24"
+                fill="white"
+                transform="translate(10 8)"
+              />
             </clipPath>
           </defs>
         </svg>
@@ -385,7 +540,13 @@ export default function SvgIcon(props) {
       break;
     case 'pictextgray':
       iconElement = (
-        <svg width="73" height="40" viewBox="0 0 73 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="73"
+          height="40"
+          viewBox="0 0 73 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect width="73" height="40" rx="4" fill="#A8B1BD" />
           <rect x="39" y="19" width="24" height="3" fill="white" />
           <rect x="39" y="25" width="24" height="3" fill="white" />
@@ -398,7 +559,12 @@ export default function SvgIcon(props) {
           </g>
           <defs>
             <clipPath id="clip0_202_56">
-              <rect width="24" height="24" fill="white" transform="translate(10 8)" />
+              <rect
+                width="24"
+                height="24"
+                fill="white"
+                transform="translate(10 8)"
+              />
             </clipPath>
           </defs>
         </svg>
@@ -407,7 +573,13 @@ export default function SvgIcon(props) {
 
     case 'info1':
       iconElement = (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M9 5H11V7H9V5ZM9 9H11V15H9V9ZM10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18Z"
             fill="#626262"
@@ -418,8 +590,21 @@ export default function SvgIcon(props) {
       break;
     case 'editpen1':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12" cy="12" r="11.5" fill="#D9D9D9" fillOpacity="0.51" stroke="#C5CED9" />
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="11.5"
+            fill="#D9D9D9"
+            fillOpacity="0.51"
+            stroke="#C5CED9"
+          />
           <g clipPath="url(#clip0_7147_24831)">
             <path
               d="M6 15.5V18H8.5L15.8733 10.6267L13.3733 8.12667L6 15.5ZM7.94667 16.6667H7.33333V16.0533L13.3733 10.0133L13.9867 10.6267L7.94667 16.6667ZM17.8067 7.75333L16.2467 6.19333C16.1133 6.06 15.9467 6 15.7733 6C15.6 6 15.4333 6.06667 15.3067 6.19333L14.0867 7.41333L16.5867 9.91333L17.8067 8.69333C18.0667 8.43333 18.0667 8.01333 17.8067 7.75333Z"
@@ -428,7 +613,12 @@ export default function SvgIcon(props) {
           </g>
           <defs>
             <clipPath id="clip0_7147_24831">
-              <rect width="16" height="16" fill="white" transform="translate(4 4)" />
+              <rect
+                width="16"
+                height="16"
+                fill="white"
+                transform="translate(4 4)"
+              />
             </clipPath>
           </defs>
         </svg>
@@ -437,7 +627,13 @@ export default function SvgIcon(props) {
       break;
     case 'editpen2':
       iconElement = (
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g filter="url(#filter0_d_7357_30233)">
             <circle cx="16" cy="15" r="12" fill="white" />
           </g>
@@ -467,12 +663,29 @@ export default function SvgIcon(props) {
               <feOffset dy="1" />
               <feGaussianBlur stdDeviation="2" />
               <feComposite in2="hardAlpha" operator="out" />
-              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_7357_30233" />
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_7357_30233" result="shape" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_7357_30233"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow_7357_30233"
+                result="shape"
+              />
             </filter>
             <clipPath id="clip0_7357_30233">
-              <rect width="16" height="16" fill="white" transform="translate(8 7)" />
+              <rect
+                width="16"
+                height="16"
+                fill="white"
+                transform="translate(8 7)"
+              />
             </clipPath>
           </defs>
         </svg>
@@ -481,7 +694,13 @@ export default function SvgIcon(props) {
       break;
     case 'timespen2':
       iconElement = (
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g filter="url(#filter0_d_7357_30236)">
             <circle cx="16" cy="15" r="12" fill="white" />
           </g>
@@ -511,12 +730,29 @@ export default function SvgIcon(props) {
               <feOffset dy="1" />
               <feGaussianBlur stdDeviation="2" />
               <feComposite in2="hardAlpha" operator="out" />
-              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_7357_30236" />
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_7357_30236" result="shape" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_7357_30236"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow_7357_30236"
+                result="shape"
+              />
             </filter>
             <clipPath id="clip0_7357_30236">
-              <rect width="16" height="16" fill="white" transform="translate(8 7)" />
+              <rect
+                width="16"
+                height="16"
+                fill="white"
+                transform="translate(8 7)"
+              />
             </clipPath>
           </defs>
         </svg>
@@ -526,8 +762,21 @@ export default function SvgIcon(props) {
 
     case 'edittimes1':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12" cy="12" r="11.5" fill="#D9D9D9" fillOpacity="0.51" stroke="#C5CED9" />
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="11.5"
+            fill="#D9D9D9"
+            fillOpacity="0.51"
+            stroke="#C5CED9"
+          />
           <g clipPath="url(#clip0_7147_24832)">
             <path
               d="M16.6663 8.27398L15.7263 7.33398L11.9997 11.0607L8.27301 7.33398L7.33301 8.27398L11.0597 12.0007L7.33301 15.7273L8.27301 16.6673L11.9997 12.9407L15.7263 16.6673L16.6663 15.7273L12.9397 12.0007L16.6663 8.27398Z"
@@ -536,7 +785,12 @@ export default function SvgIcon(props) {
           </g>
           <defs>
             <clipPath id="clip0_7147_24832">
-              <rect width="16" height="16" fill="white" transform="translate(4 4)" />
+              <rect
+                width="16"
+                height="16"
+                fill="white"
+                transform="translate(4 4)"
+              />
             </clipPath>
           </defs>
         </svg>
@@ -546,18 +800,30 @@ export default function SvgIcon(props) {
 
     case 'signPage':
       iconElement = (
-        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="25"
+          height="24"
+          viewBox="0 0 25 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M5.72754 18.2126C6.22341 17.3384 6.96721 16.8284 6.96721 16.8284C7.58704 16.3184 9.10688 16.4808 8.33084 17.4841C7.71101 18.2854 8.20688 18.7225 9.44655 17.994C9.89357 17.7313 10.5622 17.9212 11.1821 18.3583"
             stroke="#626262"
             strokeLinecap="round"
           />
-          <path d="M21.4668 7.56641L22.7524 8.85205L15.0386 16.5659L13.7529 15.2803L21.4668 7.56641Z" fill="#626262" />
+          <path
+            d="M21.4668 7.56641L22.7524 8.85205L15.0386 16.5659L13.7529 15.2803L21.4668 7.56641Z"
+            fill="#626262"
+          />
           <path
             d="M23.041 5.99027C23.2362 5.79501 23.5528 5.79501 23.7481 5.99027L24.3266 6.56881C24.5219 6.76408 24.5219 7.08066 24.3266 7.27592L23.3945 8.20802L22.1089 6.92237L23.041 5.99027Z"
             fill="#626262"
           />
-          <path d="M11.8237 18.4932L13.1094 15.9219L14.395 17.2075L11.8237 18.4932Z" fill="#626262" />
+          <path
+            d="M11.8237 18.4932L13.1094 15.9219L14.395 17.2075L11.8237 18.4932Z"
+            fill="#626262"
+          />
           <path
             d="M24.2711 9.08361L23.3945 8.20703L22.7517 8.84986L23.3945 9.49268L19.859 13.0282C19.6815 13.2057 19.6815 13.4935 19.859 13.671C20.0365 13.8485 20.3243 13.8485 20.5018 13.671L24.2711 9.90175C24.497 9.67583 24.497 9.30953 24.2711 9.08361Z"
             fill="#626262"
@@ -568,9 +834,30 @@ export default function SvgIcon(props) {
             d="M17.5455 3.81818H13.7455C13.3636 2.76364 12.3636 2 11.1818 2C10 2 9 2.76364 8.61818 3.81818H4.81818C4.69091 3.81818 4.57273 3.82727 4.45455 3.85455C4.1 3.92727 3.78182 4.10909 3.53636 4.35455C3.37273 4.51818 3.23636 4.71818 3.14545 4.93636C3.05455 5.14545 3 5.38182 3 5.63636V20.1818C3 20.4273 3.05455 20.6727 3.14545 20.8909C3.23636 21.1091 3.37273 21.3 3.53636 21.4727C3.78182 21.7182 4.1 21.9 4.45455 21.9727C4.57273 21.9909 4.69091 22 4.81818 22H17.5455C18.5455 22 19.3636 21.1818 19.3636 20.1818V13.9473L17.5455 15.7655V20.1818H4.81818V5.63636H17.5455V9.55783L19.3636 7.73965V5.63636C19.3636 4.63636 18.5455 3.81818 17.5455 3.81818ZM17.5455 13.1942L19.3636 11.376V10.3109L17.5455 12.1291V13.1942ZM11.1818 3.59091C11.5545 3.59091 11.8636 3.9 11.8636 4.27273C11.8636 4.64545 11.5545 4.95455 11.1818 4.95455C10.8091 4.95455 10.5 4.64545 10.5 4.27273C10.5 3.9 10.8091 3.59091 11.1818 3.59091Z"
             fill="#626262"
           />
-          <rect x="5.72754" y="7.45312" width="10.9091" height="1.36364" rx="0.681818" fill="#626262" />
-          <rect x="5.72754" y="10.1836" width="9.09091" height="1.36364" rx="0.681818" fill="#626262" />
-          <rect x="5.72754" y="12.9102" width="7.27273" height="1.36364" rx="0.681818" fill="#626262" />
+          <rect
+            x="5.72754"
+            y="7.45312"
+            width="10.9091"
+            height="1.36364"
+            rx="0.681818"
+            fill="#626262"
+          />
+          <rect
+            x="5.72754"
+            y="10.1836"
+            width="9.09091"
+            height="1.36364"
+            rx="0.681818"
+            fill="#626262"
+          />
+          <rect
+            x="5.72754"
+            y="12.9102"
+            width="7.27273"
+            height="1.36364"
+            rx="0.681818"
+            fill="#626262"
+          />
         </svg>
       );
 
@@ -578,7 +865,13 @@ export default function SvgIcon(props) {
 
     case 'black-dot-1':
       iconElement = (
-        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="8"
+          height="8"
+          viewBox="0 0 8 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="4" cy="4" r="4" fill="#222D4B" />
         </svg>
       );
@@ -586,7 +879,13 @@ export default function SvgIcon(props) {
       break;
     case 'blue-dot-1':
       iconElement = (
-        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="8"
+          height="8"
+          viewBox="0 0 8 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="4" cy="4" r="4" fill="#08B7DD" />
         </svg>
       );
@@ -594,7 +893,13 @@ export default function SvgIcon(props) {
       break;
     case 'white-dot-1':
       iconElement = (
-        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="8"
+          height="8"
+          viewBox="0 0 8 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="4" cy="4" r="3.5" fill="white" stroke="#222D4B" />
         </svg>
       );
@@ -602,7 +907,13 @@ export default function SvgIcon(props) {
       break;
     case 'square-1':
       iconElement = (
-        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="8"
+          height="8"
+          viewBox="0 0 8 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect width="8" height="8" fill="#222D4B" />
         </svg>
       );
@@ -610,8 +921,21 @@ export default function SvgIcon(props) {
       break;
     case 'success-green':
       iconElement = (
-        <svg width="122" height="122" viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="61" cy="61" r="60" fill="white" stroke="#00C968" strokeDasharray="5 5" />
+        <svg
+          width="122"
+          height="122"
+          viewBox="0 0 122 122"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="61"
+            cy="61"
+            r="60"
+            fill="white"
+            stroke="#00C968"
+            strokeDasharray="5 5"
+          />
           <g clipPath="url(#clip0_6750_22105)">
             <path
               d="M53.5004 71.425L43.0754 61L39.5254 64.525L53.5004 78.5L83.5004 48.5L79.9754 44.975L53.5004 71.425Z"
@@ -620,7 +944,12 @@ export default function SvgIcon(props) {
           </g>
           <defs>
             <clipPath id="clip0_6750_22105">
-              <rect width="60" height="60" fill="white" transform="translate(31 31)" />
+              <rect
+                width="60"
+                height="60"
+                fill="white"
+                transform="translate(31 31)"
+              />
             </clipPath>
           </defs>
         </svg>
@@ -630,8 +959,20 @@ export default function SvgIcon(props) {
 
     case 'icon-remote-signing':
       iconElement = (
-        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="60" cy="60" r="59.5" stroke="#08B7DD" strokeDasharray="5 5" />
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="60"
+            cy="60"
+            r="59.5"
+            stroke="#08B7DD"
+            strokeDasharray="5 5"
+          />
           <g clipPath="url(#clip0_6729_21802)">
             <path
               d="M56.666 43.3334H63.3327V50.0001H56.666V43.3334ZM56.666 56.6667H63.3327V76.6668H56.666V56.6667ZM59.9994 26.6667C41.5993 26.6667 26.666 41.6001 26.666 60.0001C26.666 78.4001 41.5993 93.3334 59.9994 93.3334C78.3994 93.3334 93.3327 78.4001 93.3327 60.0001C93.3327 41.6001 78.3994 26.6667 59.9994 26.6667ZM59.9994 86.6668C45.2994 86.6668 33.3327 74.7001 33.3327 60.0001C33.3327 45.3001 45.2994 33.3334 59.9994 33.3334C74.6994 33.3334 86.666 45.3001 86.666 60.0001C86.666 74.7001 74.6994 86.6668 59.9994 86.6668Z"
@@ -640,7 +981,12 @@ export default function SvgIcon(props) {
           </g>
           <defs>
             <clipPath id="clip0_6729_21802">
-              <rect width="80" height="80" fill="white" transform="translate(20 20)" />
+              <rect
+                width="80"
+                height="80"
+                fill="white"
+                transform="translate(20 20)"
+              />
             </clipPath>
           </defs>
         </svg>
@@ -650,31 +996,61 @@ export default function SvgIcon(props) {
 
     case 'select-cks':
       iconElement = (
-        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path d="M20 20H100V100H20V20Z" fill="white" />
           <path
             d="M56.6667 43.3333H76.6667V50H56.6667V43.3333ZM56.6667 56.6667H76.6667V63.3333H56.6667V56.6667ZM56.6667 70H76.6667V76.6667H56.6667V70ZM43.3333 43.3333H50V50H43.3333V43.3333ZM43.3333 56.6667H50V63.3333H43.3333V56.6667ZM43.3333 70H50V76.6667H43.3333V70ZM87 30H33C31.3333 30 30 31.3333 30 33V87C30 88.3333 31.3333 90 33 90H87C88.3333 90 90 88.3333 90 87V33C90 31.3333 88.3333 30 87 30ZM83.3333 83.3333H36.6667V36.6667H83.3333V83.3333Z"
             fill="#08B7DD"
           />
-          <circle cx="60" cy="60" r="59.5" stroke="#08B7DD" strokeDasharray="5 5" />
+          <circle
+            cx="60"
+            cy="60"
+            r="59.5"
+            stroke="#08B7DD"
+            strokeDasharray="5 5"
+          />
         </svg>
       );
 
       break;
     case 'sign-accept':
       iconElement = (
-        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M66.666 39.9997L63.3327 33.333H36.666V89.9997H43.3327V66.6663H59.9993L63.3327 73.333H86.666V39.9997H66.666ZM79.9993 66.6663H66.666L63.3327 59.9997H43.3327V39.9997H59.9993L63.3327 46.6663H79.9993V66.6663Z"
             fill="#08B7DD"
           />
-          <circle cx="60" cy="60" r="59.5" stroke="#08B7DD" strokeDasharray="5 5" />
+          <circle
+            cx="60"
+            cy="60"
+            r="59.5"
+            stroke="#08B7DD"
+            strokeDasharray="5 5"
+          />
         </svg>
       );
       break;
     case 'delete-cks':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
             fill="#222D4B"
@@ -684,7 +1060,13 @@ export default function SvgIcon(props) {
       break;
     case 'library-book':
       iconElement = (
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0_7346_26641)">
             <path
               d="M3 4.5H1.5V15C1.5 15.825 2.175 16.5 3 16.5H13.5V15H3V4.5ZM15 1.5H6C5.175 1.5 4.5 2.175 4.5 3V12C4.5 12.825 5.175 13.5 6 13.5H15C15.825 13.5 16.5 12.825 16.5 12V3C16.5 2.175 15.825 1.5 15 1.5ZM15 12H6V3H15V12ZM7.5 6.75H13.5V8.25H7.5V6.75ZM7.5 9H10.5V10.5H7.5V9ZM7.5 4.5H13.5V6H7.5V4.5Z"
@@ -701,7 +1083,13 @@ export default function SvgIcon(props) {
       break;
     case 'search-mini':
       iconElement = (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle r="10" transform="matrix(-1 0 0 1 10 10)" fill="#88B5EB" />
           <circle cx="10.625" cy="8.75" r="4.6875" fill="white" />
           <rect
@@ -722,7 +1110,13 @@ export default function SvgIcon(props) {
       break;
     case 'collapse':
       iconElement = (
-        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="21"
+          height="21"
+          viewBox="0 0 21 21"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M3.50508 12.6984L8.93841 7.26506C9.58008 6.6234 10.6301 6.6234 11.2717 7.26506L16.7051 12.6984"
             stroke="#8B8A92"
@@ -736,7 +1130,13 @@ export default function SvgIcon(props) {
       break;
     case 'timesocial':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="12" cy="12" r="12" fill="white" />
           <path
             d="M16.6673 8.2735L15.7273 7.3335L12.0007 11.0602L8.27398 7.3335L7.33398 8.2735L11.0607 12.0002L7.33398 15.7268L8.27398 16.6668L12.0007 12.9402L15.7273 16.6668L16.6673 15.7268L12.9407 12.0002L16.6673 8.2735Z"
@@ -747,7 +1147,13 @@ export default function SvgIcon(props) {
       break;
     case 'error-version':
       iconElement = (
-        <svg width="257" height="260" viewBox="0 0 257 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="257"
+          height="260"
+          viewBox="0 0 257 260"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M204.376 142.008C204.376 144.787 204.231 147.532 203.947 150.235C200.29 185.321 173.466 213.528 139.05 219.287C134.812 219.999 130.457 220.372 126.019 220.372C107.165 220.372 89.8749 213.714 76.359 202.632C58.8403 188.259 47.6543 166.44 47.6543 142.008C47.6543 135.661 48.4148 129.487 49.839 123.576C53.0122 110.386 59.5386 98.4875 68.4569 88.8432C82.7678 73.3501 103.259 63.6436 126.019 63.6436C139.444 63.6436 152.082 67.0173 163.13 72.9767C177.911 80.9411 189.851 93.5167 197.006 108.775C200.027 115.211 202.198 122.132 203.366 129.391C204.037 133.497 204.383 137.714 204.383 142.008H204.376Z"
             fill="#F4F4F4"
@@ -872,8 +1278,14 @@ export default function SvgIcon(props) {
             d="M184.023 176.216L153.859 161.027L162.785 193.597L168.578 183.067L176.701 192.988L180.67 189.739L172.553 179.818L184.023 176.216Z"
             fill="#FFFFFE"
           />
-          <path d="M113.519 55.8775L69.7832 44.9404L63.0274 71.956L106.763 82.893L113.519 55.8775Z" fill="#F4F4F4" />
-          <path d="M69.7793 44.9424L88.2659 63.9199L113.514 55.8864L87.6368 66.4433L69.7793 44.9424Z" fill="#222D4B" />
+          <path
+            d="M113.519 55.8775L69.7832 44.9404L63.0274 71.956L106.763 82.893L113.519 55.8775Z"
+            fill="#F4F4F4"
+          />
+          <path
+            d="M69.7793 44.9424L88.2659 63.9199L113.514 55.8864L87.6368 66.4433L69.7793 44.9424Z"
+            fill="#222D4B"
+          />
           <path
             d="M25.9119 113.103C21.3905 115.433 25.0062 122.464 29.5346 120.127C34.056 117.797 30.4402 110.766 25.9119 113.103Z"
             fill="#C5CED9"
@@ -930,7 +1342,10 @@ export default function SvgIcon(props) {
             d="M24.7444 28.7161C31.8238 20.6965 40.8597 19.6249 46.4666 24.568C52.0803 29.5181 52.1287 38.6162 45.0493 46.6358C44.5654 47.182 42.5397 49.4289 41.0395 51.0466C40.7284 51.3785 40.4449 51.6826 40.203 51.9454C39.878 52.2841 39.6222 52.5537 39.4701 52.6782C32.7433 58.7828 26.8392 57.7803 21.6126 54.1992C21.343 54.0194 21.0872 53.8189 20.8383 53.5977C20.5894 53.3764 20.3544 53.1483 20.147 52.9063C15.9574 48.1637 14.2221 42.4255 19.4487 35.0004C19.5593 34.8414 19.7875 34.5511 20.0847 34.1846C20.306 33.9081 20.5756 33.5832 20.8729 33.2375C22.2901 31.5437 24.2674 29.2553 24.7444 28.7161Z"
             fill="#F4F4F4"
           />
-          <path d="M30.9772 41.2072L20.3848 53.2051L21.2917 54.0058L31.8842 42.0079L30.9772 41.2072Z" fill="#C5CED9" />
+          <path
+            d="M30.9772 41.2072L20.3848 53.2051L21.2917 54.0058L31.8842 42.0079L30.9772 41.2072Z"
+            fill="#C5CED9"
+          />
           <path
             d="M24.2799 48.2416L25.7414 49.5319C26.0935 49.8428 26.6309 49.8093 26.9417 49.4573L30.1263 45.8501C30.4371 45.498 30.4037 44.9607 30.0516 44.6498L28.5901 43.3595C28.2381 43.0487 27.7007 43.0821 27.3899 43.4342L24.2053 47.0413C23.8944 47.3934 23.9279 47.9308 24.2799 48.2416Z"
             fill="#222D4B"
@@ -939,12 +1354,30 @@ export default function SvgIcon(props) {
             d="M20.8721 33.2441C24.799 35.5463 28.4562 38.1873 31.8231 41.1601C35.1899 44.1329 38.2664 47.4306 41.0387 51.0532C40.7276 51.3851 40.4442 51.6893 40.2022 51.952C34.6991 44.7205 27.9377 38.7542 20.084 34.1913C20.3052 33.9147 20.5748 33.5898 20.8721 33.2441Z"
             fill="#C5CED9"
           />
-          <path d="M228.894 20.1458L208.748 0L197.402 11.3464L217.547 31.4921L228.894 20.1458Z" fill="#FFFFFE" />
-          <path d="M216.362 10.4157L209.146 3.2002L200.606 11.7405L207.822 18.956L216.362 10.4157Z" fill="#222D4B" />
-          <path d="M225.481 19.5368L218.266 12.3213L209.725 20.8616L216.941 28.0771L225.481 19.5368Z" fill="#222D4B" />
-          <path d="M224.829 38.7634L244.975 58.9092L256.321 47.5628L236.175 27.4171L224.829 38.7634Z" fill="#FFFFFE" />
-          <path d="M237.361 48.4925L244.576 55.708L253.116 47.1677L245.901 39.9522L237.361 48.4925Z" fill="#222D4B" />
-          <path d="M228.245 39.3743L235.461 46.5898L244.001 38.0495L236.786 30.834L228.245 39.3743Z" fill="#222D4B" />
+          <path
+            d="M228.894 20.1458L208.748 0L197.402 11.3464L217.547 31.4921L228.894 20.1458Z"
+            fill="#FFFFFE"
+          />
+          <path
+            d="M216.362 10.4157L209.146 3.2002L200.606 11.7405L207.822 18.956L216.362 10.4157Z"
+            fill="#222D4B"
+          />
+          <path
+            d="M225.481 19.5368L218.266 12.3213L209.725 20.8616L216.941 28.0771L225.481 19.5368Z"
+            fill="#222D4B"
+          />
+          <path
+            d="M224.829 38.7634L244.975 58.9092L256.321 47.5628L236.175 27.4171L224.829 38.7634Z"
+            fill="#FFFFFE"
+          />
+          <path
+            d="M237.361 48.4925L244.576 55.708L253.116 47.1677L245.901 39.9522L237.361 48.4925Z"
+            fill="#222D4B"
+          />
+          <path
+            d="M228.245 39.3743L235.461 46.5898L244.001 38.0495L236.786 30.834L228.245 39.3743Z"
+            fill="#222D4B"
+          />
           <path
             d="M234.731 39.3565C231.572 42.516 226.643 39.4948 221.734 34.5862C216.825 29.6776 213.797 24.7483 216.964 21.5889C220.123 18.4294 228.281 18.2289 233.183 23.1375C238.091 28.0461 237.891 36.197 234.731 39.3565Z"
             fill="#A8B1BD"
@@ -999,8 +1432,14 @@ export default function SvgIcon(props) {
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-          <path d="M163.777 206.12L103.479 191.966L93.974 232.457L154.273 246.611L163.777 206.12Z" fill="white" />
-          <path d="M159.774 208.348L106.064 195.74L97.9692 230.227L151.679 242.835L159.774 208.348Z" fill="#222D4B" />
+          <path
+            d="M163.777 206.12L103.479 191.966L93.974 232.457L154.273 246.611L163.777 206.12Z"
+            fill="white"
+          />
+          <path
+            d="M159.774 208.348L106.064 195.74L97.9692 230.227L151.679 242.835L159.774 208.348Z"
+            fill="#222D4B"
+          />
           <path
             d="M153.887 233.459L144.955 219.044L133.368 226.22L120.861 206.047L100.715 218.533L97.9707 230.223L151.681 242.833L153.887 233.459Z"
             fill="#C5CED9"
@@ -1015,7 +1454,13 @@ export default function SvgIcon(props) {
 
     case 'android':
       iconElement = (
-        <svg width="111" height="32" viewBox="0 0 111 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="111"
+          height="32"
+          viewBox="0 0 111 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M106.889 32H4.11111C1.85103 32 0 30.199 0 28V4C0 1.801 1.85103 1.69118e-06 4.11111 1.69118e-06H106.889C109.149 1.69118e-06 111 1.801 111 4V28C111 30.199 109.149 32 106.889 32Z"
             fill="black"
@@ -1154,7 +1599,13 @@ export default function SvgIcon(props) {
 
     case 'ios':
       iconElement = (
-        <svg width="111" height="32" viewBox="0 0 111 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="111"
+          height="32"
+          viewBox="0 0 111 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M110.383 28.3093C110.383 30.0146 108.97 31.396 107.222 31.396H3.78121C2.03424 31.396 0.616211 30.0146 0.616211 28.3093V3.69421C0.616211 1.98969 2.03424 0.603516 3.78121 0.603516H107.221C108.97 0.603516 110.382 1.98969 110.382 3.69421L110.383 28.3093Z"
             fill="black"
@@ -1219,7 +1670,10 @@ export default function SvgIcon(props) {
             d="M56.0742 10.7464H55.2125V8.5864C55.2125 7.9208 54.9527 7.588 54.4314 7.588C54.1757 7.588 53.9693 7.6792 53.809 7.8624C53.6503 8.0456 53.5697 8.2616 53.5697 8.5088V10.7456H52.708V8.0528C52.708 7.7216 52.6973 7.3624 52.6768 6.9736H53.434L53.4743 7.5632H53.4982C53.5985 7.38 53.7481 7.2288 53.9446 7.108C54.1781 6.9672 54.4396 6.896 54.7257 6.896C55.0875 6.896 55.3884 7.0096 55.6277 7.2376C55.9253 7.5168 56.0742 7.9336 56.0742 8.4872V10.7464Z"
             fill="white"
           />
-          <path d="M58.4507 10.7467H57.5898V5.24512H58.4507V10.7467Z" fill="white" />
+          <path
+            d="M58.4507 10.7467H57.5898V5.24512H58.4507V10.7467Z"
+            fill="white"
+          />
           <path
             d="M63.5247 8.82964C63.5247 9.40964 63.3545 9.88484 63.0141 10.2576C62.6573 10.6408 62.1837 10.832 61.5941 10.832C61.0243 10.832 60.5713 10.6488 60.2342 10.2808C59.8971 9.91364 59.7285 9.45044 59.7285 8.89204C59.7285 8.30804 59.902 7.82884 60.2506 7.45684C60.5993 7.08484 61.0679 6.89844 61.6574 6.89844C62.2272 6.89844 62.6836 7.08164 63.0306 7.44884C63.3594 7.80564 63.5247 8.26644 63.5247 8.82964ZM62.6301 8.85684C62.6301 8.50884 62.5529 8.21044 62.3991 7.96164C62.219 7.66084 61.9608 7.51044 61.627 7.51044C61.28 7.51044 61.0169 7.66084 60.8369 7.96164C60.6823 8.21044 60.6058 8.51364 60.6058 8.87204C60.6058 9.22004 60.6831 9.51844 60.8369 9.76724C61.0235 10.068 61.2833 10.2184 61.6188 10.2184C61.9477 10.2184 62.205 10.0656 62.3909 9.75924C62.5512 9.50564 62.6301 9.20484 62.6301 8.85684Z"
             fill="white"
@@ -1257,7 +1711,13 @@ export default function SvgIcon(props) {
       break;
     case 'expanded':
       iconElement = (
-        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="21"
+          height="21"
+          viewBox="0 0 21 21"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M16.7059 7.70224L11.2725 13.1356C10.6309 13.7772 9.58086 13.7772 8.93919 13.1356L3.50586 7.70224"
             stroke="#8B8A92"
@@ -1271,22 +1731,46 @@ export default function SvgIcon(props) {
       break;
     case 'drop-left':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M11.41 12.59L6.83 8L11.41 3.41L10 2L4 8L10 14L11.41 12.59Z" fill="#222D4B" />
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.41 12.59L6.83 8L11.41 3.41L10 2L4 8L10 14L11.41 12.59Z"
+            fill="#222D4B"
+          />
         </svg>
       );
       break;
     case 'sub-custom':
       iconElement = (
-        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z" fill="white" />
+        <svg
+          width="18"
+          height="12"
+          viewBox="0 0 18 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z"
+            fill="white"
+          />
         </svg>
       );
       break;
 
     case 'title-pageE':
       iconElement = (
-        <svg width="174" height="28" viewBox="0 0 174 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="174"
+          height="28"
+          viewBox="0 0 174 28"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M83.9716 8.59078C82.5598 7.93265 80.8855 8.53963 80.224 9.94795C79.7261 10.9437 78.7952 11.6564 77.704 11.878C76.4526 12.1303 75.1499 11.3529 74.5361 10.913C73.2813 9.76381 71.3342 9.85247 70.185 11.1073C69.0393 12.3622 69.1245 14.3093 70.3794 15.4585C71.6342 16.6076 73.5814 16.519 74.7305 15.2641C74.9419 15.0322 75.1158 14.7731 75.2488 14.4866C75.2625 14.4594 75.2761 14.4287 75.2863 14.398C75.4602 14.1252 75.6751 13.8831 75.9274 13.6819C76.4594 13.3102 77.0698 13.0715 77.7108 12.9794C79.5079 12.6043 81.4107 13.5966 81.4107 13.5966C81.4652 13.6273 81.5232 13.658 81.5846 13.6853C82.9929 14.3434 84.6672 13.7364 85.3287 12.3281C85.9903 10.9198 85.3799 9.24549 83.9716 8.58396V8.59078Z"
             fill="white"
@@ -1368,7 +1852,10 @@ export default function SvgIcon(props) {
             d="M155.034 24.8766H155.392V23.5467C155.675 23.5024 156.044 23.4717 156.429 23.4717C157.07 23.4717 157.493 23.5808 157.82 23.8297C158.171 24.0923 158.39 24.5254 158.39 25.1255C158.39 25.7836 158.158 26.2372 157.83 26.5168C157.472 26.8135 156.93 26.9601 156.265 26.9601C155.866 26.9601 155.587 26.9362 155.392 26.9089V25.4802H155.034V24.88V24.8766ZM156.831 25.4768H156.156V26.3429C156.228 26.3531 156.333 26.3531 156.422 26.3531C157.128 26.3531 157.575 25.9814 157.575 25.1494C157.575 24.4128 157.165 24.065 156.5 24.065C156.333 24.065 156.224 24.0787 156.153 24.0957V24.8766H156.828V25.4768H156.831Z"
             fill="white"
           />
-          <path d="M159.665 23.5127V26.909H158.895V23.5127H159.665Z" fill="white" />
+          <path
+            d="M159.665 23.5127V26.909H158.895V23.5127H159.665Z"
+            fill="white"
+          />
           <path
             d="M162.353 25.4696H161.105V26.2744H162.499V26.9052H160.334V23.5089H162.428V24.1397H161.105V24.8456H162.353V25.4696V25.4696ZM161.688 22.7109L162.203 23.3316H161.664L161.408 23.0178H161.398L161.146 23.3316H160.61L161.115 22.7109H161.688V22.7109ZM161.105 27.6554C161.105 27.4576 161.255 27.3076 161.456 27.3076C161.657 27.3076 161.793 27.4576 161.793 27.6554C161.793 27.8361 161.647 27.9964 161.456 27.9964C161.255 27.9964 161.105 27.8361 161.105 27.6554Z"
             fill="white"
@@ -1377,7 +1864,10 @@ export default function SvgIcon(props) {
             d="M163.021 26.9051V23.5088H163.917L164.623 24.7534C164.824 25.1115 165.026 25.5343 165.176 25.9162H165.189C165.138 25.4695 165.124 25.0092 165.124 24.5011V23.5088H165.83V26.9051H165.026L164.299 25.5957C164.098 25.2342 163.876 24.7944 163.709 24.3988H163.696C163.716 24.8523 163.726 25.3297 163.726 25.8855V26.9085H163.021V26.9051Z"
             fill="white"
           />
-          <path d="M167.968 24.1572H167.058V23.5127H169.666V24.1572H168.739V26.9056H167.968V24.1572Z" fill="white" />
+          <path
+            d="M167.968 24.1572H167.058V23.5127H169.666V24.1572H168.739V26.9056H167.968V24.1572Z"
+            fill="white"
+          />
           <path
             d="M173.356 22.8917C173.42 23.0213 173.468 23.1884 173.468 23.3589C173.468 23.6658 173.298 23.8738 172.929 23.9079L172.844 23.9181V25.4151C172.844 26.462 172.316 26.9598 171.429 26.9598C170.542 26.9598 170.068 26.4858 170.068 25.4049V23.5123H170.839V25.4663C170.839 26.0494 171.061 26.346 171.453 26.346C171.845 26.346 172.077 26.063 172.077 25.4663V23.5123H172.66C172.868 23.5123 172.923 23.4475 172.923 23.3146C172.923 23.2088 172.888 23.0929 172.817 22.977L173.356 22.8917V22.8917ZM171.395 23.2736C171.47 23.0452 171.64 23.0077 171.64 22.8406C171.64 22.7485 171.576 22.6905 171.494 22.6905C171.398 22.6905 171.313 22.7928 171.265 22.861L171.023 22.7144C171.139 22.4825 171.33 22.3154 171.637 22.3154C171.91 22.3154 172.125 22.5132 172.125 22.7451C172.125 23.0418 171.879 23.0963 171.743 23.3487L171.391 23.2736H171.395Z"
             fill="white"
@@ -1388,21 +1878,45 @@ export default function SvgIcon(props) {
 
     case 'drop-right':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5.99984 2L4.58984 3.41L9.16984 8L4.58984 12.59L5.99984 14L11.9998 8L5.99984 2Z" fill="#222D4B" />
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.99984 2L4.58984 3.41L9.16984 8L4.58984 12.59L5.99984 14L11.9998 8L5.99984 2Z"
+            fill="#222D4B"
+          />
         </svg>
       );
       break;
     case 'drop-bottom':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3.41 4.58997L8 9.16997L12.59 4.58997L14 5.99997L8 12L2 5.99997L3.41 4.58997Z" fill="#222D4B" />
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.41 4.58997L8 9.16997L12.59 4.58997L14 5.99997L8 12L2 5.99997L3.41 4.58997Z"
+            fill="#222D4B"
+          />
         </svg>
       );
       break;
     case 'file-excel':
       iconElement = (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M15.4167 13.3333H5.83333C3.99167 13.3333 2.5 11.8416 2.5 9.99996C2.5 8.15829 3.99167 6.66663 5.83333 6.66663H16.25C17.4 6.66663 18.3333 7.59996 18.3333 8.74996C18.3333 9.89996 17.4 10.8333 16.25 10.8333H7.5C7.04167 10.8333 6.66667 10.4583 6.66667 9.99996C6.66667 9.54163 7.04167 9.16663 7.5 9.16663H15.4167V7.91663H7.5C6.35 7.91663 5.41667 8.84996 5.41667 9.99996C5.41667 11.15 6.35 12.0833 7.5 12.0833H16.25C18.0917 12.0833 19.5833 10.5916 19.5833 8.74996C19.5833 6.90829 18.0917 5.41663 16.25 5.41663H5.83333C3.3 5.41663 1.25 7.46663 1.25 9.99996C1.25 12.5333 3.3 14.5833 5.83333 14.5833H15.4167V13.3333Z"
             fill="#08B7DD"
@@ -1412,7 +1926,13 @@ export default function SvgIcon(props) {
       break;
     case 'setting-green':
       iconElement = (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M20 10C20 4.47803 15.522 0 10 0C4.47803 0 0 4.47803 0 10C0 15.522 4.47803 20 10 20C15.522 20 20 15.522 20 10Z"
             fill="#F4A835"
@@ -1427,7 +1947,13 @@ export default function SvgIcon(props) {
 
     case 'setting-bubble':
       iconElement = (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M10 13.0435C8.3222 13.0435 6.95654 11.6783 6.95654 10C6.95654 8.32176 8.3222 6.95654 10 6.95654C11.6778 6.95654 13.0435 8.32176 13.0435 10C13.0435 11.6783 11.6778 13.0435 10 13.0435ZM10 8.26089C9.04089 8.26089 8.26089 9.04089 8.26089 10C8.26089 10.9592 9.04089 11.7392 10 11.7392C10.9592 11.7392 11.7392 10.9592 11.7392 10C11.7392 9.04089 10.9592 8.26089 10 8.26089Z"
             fill="url(#paint0_linear_8_15)"
@@ -1441,7 +1967,14 @@ export default function SvgIcon(props) {
             fill="url(#paint2_linear_8_15)"
           />
           <defs>
-            <linearGradient id="paint0_linear_8_15" x1="10" y1="6.95654" x2="10" y2="13.0435" gradientUnits="userSpaceOnUse">
+            <linearGradient
+              id="paint0_linear_8_15"
+              x1="10"
+              y1="6.95654"
+              x2="10"
+              y2="13.0435"
+              gradientUnits="userSpaceOnUse"
+            >
               <stop stopColor="#6DC7FF" />
               <stop offset="1" stopColor="#E6ABFF" />
             </linearGradient>
@@ -1456,7 +1989,14 @@ export default function SvgIcon(props) {
               <stop stopColor="#E6ABFF" />
               <stop offset="1" stopColor="#6DC7FF" />
             </linearGradient>
-            <linearGradient id="paint2_linear_8_15" x1="10" y1="20" x2="10" y2="0" gradientUnits="userSpaceOnUse">
+            <linearGradient
+              id="paint2_linear_8_15"
+              x1="10"
+              y1="20"
+              x2="10"
+              y2="0"
+              gradientUnits="userSpaceOnUse"
+            >
               <stop stopColor="#C822FF" />
               <stop offset="1" stopColor="#1A6DFF" />
             </linearGradient>
@@ -1467,14 +2007,26 @@ export default function SvgIcon(props) {
 
     case 'add-black':
       iconElement = (
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="14"
+          height="14"
+          viewBox="0 0 14 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="#626262" />
         </svg>
       );
       break;
     case 'add-plus':
       iconElement = (
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="14"
+          height="14"
+          viewBox="0 0 14 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="#08B7DD" />
         </svg>
       );
@@ -1482,14 +2034,29 @@ export default function SvgIcon(props) {
 
     case 'import-black':
       iconElement = (
-        <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4 13H10V7H14L7 0L0 7H4V13ZM7 2.83L9.17 5H8V11H6V5H4.83L7 2.83ZM0 15H14V17H0V15Z" fill="#626262" />
+        <svg
+          width="14"
+          height="17"
+          viewBox="0 0 14 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 13H10V7H14L7 0L0 7H4V13ZM7 2.83L9.17 5H8V11H6V5H4.83L7 2.83ZM0 15H14V17H0V15Z"
+            fill="#626262"
+          />
         </svg>
       );
       break;
     case 'helper':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
             fill="#08B7DD"
@@ -1508,15 +2075,31 @@ export default function SvgIcon(props) {
       break;
     case 'checked-white':
       iconElement = (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="10" cy="10" r="9.25" stroke="white" strokeWidth="1.5" />
-          <path d="M6 10.375L8.73913 13L15 7" stroke="white" strokeWidth="1.5" />
+          <path
+            d="M6 10.375L8.73913 13L15 7"
+            stroke="white"
+            strokeWidth="1.5"
+          />
         </svg>
       );
       break;
     case 'play-icon':
       iconElement = (
-        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="64"
+          height="64"
+          viewBox="0 0 64 64"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle r="32" transform="matrix(-1 0 0 1 32 32)" fill="#32BEA6" />
           <path
             d="M46.694 30.5068C47.7073 31.0659 47.7326 32.5132 46.7394 33.1074L26.1923 45.399C25.2025 45.9911 23.9426 45.2911 23.9225 44.1379L23.5061 20.2793C23.4859 19.1261 24.7206 18.3825 25.7305 18.9398L46.694 30.5068Z"
@@ -1527,7 +2110,13 @@ export default function SvgIcon(props) {
       break;
     case 'play-icon-mini':
       iconElement = (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle r="10" transform="matrix(-1 0 0 1 10 10)" fill="#32BEA6" />
           <path
             d="M12.9789 8.66656C13.9921 9.22566 14.0174 10.673 13.0242 11.2672L9.67243 13.2723C8.68262 13.8644 7.42274 13.1644 7.40261 12.0112L7.33467 8.11918C7.31454 6.96595 8.54923 6.22244 9.5591 6.77965L12.9789 8.66656Z"
@@ -1539,7 +2128,13 @@ export default function SvgIcon(props) {
 
     case 'support-icon':
       iconElement = (
-        <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="23"
+          viewBox="0 0 24 23"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M2.39896 2.40012H21.5999V16.8008H3.80303L2.39896 18.2049V2.40012ZM2.39896 0C1.0789 0 0.0108501 1.08005 0.0108501 2.40012L1.46206e-07 21.9301C-0.000424242 22.694 0.923147 23.0769 1.4633 22.5367L4.79908 19.2009H21.5999C22.9199 19.2009 24 18.1209 24 16.8008V2.40012C24 1.08005 22.9199 0 21.5999 0H2.39896ZM4.79908 12.0006H14.3995V14.4007H4.79908V12.0006ZM4.79908 8.4004H19.1998V10.8005H4.79908V8.4004ZM4.79908 4.80023H19.1998V7.20034H4.79908V4.80023Z"
             fill="#08B7DD"
@@ -1550,7 +2145,13 @@ export default function SvgIcon(props) {
 
     case 'pause-icon':
       iconElement = (
-        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="64"
+          height="64"
+          viewBox="0 0 64 64"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle r="32" transform="matrix(-1 0 0 1 32 32)" fill="#FA3C48" />
           <rect x="22" y="19" width="8" height="26" fill="white" />
           <rect x="34" y="19" width="8" height="26" fill="white" />
@@ -1559,7 +2160,13 @@ export default function SvgIcon(props) {
       break;
     case 'pause-icon-mini':
       iconElement = (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle r="10" transform="matrix(-1 0 0 1 10 10)" fill="#FA3C48" />
           <rect x="6.875" y="5.9375" width="2.5" height="8.125" fill="white" />
           <rect x="10.625" y="5.9375" width="2.5" height="8.125" fill="white" />
@@ -1568,7 +2175,13 @@ export default function SvgIcon(props) {
       break;
     case 'logo-white':
       iconElement = (
-        <svg width="298" height="48" viewBox="0 0 298 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="298"
+          height="48"
+          viewBox="0 0 298 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M143.95 14.7263C141.529 13.5981 138.659 14.6386 137.525 17.0529C136.672 18.7598 135.076 19.9815 133.205 20.3615C131.06 20.7941 128.827 19.4613 127.775 18.7072C125.623 16.7372 122.285 16.8892 120.315 19.0404C118.351 21.1916 118.497 24.5295 120.649 26.4995C122.8 28.4695 126.138 28.3175 128.108 26.1663C128.47 25.7688 128.768 25.3245 128.996 24.8335C129.02 24.7867 129.043 24.7341 129.061 24.6815C129.359 24.2138 129.727 23.7988 130.16 23.4539C131.072 22.8167 132.118 22.4075 133.217 22.2497C136.298 21.6066 139.559 23.3077 139.559 23.3077C139.653 23.3604 139.752 23.413 139.858 23.4597C142.272 24.5879 145.142 23.5474 146.276 21.1331C147.41 18.7189 146.364 15.8487 143.95 14.7146V14.7263Z"
             fill="white"
@@ -1650,7 +2263,10 @@ export default function SvgIcon(props) {
             d="M265.773 42.6452H266.387V40.3654C266.872 40.2894 267.504 40.2368 268.164 40.2368C269.263 40.2368 269.988 40.4239 270.549 40.8506C271.151 41.3007 271.526 42.0431 271.526 43.072C271.526 44.2002 271.128 44.9777 270.567 45.457C269.953 45.9656 269.024 46.217 267.884 46.217C267.2 46.217 266.72 46.176 266.387 46.1293V43.6799H265.773V42.6511V42.6452ZM268.854 43.6741H267.697V45.1589C267.819 45.1764 268.001 45.1764 268.153 45.1764C269.363 45.1764 270.128 44.5392 270.128 43.1129C270.128 41.8502 269.427 41.254 268.287 41.254C268.001 41.254 267.814 41.2773 267.691 41.3066V42.6452H268.848V43.6741H268.854Z"
             fill="white"
           />
-          <path d="M273.712 40.3071V46.1294H272.391V40.3071H273.712Z" fill="white" />
+          <path
+            d="M273.712 40.3071V46.1294H272.391V40.3071H273.712Z"
+            fill="white"
+          />
           <path
             d="M278.318 43.6627H276.179V45.0423H278.569V46.1238H274.857V40.3015H278.447V41.3829H276.179V42.593H278.318V43.6627ZM277.178 38.9336L278.061 39.9975H277.137L276.699 39.4597H276.681L276.249 39.9975H275.331L276.196 38.9336H277.178ZM276.179 47.4098C276.179 47.0708 276.436 46.8136 276.781 46.8136C277.126 46.8136 277.359 47.0708 277.359 47.4098C277.359 47.7197 277.108 47.9944 276.781 47.9944C276.436 47.9944 276.179 47.7197 276.179 47.4098Z"
             fill="white"
@@ -1659,7 +2275,10 @@ export default function SvgIcon(props) {
             d="M279.464 46.1236V40.3013H281.001L282.211 42.4349C282.556 43.0487 282.901 43.7736 283.158 44.4283H283.182C283.094 43.6625 283.071 42.8734 283.071 42.0024V40.3013H284.281V46.1236H282.901L281.656 43.8788C281.311 43.2592 280.931 42.5051 280.645 41.827H280.621C280.656 42.6045 280.674 43.4229 280.674 44.3757V46.1294H279.464V46.1236Z"
             fill="white"
           />
-          <path d="M287.946 41.412H286.385V40.3071H290.857V41.412H289.267V46.1236H287.946V41.412Z" fill="white" />
+          <path
+            d="M287.946 41.412H286.385V40.3071H290.857V41.412H289.267V46.1236H287.946V41.412Z"
+            fill="white"
+          />
           <path
             d="M297.182 39.2433C297.293 39.4654 297.375 39.7519 297.375 40.0442C297.375 40.5703 297.083 40.9269 296.451 40.9853L296.305 41.0028V43.5691C296.305 45.3637 295.399 46.2172 293.879 46.2172C292.359 46.2172 291.547 45.4046 291.547 43.5516V40.3072H292.868V43.6568C292.868 44.6564 293.248 45.165 293.92 45.165C294.592 45.165 294.99 44.6798 294.99 43.6568V40.3072H295.99C296.346 40.3072 296.44 40.1961 296.44 39.9682C296.44 39.7869 296.381 39.5882 296.258 39.3894L297.182 39.2433ZM293.821 39.898C293.949 39.5063 294.242 39.442 294.242 39.1556C294.242 38.9978 294.131 38.8984 293.99 38.8984C293.827 38.8984 293.681 39.0738 293.599 39.1907L293.184 38.9393C293.382 38.5418 293.71 38.2554 294.236 38.2554C294.704 38.2554 295.072 38.5944 295.072 38.9919C295.072 39.5005 294.651 39.594 294.417 40.0266L293.815 39.898H293.821Z"
             fill="white"
@@ -1669,14 +2288,29 @@ export default function SvgIcon(props) {
       break;
     case 'export-white':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19 9H15V3H9V9H5L12 16L19 9ZM11 11V5H13V11H14.17L12 13.17L9.83 11H11ZM5 18H19V20H5V18Z" fill="white" />
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 9H15V3H9V9H5L12 16L19 9ZM11 11V5H13V11H14.17L12 13.17L9.83 11H11ZM5 18H19V20H5V18Z"
+            fill="white"
+          />
         </svg>
       );
       break;
     case 'setting-grey':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M19.4298 12.98C19.4698 12.66 19.4998 12.34 19.4998 12C19.4998 11.66 19.4698 11.34 19.4298 11.02L21.5398 9.37C21.7298 9.22 21.7798 8.95 21.6598 8.73L19.6598 5.27C19.5698 5.11 19.3998 5.02 19.2198 5.02C19.1598 5.02 19.0998 5.03 19.0498 5.05L16.5598 6.05C16.0398 5.65 15.4798 5.32 14.8698 5.07L14.4898 2.42C14.4598 2.18 14.2498 2 13.9998 2H9.99984C9.74984 2 9.53984 2.18 9.50984 2.42L9.12984 5.07C8.51984 5.32 7.95984 5.66 7.43984 6.05L4.94984 5.05C4.88984 5.03 4.82984 5.02 4.76984 5.02C4.59984 5.02 4.42984 5.11 4.33984 5.27L2.33984 8.73C2.20984 8.95 2.26984 9.22 2.45984 9.37L4.56984 11.02C4.52984 11.34 4.49984 11.67 4.49984 12C4.49984 12.33 4.52984 12.66 4.56984 12.98L2.45984 14.63C2.26984 14.78 2.21984 15.05 2.33984 15.27L4.33984 18.73C4.42984 18.89 4.59984 18.98 4.77984 18.98C4.83984 18.98 4.89984 18.97 4.94984 18.95L7.43984 17.95C7.95984 18.35 8.51984 18.68 9.12984 18.93L9.50984 21.58C9.53984 21.82 9.74984 22 9.99984 22H13.9998C14.2498 22 14.4598 21.82 14.4898 21.58L14.8698 18.93C15.4798 18.68 16.0398 18.34 16.5598 17.95L19.0498 18.95C19.1098 18.97 19.1698 18.98 19.2298 18.98C19.3998 18.98 19.5698 18.89 19.6598 18.73L21.6598 15.27C21.7798 15.05 21.7298 14.78 21.5398 14.63L19.4298 12.98ZM17.4498 11.27C17.4898 11.58 17.4998 11.79 17.4998 12C17.4998 12.21 17.4798 12.43 17.4498 12.73L17.3098 13.86L18.1998 14.56L19.2798 15.4L18.5798 16.61L17.3098 16.1L16.2698 15.68L15.3698 16.36C14.9398 16.68 14.5298 16.92 14.1198 17.09L13.0598 17.52L12.8998 18.65L12.6998 20H11.2998L11.1098 18.65L10.9498 17.52L9.88984 17.09C9.45984 16.91 9.05984 16.68 8.65984 16.38L7.74984 15.68L6.68984 16.11L5.41984 16.62L4.71984 15.41L5.79984 14.57L6.68984 13.87L6.54984 12.74C6.51984 12.43 6.49984 12.2 6.49984 12C6.49984 11.8 6.51984 11.57 6.54984 11.27L6.68984 10.14L5.79984 9.44L4.71984 8.6L5.41984 7.39L6.68984 7.9L7.72984 8.32L8.62984 7.64C9.05984 7.32 9.46984 7.08 9.87984 6.91L10.9398 6.48L11.0998 5.35L11.2998 4H12.6898L12.8798 5.35L13.0398 6.48L14.0998 6.91C14.5298 7.09 14.9298 7.32 15.3298 7.62L16.2398 8.32L17.2998 7.89L18.5698 7.38L19.2698 8.59L18.1998 9.44L17.3098 10.14L17.4498 11.27ZM11.9998 8C9.78984 8 7.99984 9.79 7.99984 12C7.99984 14.21 9.78984 16 11.9998 16C14.2098 16 15.9998 14.21 15.9998 12C15.9998 9.79 14.2098 8 11.9998 8ZM11.9998 14C10.8998 14 9.99984 13.1 9.99984 12C9.99984 10.9 10.8998 10 11.9998 10C13.0998 10 13.9998 10.9 13.9998 12C13.9998 13.1 13.0998 14 11.9998 14Z"
             fill="#626262"
@@ -1686,7 +2320,13 @@ export default function SvgIcon(props) {
       break;
     case 'setting-black':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0_8003_19558)">
             <g clipPath="url(#clip1_8003_19558)">
               <path
@@ -1720,21 +2360,39 @@ export default function SvgIcon(props) {
       break;
     case 'point-up':
       iconElement = (
-        <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="10"
+          height="5"
+          viewBox="0 0 10 5"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path d="M10 5L5 -4.37114e-07L0 5L10 5Z" fill="#323232" />
         </svg>
       );
       break;
     case 'point-down':
       iconElement = (
-        <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="10"
+          height="5"
+          viewBox="0 0 10 5"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path d="M0 0L5 5L10 0H0Z" fill="#323232" />
         </svg>
       );
       break;
     case 'warning-1':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0_6829_22927)">
             <path
               d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
@@ -1751,7 +2409,13 @@ export default function SvgIcon(props) {
       break;
     case 'setting-white':
       iconElement = (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M17.4298 10.98C17.4698 10.66 17.4998 10.34 17.4998 10C17.4998 9.66 17.4698 9.34 17.4298 9.02L19.5398 7.37C19.7298 7.22 19.7798 6.95 19.6598 6.73L17.6598 3.27C17.5698 3.11 17.3998 3.02 17.2198 3.02C17.1598 3.02 17.0998 3.03 17.0498 3.05L14.5598 4.05C14.0398 3.65 13.4798 3.32 12.8698 3.07L12.4898 0.42C12.4598 0.18 12.2498 0 11.9998 0H7.99984C7.74984 0 7.53984 0.18 7.50984 0.42L7.12984 3.07C6.51984 3.32 5.95984 3.66 5.43984 4.05L2.94984 3.05C2.88984 3.03 2.82984 3.02 2.76984 3.02C2.59984 3.02 2.42984 3.11 2.33984 3.27L0.339839 6.73C0.209839 6.95 0.26984 7.22 0.45984 7.37L2.56984 9.02C2.52984 9.34 2.49984 9.67 2.49984 10C2.49984 10.33 2.52984 10.66 2.56984 10.98L0.45984 12.63C0.26984 12.78 0.219839 13.05 0.339839 13.27L2.33984 16.73C2.42984 16.89 2.59984 16.98 2.77984 16.98C2.83984 16.98 2.89984 16.97 2.94984 16.95L5.43984 15.95C5.95984 16.35 6.51984 16.68 7.12984 16.93L7.50984 19.58C7.53984 19.82 7.74984 20 7.99984 20H11.9998C12.2498 20 12.4598 19.82 12.4898 19.58L12.8698 16.93C13.4798 16.68 14.0398 16.34 14.5598 15.95L17.0498 16.95C17.1098 16.97 17.1698 16.98 17.2298 16.98C17.3998 16.98 17.5698 16.89 17.6598 16.73L19.6598 13.27C19.7798 13.05 19.7298 12.78 19.5398 12.63L17.4298 10.98ZM15.4498 9.27C15.4898 9.58 15.4998 9.79 15.4998 10C15.4998 10.21 15.4798 10.43 15.4498 10.73L15.3098 11.86L16.1998 12.56L17.2798 13.4L16.5798 14.61L15.3098 14.1L14.2698 13.68L13.3698 14.36C12.9398 14.68 12.5298 14.92 12.1198 15.09L11.0598 15.52L10.8998 16.65L10.6998 18H9.2998L9.1098 16.65L8.9498 15.52L7.88984 15.09C7.45984 14.91 7.05984 14.68 6.65984 14.38L5.74984 13.68L4.68984 14.11L3.41984 14.62L2.71984 13.41L3.79984 12.57L4.68984 11.87L4.54984 10.74C4.51984 10.43 4.49984 10.2 4.49984 10C4.49984 9.8 4.51984 9.57 4.54984 9.27L4.68984 8.14L3.79984 7.44L2.71984 6.6L3.41984 5.39L4.68984 5.9L5.72984 6.32L6.62984 5.64C7.05984 5.32 7.46984 5.08 7.87984 4.91L8.9398 4.48L9.0998 3.35L9.2998 2H10.6898L10.8798 3.35L11.0398 4.48L12.0998 4.91C12.5298 5.09 12.9298 5.32 13.3298 5.62L14.2398 6.32L15.2998 5.89L16.5698 5.38L17.2698 6.59L16.1998 7.44L15.3098 8.14L15.4498 9.27ZM9.9998 6C7.78984 6 5.99984 7.79 5.99984 10C5.99984 12.21 7.78984 14 9.9998 14C12.2098 14 13.9998 12.21 13.9998 10C13.9998 7.79 12.2098 6 9.9998 6ZM9.9998 12C8.8998 12 7.99984 11.1 7.99984 10C7.99984 8.9 8.8998 8 9.9998 8C11.0998 8 11.9998 8.9 11.9998 10C11.9998 11.1 11.0998 12 9.9998 12Z"
             fill="white"
@@ -1761,7 +2425,13 @@ export default function SvgIcon(props) {
       break;
     case 'addlist':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M12.6667 2H3.33333C2.59333 2 2 2.6 2 3.33333V12.6667C2 13.4 2.59333 14 3.33333 14H12.6667C13.4 14 14 13.4 14 12.6667V3.33333C14 2.6 13.4 2 12.6667 2ZM12.6667 12.6667H3.33333V3.33333H12.6667V12.6667ZM7.33333 11.3333H8.66667V8.66667H11.3333V7.33333H8.66667V4.66667H7.33333V7.33333H4.66667V8.66667H7.33333V11.3333Z"
             fill="#222D4B"
@@ -1771,7 +2441,13 @@ export default function SvgIcon(props) {
       break;
     case 'hiddenlist':
       iconElement = (
-        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="12"
+          height="12"
+          viewBox="0 0 12 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M10.6667 0H1.33333C0.6 0 0 0.6 0 1.33333V10.6667C0 11.4 0.6 12 1.33333 12H10.6667C11.4 12 12 11.4 12 10.6667V1.33333C12 0.6 11.4 0 10.6667 0ZM10.6667 10.6667H1.33333V1.33333H10.6667V10.6667ZM2.66667 5.33333H9.33333V6.66667H2.66667V5.33333Z"
             fill="#222D4B"
@@ -1782,7 +2458,13 @@ export default function SvgIcon(props) {
 
     case 'pen-black':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M2 11.5V14H4.5L11.8733 6.62667L9.37333 4.12667L2 11.5ZM3.94667 12.6667H3.33333V12.0533L9.37333 6.01333L9.98667 6.62667L3.94667 12.6667ZM13.8067 3.75333L12.2467 2.19333C12.1133 2.06 11.9467 2 11.7733 2C11.6 2 11.4333 2.06667 11.3067 2.19333L10.0867 3.41333L12.5867 5.91333L13.8067 4.69333C14.0667 4.43333 14.0667 4.01333 13.8067 3.75333Z"
             fill="#222D4B"
@@ -1792,7 +2474,13 @@ export default function SvgIcon(props) {
       break;
     case 'graydot':
       iconElement = (
-        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="10"
+          height="10"
+          viewBox="0 0 10 10"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="5" cy="5" r="5" fill="#626262" />
         </svg>
       );
@@ -1800,7 +2488,13 @@ export default function SvgIcon(props) {
 
     case 'vbm-tv':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M20 6H12L10 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V8C22 6.9 21.1 6 20 6ZM20 18H4V6H9.17L11.17 8H20V18ZM18 12H6V10H18V12ZM14 16H6V14H14V16Z"
             fill="#626262"
@@ -1810,7 +2504,13 @@ export default function SvgIcon(props) {
       break;
     case 'vbm-pen':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M14.06 9.02L14.98 9.94L5.92 19H5V18.08L14.06 9.02ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z"
             fill="#626262"
@@ -1821,7 +2521,13 @@ export default function SvgIcon(props) {
 
     case 'vbm-upload':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M9 16H15V10H19L12 3L5 10H9V16ZM12 5.83L14.17 8H13V14H11V8H9.83L12 5.83ZM5 18H19V20H5V18Z"
             fill="#626262"
@@ -1832,7 +2538,13 @@ export default function SvgIcon(props) {
 
     case 'pen-primary':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M2 11.5V14H4.5L11.8733 6.62667L9.37333 4.12667L2 11.5ZM3.94667 12.6667H3.33333V12.0533L9.37333 6.01333L9.98667 6.62667L3.94667 12.6667ZM13.8067 3.75333L12.2467 2.19333C12.1133 2.06 11.9467 2 11.7733 2C11.6 2 11.4333 2.06667 11.3067 2.19333L10.0867 3.41333L12.5867 5.91333L13.8067 4.69333C14.0667 4.43333 14.0667 4.01333 13.8067 3.75333Z"
             fill="#08B7DD"
@@ -1842,7 +2554,13 @@ export default function SvgIcon(props) {
       break;
     case 'upload-success':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"
             fill="#08B7DD"
@@ -1852,14 +2570,26 @@ export default function SvgIcon(props) {
       break;
     case 'dot-black':
       iconElement = (
-        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="8"
+          height="8"
+          viewBox="0 0 8 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="4" cy="4" r="4" fill="#222D4B" />
         </svg>
       );
       break;
     case 'upload-green':
       iconElement = (
-        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="36"
+          height="36"
+          viewBox="0 0 36 36"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M13.5 24H22.5V15H28.5L18 4.5L7.5 15H13.5V24ZM18 8.745L21.255 12H19.5V21H16.5V12H14.745L18 8.745ZM7.5 27H28.5V30H7.5V27Z"
             fill="#00C968"
@@ -1870,14 +2600,26 @@ export default function SvgIcon(props) {
 
     case 'dot-border':
       iconElement = (
-        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="8"
+          height="8"
+          viewBox="0 0 8 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="4" cy="4" r="3.5" fill="white" stroke="#222D4B" />
         </svg>
       );
       break;
     case 'plus-plus':
       iconElement = (
-        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="10"
+          height="10"
+          viewBox="0 0 10 10"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M9.66634 5.66732H5.66634V9.66732H4.33301V5.66732H0.333008V4.33398H4.33301V0.333984H5.66634V4.33398H9.66634V5.66732Z"
             fill="#222D4B"
@@ -1887,29 +2629,63 @@ export default function SvgIcon(props) {
       break;
     case 'apart-apart':
       iconElement = (
-        <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M9.66634 1.66732H0.333008V0.333984H9.66634V1.66732Z" fill="#222D4B" />
+        <svg
+          width="10"
+          height="2"
+          viewBox="0 0 10 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.66634 1.66732H0.333008V0.333984H9.66634V1.66732Z"
+            fill="#222D4B"
+          />
         </svg>
       );
       break;
 
     case 'rectangle-black':
       iconElement = (
-        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="8"
+          height="8"
+          viewBox="0 0 8 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect width="8" height="8" fill="#222D4B" />
         </svg>
       );
       break;
     case 'square-square':
       iconElement = (
-        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="0.5" width="5" height="5" fill="white" stroke="#C5CED9" />
+        <svg
+          width="6"
+          height="6"
+          viewBox="0 0 6 6"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="0.5"
+            y="0.5"
+            width="5"
+            height="5"
+            fill="white"
+            stroke="#C5CED9"
+          />
         </svg>
       );
       break;
     case 'eraser':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0_5168_17024)">
             <path
               d="M14.0205 6L21.0916 13.0711L13.1419 21.0208L6.99963 21.0208L2.99969 17.0208L14.0205 6Z"
@@ -1930,7 +2706,13 @@ export default function SvgIcon(props) {
 
     case 'edit-primary':
       iconElement = (
-        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="19"
+          height="18"
+          viewBox="0 0 19 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M11.06 6.02L11.98 6.94L2.92 16H2V15.08L11.06 6.02V6.02ZM14.66 0C14.41 0 14.15 0.1 13.96 0.29L12.13 2.12L15.88 5.87L17.71 4.04C18.1 3.65 18.1 3.02 17.71 2.63L15.37 0.29C15.17 0.09 14.92 0 14.66 0V0ZM11.06 3.19L0 14.25V18H3.75L14.81 6.94L11.06 3.19V3.19Z"
             fill="#08B7DD"
@@ -1940,14 +2722,29 @@ export default function SvgIcon(props) {
       break;
     case 'white-upload':
       iconElement = (
-        <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4 13H10V7H14L7 0L0 7H4V13ZM7 2.83L9.17 5H8V11H6V5H4.83L7 2.83ZM0 15H14V17H0V15Z" fill="white" />
+        <svg
+          width="14"
+          height="17"
+          viewBox="0 0 14 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 13H10V7H14L7 0L0 7H4V13ZM7 2.83L9.17 5H8V11H6V5H4.83L7 2.83ZM0 15H14V17H0V15Z"
+            fill="white"
+          />
         </svg>
       );
       break;
     case 'red-warning':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M8.00033 3.99398L13.0203 12.6673H2.98033L8.00033 3.99398ZM8.00033 1.33398L0.666992 14.0007H15.3337L8.00033 1.33398ZM8.66699 10.6673H7.33366V12.0007H8.66699V10.6673ZM8.66699 6.66732H7.33366V9.33398H8.66699V6.66732Z"
             fill="#E50500"
@@ -1958,7 +2755,13 @@ export default function SvgIcon(props) {
 
     case 'black-dot':
       iconElement = (
-        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="8"
+          height="8"
+          viewBox="0 0 8 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="4" cy="4" r="4" fill="#222D4B" />
         </svg>
       );
@@ -1966,17 +2769,34 @@ export default function SvgIcon(props) {
 
     case 'expire-date-sign':
       iconElement = (
-        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="50"
+          height="50"
+          viewBox="0 0 50 50"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0_4831_16432)">
             <path
               d="M24.9992 11.1104C17.3604 11.1104 11.1104 17.3604 11.1104 24.9992C11.1104 32.6381 17.3604 38.8881 24.9992 38.8881C32.6381 38.8881 38.8881 32.6381 38.8881 24.9992C38.8881 17.3604 32.6381 11.1104 24.9992 11.1104ZM24.9992 36.1103C18.8742 36.1103 13.8881 31.1242 13.8881 24.9992C13.8881 18.8742 18.8742 13.8881 24.9992 13.8881C31.1242 13.8881 36.1103 18.8742 36.1103 24.9992C36.1103 31.1242 31.1242 36.1103 24.9992 36.1103ZM25.6937 18.0548H23.6103V26.3881L30.8326 30.8326L31.9437 29.027L25.6937 25.277V18.0548Z"
               fill="#E50500"
             />
           </g>
-          <circle cx="25" cy="25" r="24.5" stroke="#E50500" strokeDasharray="5 5" />
+          <circle
+            cx="25"
+            cy="25"
+            r="24.5"
+            stroke="#E50500"
+            strokeDasharray="5 5"
+          />
           <defs>
             <clipPath id="clip0_4831_16432">
-              <rect width="33.3333" height="33.3333" fill="white" transform="translate(8.33301 8.33301)" />
+              <rect
+                width="33.3333"
+                height="33.3333"
+                fill="white"
+                transform="translate(8.33301 8.33301)"
+              />
             </clipPath>
           </defs>
         </svg>
@@ -1984,7 +2804,13 @@ export default function SvgIcon(props) {
       break;
     case 'zoom-in':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect opacity="0.5" width="24" height="24" rx="4" fill="#222D4B" />
           <path
             d="M15 3L17.3 5.3L14.41 8.17L15.83 9.59L18.7 6.7L21 9V3H15ZM3 9L5.3 6.7L8.17 9.59L9.59 8.17L6.7 5.3L9 3H3V9ZM9 21L6.7 18.7L9.59 15.83L8.17 14.41L5.3 17.3L3 15V21H9ZM21 15L18.7 17.3L15.83 14.41L14.41 15.83L17.3 18.7L15 21H21V15Z"
@@ -1995,7 +2821,13 @@ export default function SvgIcon(props) {
       break;
     case 'zoom-out':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect width="24" height="24" rx="4" fill="#08B7DD" />
           <path
             d="M15 3L17.3 5.3L14.41 8.17L15.83 9.59L18.7 6.7L21 9V3H15ZM3 9L5.3 6.7L8.17 9.59L9.59 8.17L6.7 5.3L9 3H3V9ZM9 21L6.7 18.7L9.59 15.83L8.17 14.41L5.3 17.3L3 15V21H9ZM21 15L18.7 17.3L15.83 14.41L14.41 15.83L17.3 18.7L15 21H21V15Z"
@@ -2006,7 +2838,13 @@ export default function SvgIcon(props) {
       break;
     case 'arrow-down-primary':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path d="M7 10L12 15L17 10H7Z" fill={fill || '#08B7DD'} />
         </svg>
       );
@@ -2014,21 +2852,39 @@ export default function SvgIcon(props) {
 
     case 'arrow-up-primary':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path d="M7 14L12 9L17 14H7Z" fill={fill || '#08B7DD'} />
         </svg>
       );
       break;
     case 'arrow-down-primary-black':
       iconElement = (
-        <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="10"
+          height="5"
+          viewBox="0 0 10 5"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path d="M0 0L5 5L10 0H0Z" fill="#323232" />
         </svg>
       );
       break;
     case 'arrow-up-primary-black':
       iconElement = (
-        <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="10"
+          height="5"
+          viewBox="0 0 10 5"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path d="M0 5L5 0L10 5H0Z" fill="#323232" />
         </svg>
       );
@@ -2036,7 +2892,13 @@ export default function SvgIcon(props) {
 
     case 'pin':
       iconElement = (
-        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="27"
+          height="28"
+          viewBox="0 0 27 28"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0_4412_19837)">
             <path
               d="M18.6293 10.4433L14.658 19.1651C13.8948 20.8411 11.9191 21.5806 10.243 20.8174C8.56689 20.0542 7.82747 18.0785 8.59066 16.4024L12.9073 6.92223C13.3839 5.87562 14.6201 5.41297 15.6667 5.88953C16.7133 6.36609 17.1759 7.60228 16.6994 8.64889L13.0734 16.6122C12.8835 17.0294 12.3868 17.2152 11.9696 17.0253C11.5525 16.8354 11.3666 16.3387 11.5566 15.9216L14.8372 8.71664L13.6996 8.19864L10.4189 15.4036C9.94238 16.4502 10.405 17.6864 11.4516 18.1629C12.4983 18.6395 13.7344 18.1768 14.211 17.1302L17.837 9.16689C18.6002 7.4908 17.8608 5.5151 16.1847 4.75191C14.5086 3.98873 12.5329 4.72814 11.7697 6.40423L7.45304 15.8844C6.40323 18.19 7.41941 20.9052 9.72498 21.955C12.0306 23.0048 14.7458 21.9886 15.7956 19.6831L19.7669 10.9613L18.6293 10.4433Z"
@@ -2045,7 +2907,12 @@ export default function SvgIcon(props) {
           </g>
           <defs>
             <clipPath id="clip0_4412_19837">
-              <rect width="20" height="20" fill="white" transform="translate(0.106445 18.9487) rotate(-65.5185)" />
+              <rect
+                width="20"
+                height="20"
+                fill="white"
+                transform="translate(0.106445 18.9487) rotate(-65.5185)"
+              />
             </clipPath>
           </defs>
         </svg>
@@ -2053,14 +2920,26 @@ export default function SvgIcon(props) {
       break;
     case 'add-primary':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="#08B7DD" />
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="#ffffff" />
         </svg>
       );
       break;
     case 'copyVBM':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM15 5H8C6.9 5 6.01 5.9 6.01 7L6 21C6 22.1 6.89 23 7.99 23H19C20.1 23 21 22.1 21 21V11L15 5ZM8 21V7H14V12H19V21H8Z"
             fill="#8E24AA"
@@ -2070,7 +2949,13 @@ export default function SvgIcon(props) {
       break;
     case 'accountCircle':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.51 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.49 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.49 18.36 16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.17 11 10.5 10.33 10.5 9.5C10.5 8.67 11.17 8 12 8C12.83 8 13.5 8.67 13.5 9.5C13.5 10.33 12.83 11 12 11Z"
             fill="#323232"
@@ -2080,7 +2965,13 @@ export default function SvgIcon(props) {
       break;
     case 'emptySign':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M11 15H13V17H11V15ZM11 7H13V13H11V7ZM11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
             fill="#E50500"
@@ -2090,7 +2981,13 @@ export default function SvgIcon(props) {
       break;
     case 'empty':
       iconElement = (
-        <svg width="97" height="62" viewBox="0 0 97 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="97"
+          height="62"
+          viewBox="0 0 97 62"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M48.5 61.9989C75.2858 61.9989 97 57.2596 97 51.4135C97 45.5674 75.2858 40.8281 48.5 40.8281C21.7142 40.8281 0 45.5674 0 51.4135C0 57.2596 21.7142 61.9989 48.5 61.9989Z"
             fill="#DCDCDC"
@@ -2109,7 +3006,13 @@ export default function SvgIcon(props) {
       break;
     case 'uploadVBMIcon':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M9 16H15V10H19L12 3L5 10H9V16ZM12 5.83L14.17 8H13V14H11V8H9.83L12 5.83ZM5 18H19V20H5V18Z"
             fill="#08B7DD"
@@ -2119,7 +3022,13 @@ export default function SvgIcon(props) {
       break;
     case 'settingVBM':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M19.4308 12.98C19.4708 12.66 19.5008 12.34 19.5008 12C19.5008 11.66 19.4708 11.34 19.4308 11.02L21.5408 9.37C21.7308 9.22 21.7808 8.95 21.6608 8.73L19.6608 5.27C19.5708 5.11 19.4008 5.02 19.2208 5.02C19.1608 5.02 19.1008 5.03 19.0508 5.05L16.5608 6.05C16.0408 5.65 15.4808 5.32 14.8708 5.07L14.4908 2.42C14.4608 2.18 14.2508 2 14.0008 2H10.0008C9.75082 2 9.54082 2.18 9.51082 2.42L9.13082 5.07C8.52082 5.32 7.96082 5.66 7.44082 6.05L4.95082 5.05C4.89082 5.03 4.83082 5.02 4.77082 5.02C4.60082 5.02 4.43082 5.11 4.34082 5.27L2.34082 8.73C2.21082 8.95 2.27082 9.22 2.46082 9.37L4.57082 11.02C4.53082 11.34 4.50082 11.67 4.50082 12C4.50082 12.33 4.53082 12.66 4.57082 12.98L2.46082 14.63C2.27082 14.78 2.22082 15.05 2.34082 15.27L4.34082 18.73C4.43082 18.89 4.60082 18.98 4.78082 18.98C4.84082 18.98 4.90082 18.97 4.95082 18.95L7.44082 17.95C7.96082 18.35 8.52082 18.68 9.13082 18.93L9.51082 21.58C9.54082 21.82 9.75082 22 10.0008 22H14.0008C14.2508 22 14.4608 21.82 14.4908 21.58L14.8708 18.93C15.4808 18.68 16.0408 18.34 16.5608 17.95L19.0508 18.95C19.1108 18.97 19.1708 18.98 19.2308 18.98C19.4008 18.98 19.5708 18.89 19.6608 18.73L21.6608 15.27C21.7808 15.05 21.7308 14.78 21.5408 14.63L19.4308 12.98V12.98ZM17.4508 11.27C17.4908 11.58 17.5008 11.79 17.5008 12C17.5008 12.21 17.4808 12.43 17.4508 12.73L17.3108 13.86L18.2008 14.56L19.2808 15.4L18.5808 16.61L17.3108 16.1L16.2708 15.68L15.3708 16.36C14.9408 16.68 14.5308 16.92 14.1208 17.09L13.0608 17.52L12.9008 18.65L12.7008 20H11.3008L11.1108 18.65L10.9508 17.52L9.89082 17.09C9.46082 16.91 9.06082 16.68 8.66082 16.38L7.75082 15.68L6.69082 16.11L5.42082 16.62L4.72082 15.41L5.80082 14.57L6.69082 13.87L6.55082 12.74C6.52082 12.43 6.50082 12.2 6.50082 12C6.50082 11.8 6.52082 11.57 6.55082 11.27L6.69082 10.14L5.80082 9.44L4.72082 8.6L5.42082 7.39L6.69082 7.9L7.73082 8.32L8.63082 7.64C9.06082 7.32 9.47082 7.08 9.88082 6.91L10.9408 6.48L11.1008 5.35L11.3008 4H12.6908L12.8808 5.35L13.0408 6.48L14.1008 6.91C14.5308 7.09 14.9308 7.32 15.3308 7.62L16.2408 8.32L17.3008 7.89L18.5708 7.38L19.2708 8.59L18.2008 9.44L17.3108 10.14L17.4508 11.27ZM12.0008 8C9.79082 8 8.00082 9.79 8.00082 12C8.00082 14.21 9.79082 16 12.0008 16C14.2108 16 16.0008 14.21 16.0008 12C16.0008 9.79 14.2108 8 12.0008 8ZM12.0008 14C10.9008 14 10.0008 13.1 10.0008 12C10.0008 10.9 10.9008 10 12.0008 10C13.1008 10 14.0008 10.9 14.0008 12C14.0008 13.1 13.1008 14 12.0008 14Z"
             fill="#F57C00"
@@ -2129,7 +3038,13 @@ export default function SvgIcon(props) {
       break;
     case 'starOrange':
       iconElement = (
-        <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="8"
+          height="7"
+          viewBox="0 0 8 7"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M3.99935 5.75797L6.05935 7.0013L5.51268 4.65797L7.33268 3.0813L4.93602 2.87797L3.99935 0.667969L3.06268 2.87797L0.666016 3.0813L2.48602 4.65797L1.93935 7.0013L3.99935 5.75797Z"
             fill="#F57C00"
@@ -2139,7 +3054,13 @@ export default function SvgIcon(props) {
       break;
     case 'writeVBM':
       iconElement = (
-        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="100"
+          height="100"
+          viewBox="0 0 100 100"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="50" cy="50" r="49" stroke="#8E24AA" strokeWidth="2" />
           <path
             d="M54.2917 43.7917L56.2083 45.7083L37.3333 64.5833H35.4167V62.6667L54.2917 43.7917V43.7917ZM61.7917 31.25C61.2708 31.25 60.7292 31.4583 60.3333 31.8542L56.5208 35.6667L64.3333 43.4792L68.1458 39.6667C68.9583 38.8542 68.9583 37.5417 68.1458 36.7292L63.2708 31.8542C62.8542 31.4375 62.3333 31.25 61.7917 31.25V31.25ZM54.2917 37.8958L31.25 60.9375V68.75H39.0625L62.1042 45.7083L54.2917 37.8958V37.8958Z"
@@ -2150,7 +3071,13 @@ export default function SvgIcon(props) {
       break;
     case 'uploadVBM':
       iconElement = (
-        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="100"
+          height="100"
+          viewBox="0 0 100 100"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="50" cy="50" r="49" stroke="#00C968" strokeWidth="2" />
           <path
             d="M43.7493 58.3333H56.2494V45.8333H64.5827L49.9993 31.25L35.416 45.8333H43.7493V58.3333ZM49.9993 37.1458L54.5202 41.6667H52.0827V54.1667H47.916V41.6667H45.4785L49.9993 37.1458ZM35.416 62.5H64.5827V66.6667H35.416V62.5Z"
@@ -2161,7 +3088,13 @@ export default function SvgIcon(props) {
       break;
     case 'sign':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -2181,7 +3114,13 @@ export default function SvgIcon(props) {
       break;
     case 'iconSigned':
       iconElement = (
-        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="50"
+          height="50"
+          viewBox="0 0 50 50"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0_2210_12464)">
             <path
               d="M14.3242 8.95268C14.4809 8.97506 14.6376 9.01982 14.8166 9.06458L15.1747 9.98222L15.6223 9.15411C15.9357 9.15411 16.249 9.17649 16.5624 9.17649L15.9581 8.39314C15.9804 8.326 16.0028 8.25885 16.0252 8.19171C15.9581 8.16933 15.8909 8.14695 15.7566 8.10219C15.9581 7.90075 16.0476 7.81123 16.1595 7.85599C16.2043 7.74408 16.249 7.60979 16.2938 7.49789C15.9804 7.58741 15.6671 7.7217 15.3538 7.83361C15.1747 7.69932 14.9957 7.58741 14.8166 7.45312C14.8166 7.60979 14.839 7.78885 14.7718 7.99028C14.6823 7.78885 14.6152 7.63218 14.548 7.52027C14.5704 7.76646 14.5704 8.03504 14.5928 8.28124C14.5704 8.30362 14.5257 8.326 14.5033 8.37076C14.5928 8.37076 14.6823 8.37076 14.7942 8.37076C14.7942 8.66172 14.6823 8.84077 14.3242 8.95268Z"
@@ -2262,7 +3201,13 @@ export default function SvgIcon(props) {
       break;
     case 'iconRejectSigned':
       iconElement = (
-        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="50"
+          height="50"
+          viewBox="0 0 50 50"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0_2210_12522)">
             <path
               d="M14.3242 8.95268C14.4809 8.97506 14.6376 9.01982 14.8166 9.06458L15.1747 9.98222L15.6223 9.15411C15.9357 9.15411 16.249 9.17649 16.5624 9.17649L15.9581 8.39314C15.9804 8.326 16.0028 8.25885 16.0252 8.19171C15.9581 8.16933 15.8909 8.14695 15.7566 8.10219C15.9581 7.90075 16.0476 7.81123 16.1595 7.85599C16.2043 7.74408 16.249 7.60979 16.2938 7.49789C15.9804 7.58741 15.6671 7.7217 15.3538 7.83361C15.1747 7.69932 14.9957 7.58741 14.8166 7.45312C14.8166 7.60979 14.839 7.78885 14.7718 7.99028C14.6823 7.78885 14.6152 7.63218 14.548 7.52027C14.5704 7.76646 14.5704 8.03504 14.5928 8.28124C14.5704 8.30362 14.5257 8.326 14.5033 8.37076C14.5928 8.37076 14.6823 8.37076 14.7942 8.37076C14.7942 8.66172 14.6823 8.84077 14.3242 8.95268Z"
@@ -2343,18 +3288,36 @@ export default function SvgIcon(props) {
       break;
     case 'signSuccess':
       iconElement = (
-        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M50.0005 73.9005L36.1005 60.0005L31.3672 64.7005L50.0005 83.3338L90.0005 43.3338L85.3005 38.6338L50.0005 73.9005Z"
             fill="#08B7DD"
           />
-          <circle cx="60" cy="60" r="59.5" stroke="#08B7DD" strokeDasharray="5 5" />
+          <circle
+            cx="60"
+            cy="60"
+            r="59.5"
+            stroke="#08B7DD"
+            strokeDasharray="5 5"
+          />
         </svg>
       );
       break;
     case 'hidePassLogin':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M8.00033 4.00003C10.527 4.00003 12.7803 5.42003 13.8803 7.6667C13.487 8.48003 12.9337 9.18003 12.2737 9.7467L13.2137 10.6867C14.1403 9.8667 14.8737 8.84003 15.3337 7.6667C14.1803 4.74003 11.3337 2.6667 8.00033 2.6667C7.15366 2.6667 6.34032 2.80003 5.57366 3.0467L6.67366 4.1467C7.10699 4.06003 7.54699 4.00003 8.00033 4.00003ZM7.28699 4.76003L8.66699 6.14003C9.04699 6.3067 9.35366 6.61336 9.52032 6.99336L10.9003 8.37336C10.9537 8.1467 10.9937 7.9067 10.9937 7.66003C11.0003 6.0067 9.65366 4.6667 8.00033 4.6667C7.75366 4.6667 7.52033 4.70003 7.28699 4.76003ZM1.34033 2.58003L3.12699 4.3667C2.04033 5.22003 1.18033 6.35336 0.666992 7.6667C1.82033 10.5934 4.66699 12.6667 8.00033 12.6667C9.01366 12.6667 9.98699 12.4734 10.8803 12.12L13.1603 14.4L14.1003 13.46L2.28033 1.63336L1.34033 2.58003ZM6.34033 7.58003L8.08033 9.32003C8.05366 9.32669 8.02699 9.33336 8.00033 9.33336C7.08033 9.33336 6.33366 8.5867 6.33366 7.6667C6.33366 7.63336 6.34033 7.61336 6.34033 7.58003ZM4.07366 5.31336L5.24033 6.48003C5.08699 6.8467 5.00033 7.2467 5.00033 7.6667C5.00033 9.32003 6.34699 10.6667 8.00033 10.6667C8.42033 10.6667 8.82032 10.58 9.18033 10.4267L9.83366 11.08C9.24699 11.24 8.63366 11.3334 8.00033 11.3334C5.47366 11.3334 3.22033 9.91336 2.12033 7.6667C2.58699 6.71336 3.26699 5.92669 4.07366 5.31336Z"
             fill="#323232"
@@ -2364,7 +3327,13 @@ export default function SvgIcon(props) {
       break;
     case 'checkDisabled':
       iconElement = (
-        <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="70"
+          height="70"
+          viewBox="0 0 70 70"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g opacity="0.5" clipPath="url(#clip0_2178_12364)">
             <path
               d="M20.0547 12.5339C20.274 12.5653 20.4934 12.6279 20.744 12.6906L21.2454 13.9753L21.8721 12.816C22.3107 12.816 22.7494 12.8473 23.1881 12.8473L22.3421 11.7506C22.3734 11.6566 22.4047 11.5626 22.4361 11.4686C22.3421 11.4373 22.2481 11.4059 22.0601 11.3433C22.3421 11.0612 22.4674 10.9359 22.6241 10.9986C22.6867 10.8419 22.7494 10.6539 22.8121 10.4972C22.3734 10.6226 21.9347 10.8106 21.496 10.9672C21.2454 10.7792 20.9947 10.6226 20.744 10.4346C20.744 10.6539 20.7754 10.9046 20.6814 11.1866C20.556 10.9046 20.462 10.6852 20.368 10.5286C20.3994 10.8732 20.3994 11.2493 20.4307 11.5939C20.3994 11.6253 20.3367 11.6566 20.3054 11.7193C20.4307 11.7193 20.556 11.7193 20.7127 11.7193C20.7127 12.1266 20.556 12.3773 20.0547 12.5339Z"
@@ -2445,7 +3414,13 @@ export default function SvgIcon(props) {
       break;
     case 'checkEnabled':
       iconElement = (
-        <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="70"
+          height="70"
+          viewBox="0 0 70 70"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g opacity="0.5" clipPath="url(#clip0_2178_12343)">
             <path
               d="M20.0547 12.5339C20.274 12.5653 20.4934 12.6279 20.744 12.6906L21.2454 13.9753L21.8721 12.816C22.3107 12.816 22.7494 12.8473 23.1881 12.8473L22.3421 11.7506C22.3734 11.6566 22.4047 11.5626 22.4361 11.4686C22.3421 11.4373 22.2481 11.4059 22.0601 11.3433C22.3421 11.0612 22.4674 10.9359 22.6241 10.9986C22.6867 10.8419 22.7494 10.6539 22.8121 10.4972C22.3734 10.6226 21.9347 10.8106 21.496 10.9672C21.2454 10.7792 20.9947 10.6226 20.744 10.4346C20.744 10.6539 20.7754 10.9046 20.6814 11.1866C20.556 10.9046 20.462 10.6852 20.368 10.5286C20.3994 10.8732 20.3994 11.2493 20.4307 11.5939C20.3994 11.6253 20.3367 11.6566 20.3054 11.7193C20.4307 11.7193 20.556 11.7193 20.7127 11.7193C20.7127 12.1266 20.556 12.3773 20.0547 12.5339Z"
@@ -2526,7 +3501,13 @@ export default function SvgIcon(props) {
       break;
     case 'closeSigner':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M12.6654 4.2735L11.7254 3.3335L7.9987 7.06016L4.27203 3.3335L3.33203 4.2735L7.0587 8.00016L3.33203 11.7268L4.27203 12.6668L7.9987 8.94016L11.7254 12.6668L12.6654 11.7268L8.9387 8.00016L12.6654 4.2735Z"
             fill="#222D4B"
@@ -2536,7 +3517,13 @@ export default function SvgIcon(props) {
       break;
     case 'iconPdf':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M20 2H8C6.9 2 6 2.9 6 4V16C6 17.1 6.9 18 8 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H8V4H20V16ZM4 6H2V20C2 21.1 2.9 22 4 22H18V20H4V6ZM16 12V9C16 8.45 15.55 8 15 8H13V13H15C15.55 13 16 12.55 16 12ZM14 9H15V12H14V9ZM18 11H19V10H18V9H19V8H17V13H18V11ZM10 11H11C11.55 11 12 10.55 12 10V9C12 8.45 11.55 8 11 8H9V13H10V11ZM10 9H11V10H10V9Z"
             fill="#222D4B"
@@ -2546,7 +3533,13 @@ export default function SvgIcon(props) {
       break;
     case 'trashIcon':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M16 9V19H8V9H16ZM14.5 3H9.5L8.5 4H5V6H19V4H15.5L14.5 3ZM18 7H6V19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7Z"
             fill="#E50500"
@@ -2556,7 +3549,13 @@ export default function SvgIcon(props) {
       break;
     case 'uploadProfile':
       iconElement = (
-        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="36"
+          height="36"
+          viewBox="0 0 36 36"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M13.5 24H22.5V15H28.5L18 4.5L7.5 15H13.5V24ZM18 8.745L21.255 12H19.5V21H16.5V12H14.745L18 8.745ZM7.5 27H28.5V30H7.5V27Z"
             fill="#00C968"
@@ -2566,7 +3565,13 @@ export default function SvgIcon(props) {
       break;
     case 'noticePartner':
       iconElement = (
-        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="25"
+          height="24"
+          viewBox="0 0 25 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M11.4043 7H13.4043V9H11.4043V7ZM11.4043 11H13.4043V17H11.4043V11ZM12.4043 2C6.8843 2 2.4043 6.48 2.4043 12C2.4043 17.52 6.8843 22 12.4043 22C17.9243 22 22.4043 17.52 22.4043 12C22.4043 6.48 17.9243 2 12.4043 2ZM12.4043 20C7.9943 20 4.4043 16.41 4.4043 12C4.4043 7.59 7.9943 4 12.4043 4C16.8143 4 20.4043 7.59 20.4043 12C20.4043 16.41 16.8143 20 12.4043 20Z"
             fill="#08B7DD"
@@ -2576,7 +3581,13 @@ export default function SvgIcon(props) {
       break;
     case 'partner':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0_7412_11876)">
             <path
               d="M20 6H17V4C17 2.89 16.11 2 15 2H9C7.89 2 7 2.89 7 4V6H4C2.89 6 2 6.89 2 8V19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM9 4H15V6H9V4ZM20 19H4V17H20V19ZM20 14H4V8H7V10H9V8H15V10H17V8H20V14Z"
@@ -2593,14 +3604,29 @@ export default function SvgIcon(props) {
       break;
     case 'exportStatistic':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19 9H15V3H9V9H5L12 16L19 9ZM11 11V5H13V11H14.17L12 13.17L9.83 11H11ZM5 18H19V20H5V18Z" fill="white" />
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 9H15V3H9V9H5L12 16L19 9ZM11 11V5H13V11H14.17L12 13.17L9.83 11H11ZM5 18H19V20H5V18Z"
+            fill="white"
+          />
         </svg>
       );
       break;
     case 'editTypeConfig':
       iconElement = (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M11.7167 7.51667L12.4833 8.28333L4.93333 15.8333H4.16667V15.0667L11.7167 7.51667ZM14.7167 2.5C14.5083 2.5 14.2917 2.58333 14.1333 2.74167L12.6083 4.26667L15.7333 7.39167L17.2583 5.86667C17.5833 5.54167 17.5833 5.01667 17.2583 4.69167L15.3083 2.74167C15.1417 2.575 14.9333 2.5 14.7167 2.5ZM11.7167 5.15833L2.5 14.375V17.5H5.625L14.8417 8.28333L11.7167 5.15833Z"
             fill="#08B7DD"
@@ -2610,7 +3636,13 @@ export default function SvgIcon(props) {
       break;
     case 'configTypeProfile':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M19.4308 12.98C19.4708 12.66 19.5008 12.34 19.5008 12C19.5008 11.66 19.4708 11.34 19.4308 11.02L21.5408 9.37C21.7308 9.22 21.7808 8.95 21.6608 8.73L19.6608 5.27C19.5708 5.11 19.4008 5.02 19.2208 5.02C19.1608 5.02 19.1008 5.03 19.0508 5.05L16.5608 6.05C16.0408 5.65 15.4808 5.32 14.8708 5.07L14.4908 2.42C14.4608 2.18 14.2508 2 14.0008 2H10.0008C9.75082 2 9.54082 2.18 9.51082 2.42L9.13082 5.07C8.52082 5.32 7.96082 5.66 7.44082 6.05L4.95082 5.05C4.89082 5.03 4.83082 5.02 4.77082 5.02C4.60082 5.02 4.43082 5.11 4.34082 5.27L2.34082 8.73C2.21082 8.95 2.27082 9.22 2.46082 9.37L4.57082 11.02C4.53082 11.34 4.50082 11.67 4.50082 12C4.50082 12.33 4.53082 12.66 4.57082 12.98L2.46082 14.63C2.27082 14.78 2.22082 15.05 2.34082 15.27L4.34082 18.73C4.43082 18.89 4.60082 18.98 4.78082 18.98C4.84082 18.98 4.90082 18.97 4.95082 18.95L7.44082 17.95C7.96082 18.35 8.52082 18.68 9.13082 18.93L9.51082 21.58C9.54082 21.82 9.75082 22 10.0008 22H14.0008C14.2508 22 14.4608 21.82 14.4908 21.58L14.8708 18.93C15.4808 18.68 16.0408 18.34 16.5608 17.95L19.0508 18.95C19.1108 18.97 19.1708 18.98 19.2308 18.98C19.4008 18.98 19.5708 18.89 19.6608 18.73L21.6608 15.27C21.7808 15.05 21.7308 14.78 21.5408 14.63L19.4308 12.98ZM17.4508 11.27C17.4908 11.58 17.5008 11.79 17.5008 12C17.5008 12.21 17.4808 12.43 17.4508 12.73L17.3108 13.86L18.2008 14.56L19.2808 15.4L18.5808 16.61L17.3108 16.1L16.2708 15.68L15.3708 16.36C14.9408 16.68 14.5308 16.92 14.1208 17.09L13.0608 17.52L12.9008 18.65L12.7008 20H11.3008L11.1108 18.65L10.9508 17.52L9.89082 17.09C9.46082 16.91 9.06082 16.68 8.66082 16.38L7.75082 15.68L6.69082 16.11L5.42082 16.62L4.72082 15.41L5.80082 14.57L6.69082 13.87L6.55082 12.74C6.52082 12.43 6.50082 12.2 6.50082 12C6.50082 11.8 6.52082 11.57 6.55082 11.27L6.69082 10.14L5.80082 9.44L4.72082 8.6L5.42082 7.39L6.69082 7.9L7.73082 8.32L8.63082 7.64C9.06082 7.32 9.47082 7.08 9.88082 6.91L10.9408 6.48L11.1008 5.35L11.3008 4H12.6908L12.8808 5.35L13.0408 6.48L14.1008 6.91C14.5308 7.09 14.9308 7.32 15.3308 7.62L16.2408 8.32L17.3008 7.89L18.5708 7.38L19.2708 8.59L18.2008 9.44L17.3108 10.14L17.4508 11.27ZM12.0008 8C9.79082 8 8.00082 9.79 8.00082 12C8.00082 14.21 9.79082 16 12.0008 16C14.2108 16 16.0008 14.21 16.0008 12C16.0008 9.79 14.2108 8 12.0008 8ZM12.0008 14C10.9008 14 10.0008 13.1 10.0008 12C10.0008 10.9 10.9008 10 12.0008 10C13.1008 10 14.0008 10.9 14.0008 12C14.0008 13.1 13.1008 14 12.0008 14Z"
             fill="#F57C00"
@@ -2620,7 +3652,13 @@ export default function SvgIcon(props) {
       break;
     case 'searchStatistic':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
             fill="#222D4B"
@@ -2630,7 +3668,13 @@ export default function SvgIcon(props) {
       break;
     case 'statistic':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19ZM7 10H9V17H7V10ZM11 7H13V17H11V7ZM15 13H17V17H15V13Z"
             fill="rgba(0, 0, 0, 0.5)"
@@ -2640,7 +3684,13 @@ export default function SvgIcon(props) {
       break;
     case 'sql':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M6 6.5165V3.36321C6.06217 3.38046 6.12468 3.39699 6.18732 3.41287C6.68842 3.53983 7.26703 3.64117 7.88651 3.72037C9.12623 3.87887 10.5877 3.95594 12.035 3.95507C13.4822 3.95421 14.9405 3.87542 16.1736 3.71455C16.7897 3.63418 17.3649 3.53138 17.8618 3.4024C17.908 3.39043 17.954 3.37808 18 3.36532V6.5165C17.9751 6.53454 17.941 6.55711 17.895 6.5839C17.6405 6.7322 17.2076 6.89067 16.5915 7.03026C15.3765 7.30557 13.7065 7.45161 12 7.45161C10.2935 7.45161 8.62354 7.30557 7.40848 7.03026C6.7924 6.89067 6.35951 6.7322 6.10498 6.5839C6.059 6.55711 6.02487 6.53454 6 6.5165ZM18.0593 6.46495C18.0599 6.46501 18.0571 6.46883 18.0495 6.47619C18.055 6.46856 18.0588 6.46488 18.0593 6.46495ZM5.94068 6.46495C5.94122 6.46488 5.94502 6.46856 5.95045 6.47619C5.94286 6.46883 5.94014 6.46501 5.94068 6.46495Z"
             stroke="#626262"
@@ -2664,7 +3714,13 @@ export default function SvgIcon(props) {
       break;
     case 'notice1':
       iconElement = (
-        <svg width="406" height="202" viewBox="0 0 406 202" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="406"
+          height="202"
+          viewBox="0 0 406 202"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M-121.565 -14.4636L405.183 -16.1669C222.227 -7.58615 73.9122 58.9039 -22.2484 121.781C-67.5549 151.405 -101.284 180.228 -121.604 201.814L-121.565 -14.4636Z"
             fill="#08B7DD"
@@ -2674,7 +3730,13 @@ export default function SvgIcon(props) {
       break;
     case 'notice2':
       iconElement = (
-        <svg width="424" height="256" viewBox="0 0 424 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="424"
+          height="256"
+          viewBox="0 0 424 256"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M-120.7 -20.147L423.489 -22.0001C234.479 -11.1557 81.2827 73.6495 -18.0336 153.873C-64.827 191.671 -99.6598 228.451 -120.643 256L-120.7 -20.147Z"
             fill="#B2E9F8"
@@ -2684,7 +3746,13 @@ export default function SvgIcon(props) {
       break;
     case 'notice3':
       iconElement = (
-        <svg width="605" height="225" viewBox="0 0 605 225" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="605"
+          height="225"
+          viewBox="0 0 605 225"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M723.401 225.59L0 226C251.28 217.524 455.132 148.556 587.351 83.2214C649.646 52.4386 696.04 22.4625 724 0L723.401 225.59Z"
             fill="#08B7DD"
@@ -2694,7 +3762,13 @@ export default function SvgIcon(props) {
       break;
     case 'notice4':
       iconElement = (
-        <svg width="630" height="272" viewBox="0 0 630 272" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="630"
+          height="272"
+          viewBox="0 0 630 272"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M746.382 272.505L0 273C259.262 262.762 469.591 179.45 606.01 100.528C670.284 63.344 718.152 27.1339 747 0L746.382 272.505Z"
             fill="#B2E9F8"
@@ -2704,18 +3778,36 @@ export default function SvgIcon(props) {
       break;
     case 'warningInactive':
       iconElement = (
-        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M59.9997 93.333C63.6663 93.333 66.6663 90.333 66.6663 86.6663H53.333C53.333 90.333 56.333 93.333 59.9997 93.333ZM79.9997 73.333V56.6663C79.9997 46.433 74.5663 37.8663 64.9997 35.5997V33.333C64.9997 30.5663 62.7663 28.333 59.9997 28.333C57.233 28.333 54.9997 30.5663 54.9997 33.333V35.5997C45.4663 37.8663 39.9997 46.3997 39.9997 56.6663V73.333L33.333 79.9997V83.333H86.6663V79.9997L79.9997 73.333ZM73.333 76.6663H46.6663V56.6663C46.6663 48.3997 51.6997 41.6663 59.9997 41.6663C68.2997 41.6663 73.333 48.3997 73.333 56.6663V76.6663Z"
             fill="#F57C00"
           />
-          <circle cx="60" cy="60" r="59.5" stroke="#F57C00" strokeDasharray="5 5" />
+          <circle
+            cx="60"
+            cy="60"
+            r="59.5"
+            stroke="#F57C00"
+            strokeDasharray="5 5"
+          />
         </svg>
       );
       break;
     case 'closeTab':
       iconElement = (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="10" cy="10" r="10" fill="white" />
           <path
             d="M14.6668 6.2735L13.7268 5.3335L10.0002 9.06016L6.2735 5.3335L5.3335 6.2735L9.06016 10.0002L5.3335 13.7268L6.2735 14.6668L10.0002 10.9402L13.7268 14.6668L14.6668 13.7268L10.9402 10.0002L14.6668 6.2735Z"
@@ -2726,7 +3818,13 @@ export default function SvgIcon(props) {
       break;
     case 'defaultAvatar':
       iconElement = (
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="20" cy="20" r="20" fill="#F4F4F4" />
           <path
             d="M20 14C21.1 14 22 14.9 22 16C22 17.1 21.1 18 20 18C18.9 18 18 17.1 18 16C18 14.9 18.9 14 20 14ZM20 23C22.7 23 25.8 24.29 26 25V26H14V25.01C14.2 24.29 17.3 23 20 23ZM20 12C17.79 12 16 13.79 16 16C16 18.21 17.79 20 20 20C22.21 20 24 18.21 24 16C24 13.79 22.21 12 20 12ZM20 21C17.33 21 12 22.34 12 25V28H28V25C28 22.34 22.67 21 20 21Z"
@@ -2737,7 +3835,13 @@ export default function SvgIcon(props) {
       break;
     case 'bigLogo':
       iconElement = (
-        <svg width="264" height="45" viewBox="0 0 264 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="264"
+          height="45"
+          viewBox="0 0 264 45"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0)">
             <path
               d="M28.2558 27.1657C28.186 23.1565 27.8372 20.2532 27.0698 18.2486C26.3023 16.1058 24.7674 14.5159 22.6047 13.6173C20.5814 12.7878 17.6512 12.373 13.7442 12.373C9.69767 12.373 6.76744 12.9952 4.81395 14.3085C2.7907 15.6219 1.46512 17.5574 0.837209 19.9767C0.27907 22.1887 0 25.2993 0 29.3085C0 32.2118 0.209302 34.6311 0.55814 36.4975C0.976744 38.5021 1.67442 40.0919 2.7907 41.3362C3.83721 42.5804 5.37209 43.5482 7.32558 44.1012C9.13953 44.6542 11.5814 44.8615 14.4419 44.8615C17.5116 44.8615 19.9535 44.6542 21.7674 44.2394C23.7907 43.8247 25.3953 42.7878 26.5116 41.1979C27.6977 39.6772 28.2558 37.3961 28.2558 34.3546V33.3178H21.4884V35.3224C21.4884 37.8108 20.5116 38.2256 20.1628 38.433C19.0465 38.986 17.2326 39.1933 14.9302 39.1933H13.7442C11.4419 39.1933 9.76744 38.8477 8.86047 38.1565C7.95349 37.4652 7.39535 36.5666 7.18605 35.4606C6.97674 34.2855 6.83721 32.6265 6.83721 30.4836H28.3256V27.1657H28.2558ZM6.76744 24.9537C6.83721 23.1565 7.04651 21.7048 7.39535 20.7371C7.74419 19.7002 8.37209 19.009 9.34884 18.5942C10.3953 18.1104 12 17.903 14.1628 17.903C16.6047 17.903 18.4186 18.1104 19.4651 18.5942C20.3721 18.9399 20.9302 19.562 21.1395 20.5297C21.4186 21.4975 21.5581 23.0182 21.6279 25.0919H6.76744V24.9537Z"
@@ -2786,29 +3890,59 @@ export default function SvgIcon(props) {
       break;
     case 'signMethod':
       iconElement = (
-        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M66.6665 40L63.3332 33.3333H36.6665V90H43.3332V66.6667H59.9998L63.3332 73.3333H86.6665V40H66.6665ZM79.9998 66.6667H66.6665L63.3332 60H43.3332V40H59.9998L63.3332 46.6667H79.9998V66.6667Z"
             fill="#08B7DD"
           />
-          <circle cx="60" cy="60" r="59.5" stroke="#08B7DD" strokeDasharray="5 5" />
+          <circle
+            cx="60"
+            cy="60"
+            r="59.5"
+            stroke="#08B7DD"
+            strokeDasharray="5 5"
+          />
         </svg>
       );
       break;
     case 'trashRed':
       iconElement = (
-        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M40.0003 83.3333C40.0003 87 43.0003 90 46.667 90H73.3337C77.0003 90 80.0003 87 80.0003 83.3333V43.3333H40.0003V83.3333ZM46.667 50H73.3337V83.3333H46.667V50ZM71.667 33.3333L68.3337 30H51.667L48.3337 33.3333H36.667V40H83.3337V33.3333H71.667Z"
             fill="#E50500"
           />
-          <circle cx="60" cy="60" r="59.5" stroke="#E50500" strokeDasharray="5 5" />
+          <circle
+            cx="60"
+            cy="60"
+            r="59.5"
+            stroke="#E50500"
+            strokeDasharray="5 5"
+          />
         </svg>
       );
       break;
     case 'logoutIcon':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M11 7L9.6 8.4L12.2 11H2V13H12.2L9.6 15.6L11 17L16 12L11 7ZM20 19H12V21H20C21.1 21 22 20.1 22 19V5C22 3.9 21.1 3 20 3H12V5H20V19Z"
             fill="#222D4B"
@@ -2818,7 +3952,13 @@ export default function SvgIcon(props) {
       break;
     case 'updateUnit':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M14.06 9.02L14.98 9.94L5.92 19H5V18.08L14.06 9.02ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z"
             fill="white"
@@ -2828,7 +3968,13 @@ export default function SvgIcon(props) {
       break;
     case 'warningCKS':
       iconElement = (
-        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="25"
+          height="24"
+          viewBox="0 0 25 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M12.9148 5.99L20.4156 19H5.41406L12.9148 5.99ZM12.9148 2L1.95752 21H23.8722L12.9148 2ZM13.911 16H11.9187V18H13.911V16ZM13.911 10H11.9187V14H13.911V10Z"
             fill="#F57C00"
@@ -2838,7 +3984,13 @@ export default function SvgIcon(props) {
       break;
     case 'warningAmber':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M12 5.99L19.53 19H4.47L12 5.99ZM12 2L1 21H23L12 2ZM13 16H11V18H13V16ZM13 10H11V14H13V10Z"
             fill="#E50500"
@@ -2848,7 +4000,13 @@ export default function SvgIcon(props) {
       break;
     case 'arrowDownTree':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M15.5 4.5L8 12L0.5 4.5"
             stroke="#868E96"
@@ -2861,7 +4019,13 @@ export default function SvgIcon(props) {
       break;
     case 'cancel':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M3 17.4649L3 2.99995C3 2.73473 3.10536 2.48038 3.29289 2.29284C3.48043 2.1053 3.73478 1.99995 4 1.99995H20C20.2652 1.99995 20.5196 2.1053 20.7071 2.29284C20.8946 2.48038 21 2.73473 21 2.99995V17.4649C21 17.6295 20.9594 17.7916 20.8818 17.9367C20.8042 18.0819 20.6919 18.2056 20.555 18.2969L12.555 23.6299C12.3907 23.7396 12.1975 23.7981 12 23.7981C11.8025 23.7981 11.6093 23.7396 11.445 23.6299L3.445 18.2969C3.30808 18.2056 3.19583 18.0819 3.11821 17.9367C3.04058 17.7916 2.99998 17.6295 3 17.4649ZM5 16.9299L12 21.5959L19 16.9299V3.99995H5L5 16.9299ZM10.586 10.9999L7.757 8.17195L9.172 6.75695L12 9.58595L14.828 6.75695L16.243 8.17195L13.414 10.9999L16.243 13.8279L14.828 15.2429L12 12.4139L9.172 15.2429L7.757 13.8279L10.586 10.9999Z"
             fill="#EB5757"
@@ -2871,7 +4035,13 @@ export default function SvgIcon(props) {
       break;
     case 'undo':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M2 16H16C19.866 16 23 12.866 23 9C23 5.134 19.866 2 16 2H9"
             stroke="#219653"
@@ -2893,7 +4063,13 @@ export default function SvgIcon(props) {
       break;
     case 'refresh':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M12 6V9L16 5L12 1V4C7.58 4 4 7.58 4 12C4 13.57 4.46 15.03 5.24 16.26L6.7 14.8C6.25 13.97 6 13.01 6 12C6 8.69 8.69 6 12 6ZM18.76 7.74L17.3 9.2C17.74 10.04 18 10.99 18 12C18 15.31 15.31 18 12 18V15L8 19L12 23V20C16.42 20 20 16.42 20 12C20 10.43 19.54 8.97 18.76 7.74Z"
             fill="#00C968"
@@ -2903,7 +4079,13 @@ export default function SvgIcon(props) {
       break;
     case 'refresh-blue':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M1.33398 7.99998C1.33398 4.33331 4.33398 1.33331 8.00065 1.33331C10.6007 1.33331 12.8673 2.79998 13.934 4.99998"
             stroke="#448AFF"
@@ -2941,7 +4123,13 @@ export default function SvgIcon(props) {
       break;
     case 'users':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M5.992 18.7371L8.2 20.4001C8.704 20.7781 9 21.3701 9 22.0001V23.0001H1V22.0001C1 21.3701 1.296 20.7781 1.8 20.4001L4.008 18.7371"
             stroke="#F2994A"
@@ -2995,7 +4183,13 @@ export default function SvgIcon(props) {
       break;
     case 'restore':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -3019,7 +4213,13 @@ export default function SvgIcon(props) {
       break;
     case 'back':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -3037,14 +4237,28 @@ export default function SvgIcon(props) {
       break;
     case 'remove':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
             d="M13.4142 12.0002L17.7072 7.70725C18.0982 7.31625 18.0982 6.68425 17.7072 6.29325C17.3162 5.90225 16.6842 5.90225 16.2933 6.29325L12.0002 10.5862L7.70725 6.29325C7.31625 5.90225 6.68425 5.90225 6.29325 6.29325C5.90225 6.68425 5.90225 7.31625 6.29325 7.70725L10.5862 12.0002L6.29325 16.2933C5.90225 16.6842 5.90225 17.3162 6.29325 17.7072C6.48825 17.9022 6.74425 18.0002 7.00025 18.0002C7.25625 18.0002 7.51225 17.9022 7.70725 17.7072L12.0002 13.4142L16.2933 17.7072C16.4882 17.9022 16.7443 18.0002 17.0002 18.0002C17.2562 18.0002 17.5122 17.9022 17.7072 17.7072C18.0982 17.3162 18.0982 16.6842 17.7072 16.2933L13.4142 12.0002Z"
             fill="#616161"
           />
-          <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="6" y="6" width="13" height="13">
+          <mask
+            id="mask0"
+            mask-type="alpha"
+            maskUnits="userSpaceOnUse"
+            x="6"
+            y="6"
+            width="13"
+            height="13"
+          >
             <path
               fillRule="evenodd"
               clipRule="evenodd"
@@ -3058,7 +4272,13 @@ export default function SvgIcon(props) {
       break;
     case 'filter-main':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M7.00018 6H17.0002L11.9902 12.3L7.00018 6ZM4.25018 5.61C6.27018 8.2 10.0002 13 10.0002 13V19C10.0002 19.55 10.4502 20 11.0002 20H13.0002C13.5502 20 14.0002 19.55 14.0002 19V13C14.0002 13 17.7202 8.2 19.7402 5.61C20.2502 4.95 19.7802 4 18.9502 4H5.04018C4.21018 4 3.74018 4.95 4.25018 5.61Z"
             fill="#08B7DD"
@@ -3068,7 +4288,13 @@ export default function SvgIcon(props) {
       break;
     case 'filter-white':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M6.99969 6H16.9997L11.9897 12.3L6.99969 6ZM4.24969 5.61C6.26969 8.2 9.99969 13 9.99969 13V19C9.99969 19.55 10.4497 20 10.9997 20H12.9997C13.5497 20 13.9997 19.55 13.9997 19V13C13.9997 13 17.7197 8.2 19.7397 5.61C20.2497 4.95 19.7797 4 18.9497 4H5.03969C4.20969 4 3.73969 4.95 4.24969 5.61Z"
             fill="white"
@@ -3078,7 +4304,13 @@ export default function SvgIcon(props) {
       break;
     case 'box-confirm':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -3102,7 +4334,13 @@ export default function SvgIcon(props) {
       break;
     case 'check-list':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0)">
             <path
               fillRule="evenodd"
@@ -3139,7 +4377,13 @@ export default function SvgIcon(props) {
       break;
     case 'handout-2':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0)">
             <path
               fillRule="evenodd"
@@ -3170,7 +4414,13 @@ export default function SvgIcon(props) {
       break;
     case 'cheque':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -3194,7 +4444,13 @@ export default function SvgIcon(props) {
       break;
     case 'curved-previous':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -3206,7 +4462,13 @@ export default function SvgIcon(props) {
       break;
     case 'g-chart':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -3230,7 +4492,13 @@ export default function SvgIcon(props) {
       break;
     case 'handout':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -3254,7 +4522,13 @@ export default function SvgIcon(props) {
       break;
     case 'send-message':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -3272,40 +4546,82 @@ export default function SvgIcon(props) {
       break;
     case 'warning-usb':
       iconElement = (
-        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M59.9997 39.966L85.0997 83.3327H34.8997L59.9997 39.966ZM59.9997 26.666L23.333 89.9993H96.6663L59.9997 26.666ZM63.333 73.3327H56.6663V79.9993H63.333V73.3327ZM63.333 53.3327H56.6663V66.666H63.333V53.3327Z"
             fill="#F57C00"
           />
-          <circle cx="60" cy="60" r="59.5" stroke="#F57C00" strokeDasharray="5 5" />
+          <circle
+            cx="60"
+            cy="60"
+            r="59.5"
+            stroke="#F57C00"
+            strokeDasharray="5 5"
+          />
         </svg>
       );
       break;
     case 'warning-usb2':
       iconElement = (
-        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+        >
           <path
             d="M56.666 69.9998H63.3327V76.6665H56.666V69.9998ZM56.666 43.3332H63.3327V63.3332H56.666V43.3332ZM59.966 26.6665C41.566 26.6665 26.666 41.5998 26.666 59.9998C26.666 78.3998 41.566 93.3332 59.966 93.3332C78.3994 93.3332 93.3327 78.3998 93.3327 59.9998C93.3327 41.5998 78.3994 26.6665 59.966 26.6665ZM59.9994 86.6665C45.266 86.6665 33.3327 74.7332 33.3327 59.9998C33.3327 45.2665 45.266 33.3332 59.9994 33.3332C74.7327 33.3332 86.666 45.2665 86.666 59.9998C86.666 74.7332 74.7327 86.6665 59.9994 86.6665Z"
             fill="#E50500"
           />
-          <circle cx="60" cy="60" r="59.5" stroke="#E50500" strokeDasharray="5 5" />
+          <circle
+            cx="60"
+            cy="60"
+            r="59.5"
+            stroke="#E50500"
+            strokeDasharray="5 5"
+          />
         </svg>
       );
       break;
     case 'not-cks':
       iconElement = (
-        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M56.667 69.9994H63.3337V76.666H56.667V69.9994ZM56.667 43.3327H63.3337V63.3327H56.667V43.3327ZM59.967 26.666C41.567 26.666 26.667 41.5993 26.667 59.9994C26.667 78.3994 41.567 93.3327 59.967 93.3327C78.4003 93.3327 93.3337 78.3994 93.3337 59.9994C93.3337 41.5993 78.4003 26.666 59.967 26.666ZM60.0003 86.666C45.267 86.666 33.3337 74.7327 33.3337 59.9994C33.3337 45.266 45.267 33.3327 60.0003 33.3327C74.7337 33.3327 86.667 45.266 86.667 59.9994C86.667 74.7327 74.7337 86.666 60.0003 86.666Z"
             fill="#E50500"
           />
-          <circle cx="60" cy="60" r="59.5" stroke="#E50500" strokeDasharray="5 5" />
+          <circle
+            cx="60"
+            cy="60"
+            r="59.5"
+            stroke="#E50500"
+            strokeDasharray="5 5"
+          />
         </svg>
       );
       break;
     case 'd-check':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -3317,7 +4633,13 @@ export default function SvgIcon(props) {
       break;
     case 'bin':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M16 9V19H8V9H16ZM14.5 3H9.5L8.5 4H5V6H19V4H15.5L14.5 3ZM18 7H6V19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7Z"
             fill={fill || '#E50500'}
@@ -3327,7 +4649,13 @@ export default function SvgIcon(props) {
       break;
     case 'lock':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path opacity="0.87" d="M0 0H24V24H0V0Z" fill="transparent" />
           <path
             d="M18 8H17V6C17 3.24 14.76 1 12 1C9.24 1 7 3.24 7 6V8H6C4.9 8 4 8.9 4 10V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V10C20 8.9 19.1 8 18 8ZM9 6C9 4.34 10.34 3 12 3C13.66 3 15 4.34 15 6V8H9V6ZM18 20H6V10H18V20ZM12 17C13.1 17 14 16.1 14 15C14 13.9 13.1 13 12 13C10.9 13 10 13.9 10 15C10 16.1 10.9 17 12 17Z"
@@ -3338,7 +4666,13 @@ export default function SvgIcon(props) {
       break;
     case 'hierarchy':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M12 9V15"
             stroke="#1574F6"
@@ -3389,7 +4723,13 @@ export default function SvgIcon(props) {
       break;
     case 'settings':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0)">
             <path
               d="M14 19L16.95 21.95C17.2759 22.2826 17.6648 22.5468 18.0941 22.7272C18.5234 22.9076 18.9844 23.0005 19.45 23.0005C19.9156 23.0005 20.3766 22.9076 20.8059 22.7272C21.2352 22.5468 21.6241 22.2826 21.95 21.95V21.95C22.2826 21.6241 22.5468 21.2352 22.7272 20.8059C22.9076 20.3766 23.0005 19.9156 23.0005 19.45C23.0005 18.9844 22.9076 18.5234 22.7272 18.0941C22.5468 17.6648 22.2826 17.2759 21.95 16.95L20 15"
@@ -3442,8 +4782,19 @@ export default function SvgIcon(props) {
       break;
     case 'database':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3 4V20C3 21.7 7 23 12 23C17 23 21 21.7 21 20V4" stroke="#BB6BD9" strokeWidth="2" strokeMiterlimit="10" />
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3 4V20C3 21.7 7 23 12 23C17 23 21 21.7 21 20V4"
+            stroke="#BB6BD9"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+          />
           <path
             d="M12 7C16.9706 7 21 5.65685 21 4C21 2.34315 16.9706 1 12 1C7.02944 1 3 2.34315 3 4C3 5.65685 7.02944 7 12 7Z"
             stroke="#BB6BD9"
@@ -3463,7 +4814,13 @@ export default function SvgIcon(props) {
       break;
     case 'chart':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M14 5C18.971 5 23 9.029 23 14C23 18.971 18.971 23 14 23C9.029 23 5 18.971 5 14"
             stroke="#24B8CC"
@@ -3485,7 +4842,13 @@ export default function SvgIcon(props) {
       break;
     case 'notes':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -3521,7 +4884,13 @@ export default function SvgIcon(props) {
       break;
     case 'logoLogin':
       iconElement = (
-        <svg width="162" height="111" viewBox="0 0 162 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="162"
+          height="111"
+          viewBox="0 0 162 111"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M74.443 1.44831C74.7158 0.405756 75.7876 -0.208084 76.8204 0.0647335L112.93 9.61335C113.972 9.88617 114.586 10.958 114.313 11.9908L102.845 55.3785C102.572 56.4211 101.501 57.0349 100.468 56.7621L64.3585 47.2135C63.3159 46.9407 62.7021 45.8689 62.9749 44.8361L74.443 1.44831Z"
             fill="#FF0F0F"
@@ -3604,7 +4973,13 @@ export default function SvgIcon(props) {
       break;
     case 'logo':
       iconElement = (
-        <svg width="199" height="32" viewBox="0 0 199 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="199"
+          height="32"
+          viewBox="0 0 199 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M95.9663 9.81768C94.3529 9.06554 92.4394 9.75923 91.6834 11.3687C91.1144 12.5067 90.0505 13.3212 88.8034 13.5745C87.3732 13.8629 85.8845 12.9743 85.183 12.4716C83.7489 11.1583 81.5236 11.2596 80.2103 12.6937C78.9009 14.1279 78.9983 16.3531 80.4325 17.6665C81.8666 18.9798 84.0918 18.8785 85.4052 17.4443C85.6468 17.1793 85.8455 16.8831 85.9975 16.5558C86.0131 16.5246 86.0287 16.4895 86.0404 16.4545C86.2391 16.1427 86.4847 15.866 86.773 15.6361C87.381 15.2113 88.0786 14.9385 88.8112 14.8333C90.865 14.4046 93.0396 15.5386 93.0396 15.5386C93.1019 15.5737 93.1682 15.6088 93.2383 15.64C94.8478 16.3921 96.7613 15.6984 97.5174 14.0889C98.2734 12.4794 97.5758 10.5659 95.9663 9.80989V9.81768Z"
             fill="#08B7DD"
@@ -3692,7 +5067,10 @@ export default function SvgIcon(props) {
             d="M177.183 28.4303H177.592V26.9104C177.915 26.8598 178.336 26.8247 178.777 26.8247C179.509 26.8247 179.992 26.9494 180.367 27.2339C180.768 27.534 181.017 28.0289 181.017 28.7148C181.017 29.4669 180.752 29.9853 180.378 30.3048C179.969 30.6439 179.349 30.8114 178.589 30.8114C178.134 30.8114 177.814 30.7842 177.592 30.753V29.1201H177.183V28.4342V28.4303ZM179.236 29.1162H178.465V30.1061C178.547 30.1178 178.667 30.1178 178.769 30.1178C179.575 30.1178 180.086 29.693 180.086 28.7421C180.086 27.9003 179.618 27.5028 178.858 27.5028C178.667 27.5028 178.543 27.5184 178.461 27.5379V28.4303H179.232V29.1162H179.236Z"
             fill="#5E5E5E"
           />
-          <path d="M182.474 26.8711V30.7526H181.594V26.8711H182.474Z" fill="#5E5E5E" />
+          <path
+            d="M182.474 26.8711V30.7526H181.594V26.8711H182.474Z"
+            fill="#5E5E5E"
+          />
           <path
             d="M185.545 29.1083H184.119V30.028H185.713V30.749H183.238V26.8675H185.631V27.5885H184.119V28.3952H185.545V29.1083ZM184.785 25.9556L185.374 26.6648H184.758L184.466 26.3063H184.454L184.166 26.6648H183.554L184.131 25.9556H184.785ZM184.119 31.6064C184.119 31.3803 184.291 31.2089 184.52 31.2089C184.75 31.2089 184.906 31.3803 184.906 31.6064C184.906 31.8129 184.739 31.9961 184.52 31.9961C184.291 31.9961 184.119 31.8129 184.119 31.6064Z"
             fill="#5E5E5E"
@@ -3701,7 +5079,10 @@ export default function SvgIcon(props) {
             d="M186.31 30.7487V26.8672H187.335L188.141 28.2896C188.371 28.6988 188.601 29.1821 188.773 29.6185H188.788C188.73 29.108 188.714 28.5819 188.714 28.0012V26.8672H189.521V30.7487H188.601L187.771 29.2522C187.541 28.8391 187.288 28.3364 187.097 27.8843H187.081C187.105 28.4026 187.116 28.9482 187.116 29.5835V30.7526H186.31V30.7487Z"
             fill="#5E5E5E"
           />
-          <path d="M191.964 27.6076H190.924V26.8711H193.905V27.6076H192.845V30.7487H191.964V27.6076Z" fill="#5E5E5E" />
+          <path
+            d="M191.964 27.6076H190.924V26.8711H193.905V27.6076H192.845V30.7487H191.964V27.6076Z"
+            fill="#5E5E5E"
+          />
           <path
             d="M198.121 26.162C198.195 26.3101 198.25 26.5011 198.25 26.6959C198.25 27.0467 198.055 27.2844 197.634 27.3234L197.537 27.3351V29.0459C197.537 30.2423 196.932 30.8113 195.919 30.8113C194.906 30.8113 194.364 30.2696 194.364 29.0342V26.8713H195.245V29.1043C195.245 29.7708 195.498 30.1098 195.946 30.1098C196.395 30.1098 196.66 29.7863 196.66 29.1043V26.8713H197.326C197.564 26.8713 197.626 26.7973 197.626 26.6453C197.626 26.5245 197.587 26.392 197.505 26.2595L198.121 26.162ZM195.88 26.5985C195.966 26.3374 196.161 26.2945 196.161 26.1036C196.161 25.9984 196.087 25.9321 195.993 25.9321C195.884 25.9321 195.787 26.049 195.732 26.127L195.455 25.9594C195.588 25.6944 195.806 25.5034 196.157 25.5034C196.469 25.5034 196.714 25.7295 196.714 25.9945C196.714 26.3335 196.434 26.3959 196.278 26.6842L195.876 26.5985H195.88Z"
             fill="#5E5E5E"
@@ -3711,7 +5092,13 @@ export default function SvgIcon(props) {
       break;
     case 'add':
       iconElement = (
-        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="17"
+          viewBox="0 0 16 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0)">
             <path
               d="M8 1.83398V15.1673"
@@ -3732,7 +5119,12 @@ export default function SvgIcon(props) {
           </g>
           <defs>
             <clipPath id="clip0">
-              <rect width="16" height="16" fill="white" transform="translate(0 0.5)" />
+              <rect
+                width="16"
+                height="16"
+                fill="white"
+                transform="translate(0 0.5)"
+              />
             </clipPath>
           </defs>
         </svg>
@@ -3740,7 +5132,13 @@ export default function SvgIcon(props) {
       break;
     case 'search':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
             fill={fill || '#222D4B'}
@@ -3750,7 +5148,13 @@ export default function SvgIcon(props) {
       break;
     case 'arrowDown':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M15.5 4.5L8 12L0.5 4.5"
             stroke="#868E96"
@@ -3763,7 +5167,13 @@ export default function SvgIcon(props) {
       break;
     case 'arrow-menu':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M11.3335 4.6665H4.66682C4.42482 4.6665 4.20148 4.79784 4.08348 5.00984C3.96615 5.22184 3.97282 5.48117 4.10148 5.6865L7.43482 11.0198C7.55682 11.2145 7.77015 11.3332 8.00015 11.3332C8.23015 11.3332 8.44348 11.2145 8.56548 11.0198L11.8988 5.6865C12.0275 5.48117 12.0341 5.22184 11.9168 5.00984C11.7988 4.79784 11.5755 4.6665 11.3335 4.6665Z"
             fill="rgba(0, 0, 0, 0.5)"
@@ -3773,7 +5183,13 @@ export default function SvgIcon(props) {
       break;
     case 'trashCan':
       iconElement = (
-        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle opacity="0.1" cx="24" cy="24" r="24" fill="#BC2618" />
           <path
             d="M32.25 16.5V33.5455C32.25 34.4868 31.5784 35.25 30.75 35.25H17.25C16.4216 35.25 15.75 34.4868 15.75 33.5455V16.5"
@@ -3825,7 +5241,12 @@ export default function SvgIcon(props) {
           />
           <defs>
             <clipPath id="clip0">
-              <rect width="24" height="24" fill="white" transform="translate(12 12)" />
+              <rect
+                width="24"
+                height="24"
+                fill="white"
+                transform="translate(12 12)"
+              />
             </clipPath>
           </defs>
         </svg>
@@ -3833,7 +5254,13 @@ export default function SvgIcon(props) {
       break;
     case 'threeDots':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z"
             stroke="#868E96"
@@ -3860,17 +5287,47 @@ export default function SvgIcon(props) {
       break;
     case 'dot':
       iconElement = (
-        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="8"
+          height="8"
+          viewBox="0 0 8 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="4" cy="4" r="4" fill={fill || 'rgba(0, 0, 0, 0.5)'} />
         </svg>
       );
       break;
     case 'stationery':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17.1001 4.40002H20.5001" stroke="#27AE60" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" />
-          <path d="M17.1001 10H20.5001" stroke="#27AE60" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" />
-          <path d="M19 7.19995H20.5" stroke="#27AE60" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" />
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17.1001 4.40002H20.5001"
+            stroke="#27AE60"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+          />
+          <path
+            d="M17.1001 10H20.5001"
+            stroke="#27AE60"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+          />
+          <path
+            d="M19 7.19995H20.5"
+            stroke="#27AE60"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+          />
           <path
             d="M5.8001 13.2L2.1001 7.40002L2.4001 2.40002L7.1001 4.40002L12.7001 13.3"
             stroke="#27AE60"
@@ -3900,7 +5357,13 @@ export default function SvgIcon(props) {
       break;
     case 'menu':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M3 18H16V16H3V18ZM3 13H13V11H3V13ZM3 6V8H16V6H3ZM21 15.59L17.42 12L21 8.41L19.59 7L14.59 12L19.59 17L21 15.59Z"
             fill="#222D4B"
@@ -3910,7 +5373,13 @@ export default function SvgIcon(props) {
       break;
     case 'meeting':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M5.992 18.7373L8.2 20.4003C8.704 20.7783 9 21.3703 9 22.0003V23.0003H1V22.0003C1 21.3703 1.296 20.7783 1.8 20.4003L4.008 18.7373"
             stroke="#BB6BD9"
@@ -3964,7 +5433,13 @@ export default function SvgIcon(props) {
       break;
     case 'access-key':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0)">
             <path
               d="M11.2424 21.2426C13.5856 18.8995 13.5856 15.1005 11.2424 12.7574C8.89932 10.4143 5.10037 10.4143 2.75725 12.7574C0.414125 15.1005 0.414125 18.8995 2.75725 21.2426C5.10037 23.5857 8.89932 23.5857 11.2424 21.2426Z"
@@ -4001,7 +5476,13 @@ export default function SvgIcon(props) {
       break;
     case 'add-blue':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M12 2V22"
             stroke="#2196F3"
@@ -4023,7 +5504,13 @@ export default function SvgIcon(props) {
       break;
     case 'close-icon':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="12" cy="12" r="12" fill="#CED4DA" />
           <path
             d="M16.6663 7.33337L7.33301 16.6667"
@@ -4046,19 +5533,67 @@ export default function SvgIcon(props) {
       break;
     case 'filter-remove':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 9H23" stroke="#EB5757" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="square" />
-          <path d="M1 3H23" stroke="#EB5757" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="square" />
-          <path d="M1 15H11" stroke="#EB5757" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="square" />
-          <path d="M1 21H11" stroke="#EB5757" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="square" />
-          <path d="M16 15L22 21" stroke="#EB5757" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="square" />
-          <path d="M22 15L16 21" stroke="#EB5757" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="square" />
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 9H23"
+            stroke="#EB5757"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+            strokeLinecap="square"
+          />
+          <path
+            d="M1 3H23"
+            stroke="#EB5757"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+            strokeLinecap="square"
+          />
+          <path
+            d="M1 15H11"
+            stroke="#EB5757"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+            strokeLinecap="square"
+          />
+          <path
+            d="M1 21H11"
+            stroke="#EB5757"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+            strokeLinecap="square"
+          />
+          <path
+            d="M16 15L22 21"
+            stroke="#EB5757"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+            strokeLinecap="square"
+          />
+          <path
+            d="M22 15L16 21"
+            stroke="#EB5757"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+            strokeLinecap="square"
+          />
         </svg>
       );
       break;
     case 'check':
       iconElement = (
-        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="hjustice://www.w3.org/2000/svg">
+        <svg
+          width="14"
+          height="10"
+          viewBox="0 0 14 10"
+          fill="none"
+          xmlns="hjustice://www.w3.org/2000/svg"
+        >
           <path
             d="M1 5L5 9L13 1"
             stroke="#1574F6"
@@ -4072,8 +5607,19 @@ export default function SvgIcon(props) {
       break;
     case 'role-group':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3 4V20C3 21.7 7 23 12 23C17 23 21 21.7 21 20V4" stroke="#56CCF2" strokeWidth="2" strokeMiterlimit="10" />
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3 4V20C3 21.7 7 23 12 23C17 23 21 21.7 21 20V4"
+            stroke="#56CCF2"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+          />
           <path
             d="M12 7C16.9706 7 21 5.65685 21 4C21 2.34315 16.9706 1 12 1C7.02944 1 3 2.34315 3 4C3 5.65685 7.02944 7 12 7Z"
             stroke="#56CCF2"
@@ -4093,7 +5639,13 @@ export default function SvgIcon(props) {
       break;
     case 'authorization':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M5.992 18.7371L8.2 20.4001C8.704 20.7781 9 21.3701 9 22.0001V23.0001H1V22.0001C1 21.3701 1.296 20.7781 1.8 20.4001L4.008 18.7371"
             stroke="#F2994A"
@@ -4147,7 +5699,13 @@ export default function SvgIcon(props) {
       break;
     case 'notice-error':
       iconElement = (
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M1.3335 28H30.6668L16.0002 2.66666L1.3335 28ZM5.96016 25.3333L16.0002 7.98666L26.0402 25.3333H5.96016ZM14.6668 21.3333H17.3335V24H14.6668V21.3333ZM14.6668 13.3333H17.3335V18.6667H14.6668V13.3333Z"
             fill="#E13F3D"
@@ -4157,7 +5715,13 @@ export default function SvgIcon(props) {
       break;
     case 'notice-success':
       iconElement = (
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M27.6861 14.1597C28.0165 15.7411 28.1152 17.4848 27.8027 19.2574C26.5524 26.348 19.8333 31.0528 12.7427 29.8025C5.65211 28.5522 0.947385 21.8332 2.19765 14.7426C3.44792 7.65195 10.167 2.94722 17.2576 4.19749C19.7196 4.63161 21.9616 5.73773 23.7055 7.36528"
             stroke="#27AE60"
@@ -4177,7 +5741,13 @@ export default function SvgIcon(props) {
       break;
     case 'icon-arrow-down':
       iconElement = (
-        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="12"
+          height="10"
+          viewBox="0 0 12 10"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M11 0L0.999979 0C0.636979 0 0.301979 0.197 0.124979 0.515C-0.0510214 0.833 -0.0410214 1.222 0.151979 1.53L5.15198 9.53C5.33498 9.822 5.65498 10 5.99998 10C6.34498 10 6.66498 9.822 6.84798 9.53L11.848 1.53C12.041 1.222 12.051 0.833 11.875 0.515C11.698 0.197 11.363 0 11 0Z"
             fill="#868E96"
@@ -4187,7 +5757,13 @@ export default function SvgIcon(props) {
       break;
     case 'faq':
       iconElement = (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M9 16H11V14H9V16ZM10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10 4C7.79 4 6 5.79 6 8H8C8 6.9 8.9 6 10 6C11.1 6 12 6.9 12 8C12 10 9 9.75 9 13H11C11 10.75 14 10.5 14 8C14 5.79 12.21 4 10 4Z"
             fill="#1574F6"
@@ -4197,7 +5773,13 @@ export default function SvgIcon(props) {
       break;
     case 'warning':
       iconElement = (
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M1.33331 28H30.6666L16 2.66663L1.33331 28ZM17.3333 24H14.6666V21.3333H17.3333V24ZM17.3333 18.6666H14.6666V13.3333H17.3333V18.6666Z"
             fill="#E65100"
@@ -4207,7 +5789,13 @@ export default function SvgIcon(props) {
       break;
     case 't_warning_default':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="hjustice://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="hjustice://www.w3.org/2000/svg"
+        >
           <path
             d="M2 22L12 3L22 22H2Z"
             stroke="#F57C00"
@@ -4216,7 +5804,13 @@ export default function SvgIcon(props) {
             strokeLinecap="square"
             strokeLinejoin="round"
           />
-          <path d="M12 11V15" stroke="#F57C00" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" />
+          <path
+            d="M12 11V15"
+            stroke="#F57C00"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+          />
           <path
             d="M12 19C12.5523 19 13 18.5523 13 18C13 17.4477 12.5523 17 12 17C11.4477 17 11 17.4477 11 18C11 18.5523 11.4477 19 12 19Z"
             fill="#F57C00"
@@ -4226,7 +5820,13 @@ export default function SvgIcon(props) {
       break;
     case 'arrow_down':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M11.3335 4.66669L4.66682 4.66669C4.42482 4.66669 4.20148 4.79802 4.08348 5.01002C3.96615 5.22202 3.97282 5.48135 4.10148 5.68669L7.43482 11.02C7.55682 11.2147 7.77015 11.3334 8.00015 11.3334C8.23015 11.3334 8.44348 11.2147 8.56548 11.02L11.8988 5.68669C12.0275 5.48135 12.0341 5.22202 11.9168 5.01002C11.7988 4.79802 11.5755 4.66669 11.3335 4.66669Z"
             fill="#868E96"
@@ -4236,7 +5836,13 @@ export default function SvgIcon(props) {
       break;
     case 'arrow_down_white':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M11.3335 4.66666L4.66682 4.66666C4.42482 4.66666 4.20148 4.79799 4.08348 5.00999C3.96615 5.22199 3.97282 5.48132 4.10148 5.68666L7.43482 11.02C7.55682 11.2147 7.77015 11.3333 8.00015 11.3333C8.23015 11.3333 8.44348 11.2147 8.56548 11.02L11.8988 5.68666C12.0275 5.48132 12.0341 5.22199 11.9168 5.00999C11.7988 4.79799 11.5755 4.66666 11.3335 4.66666Z"
             fill="white"
@@ -4246,7 +5852,13 @@ export default function SvgIcon(props) {
       break;
     case 'process_group':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0)">
             <path d="M20 6H10V8H20V6Z" fill="#F2994A" />
             <path
@@ -4281,7 +5893,13 @@ export default function SvgIcon(props) {
       break;
     case 'menu-log-work':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M7.42857 19V20.5C7.42857 22.75 5 23 5 23C5 23 19.4053 23 19.5714 23C20.913 23 22 21.881 22 20.5V19H7.42857Z"
             stroke="#FF5722"
@@ -4343,7 +5961,13 @@ export default function SvgIcon(props) {
       break;
     case 'menu-product':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M17 1L22 6V23H2V1H17Z"
             stroke="#18BC78"
@@ -4389,7 +6013,13 @@ export default function SvgIcon(props) {
       break;
     case 'menu-config':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M12 13C9.176 13 6.671 13.638 5.025 14.193C3.81 14.604 3 15.749 3 17.032V21H12.5"
             stroke="#F57C00"
@@ -4418,7 +6048,13 @@ export default function SvgIcon(props) {
       break;
     case 'menu-role-group':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M8 5V1H16V5"
             stroke="#2196F3"
@@ -4456,7 +6092,13 @@ export default function SvgIcon(props) {
       break;
     case 'menu-authori':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M10 13C7.176 13 4.671 13.638 3.025 14.193C1.81 14.604 1 15.749 1 17.032V21H9"
             stroke="#7B1FA2"
@@ -4501,7 +6143,13 @@ export default function SvgIcon(props) {
       break;
     case 'filter-black':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0)">
             <path
               d="M22 0H2C1.73478 0 1.48043 0.105357 1.29289 0.292893C1.10536 0.48043 1 0.734784 1 1V4C1.00006 4.26519 1.10545 4.51951 1.293 4.707L9 12.414V23C9 23.1857 9.05171 23.3678 9.14935 23.5257C9.24698 23.6837 9.38668 23.8114 9.55279 23.8944C9.71889 23.9775 9.90484 24.0126 10.0898 23.996C10.2748 23.9793 10.4514 23.9114 10.6 23.8L14.6 20.8C14.7242 20.7069 14.825 20.5861 14.8944 20.4472C14.9639 20.3084 15 20.1552 15 20V12.414L22.707 4.707C22.8946 4.51951 22.9999 4.26519 23 4V1C23 0.734784 22.8946 0.48043 22.7071 0.292893C22.5196 0.105357 22.2652 0 22 0V0Z"
@@ -4518,7 +6166,13 @@ export default function SvgIcon(props) {
       break;
     case 'confirm':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M6 12L10 16L18 8"
             stroke="#18BC78"
@@ -4532,7 +6186,13 @@ export default function SvgIcon(props) {
       break;
     case 'history':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M12 7V12L16 16"
             stroke="#F57C00"
@@ -4562,7 +6222,13 @@ export default function SvgIcon(props) {
       break;
     case 'edit':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M14.06 9.02L14.98 9.94L5.92 19H5V18.08L14.06 9.02ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z"
             fill="#1574F6"
@@ -4572,7 +6238,13 @@ export default function SvgIcon(props) {
       break;
     case 'delete':
       iconElement = (
-        <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="18"
+          height="22"
+          viewBox="0 0 18 22"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M1.42913 19.5556C1.42913 20.9 2.52199 22 3.8577 22H13.572C14.9077 22 16.0006 20.9 16.0006 19.5556V4.88889H1.42913V19.5556ZM3.8577 7.33333H13.572V19.5556H3.8577V7.33333ZM12.9648 1.22222L11.7506 0H5.67913L4.46484 1.22222H0.214844V3.66667H17.2148V1.22222H12.9648Z"
             fill="#E50500"
@@ -4582,7 +6254,13 @@ export default function SvgIcon(props) {
       break;
     case 'arrow-right':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M4.66699 4.66652L4.66699 11.3332C4.66699 11.5752 4.79833 11.7985 5.01033 11.9165C5.22233 12.0339 5.48166 12.0272 5.68699 11.8985L11.0203 8.56518C11.215 8.44318 11.3337 8.22985 11.3337 7.99985C11.3337 7.76985 11.215 7.55652 11.0203 7.43452L5.68699 4.10118C5.48166 3.97252 5.22233 3.96585 5.01033 4.08318C4.79833 4.20118 4.66699 4.42452 4.66699 4.66652Z"
             fill={fill || '#616161'}
@@ -4592,7 +6270,13 @@ export default function SvgIcon(props) {
       break;
     case 'arrow-down':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M11.3335 4.66602H4.66682C4.42482 4.66602 4.20148 4.79735 4.08348 5.00935C3.96615 5.22135 3.97282 5.48068 4.10148 5.68602L7.43482 11.0193C7.55682 11.214 7.77015 11.3327 8.00015 11.3327C8.23015 11.3327 8.44348 11.214 8.56548 11.0193L11.8988 5.68602C12.0275 5.48068 12.0341 5.22135 11.9168 5.00935C11.7988 4.79735 11.5755 4.66602 11.3335 4.66602Z"
             fill={fill || '#616161'}
@@ -4602,7 +6286,13 @@ export default function SvgIcon(props) {
       break;
     case 'calendar':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M0.666992 5.33398H15.3337"
             stroke="#616161"
@@ -4640,7 +6330,13 @@ export default function SvgIcon(props) {
       break;
     case 'warning_default':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M1.33301 14.6667L7.99967 2L14.6663 14.6667H1.33301Z"
             stroke="#18BC78"
@@ -4649,7 +6345,13 @@ export default function SvgIcon(props) {
             strokeLinecap="square"
             strokeLinejoin="round"
           />
-          <path d="M8 7.33398V10.0007" stroke="#18BC78" strokeWidth="1.3" strokeMiterlimit="10" strokeLinecap="round" />
+          <path
+            d="M8 7.33398V10.0007"
+            stroke="#18BC78"
+            strokeWidth="1.3"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+          />
           <path
             d="M7.99967 12.6673C8.36786 12.6673 8.66634 12.3688 8.66634 12.0007C8.66634 11.6325 8.36786 11.334 7.99967 11.334C7.63148 11.334 7.33301 11.6325 7.33301 12.0007C7.33301 12.3688 7.63148 12.6673 7.99967 12.6673Z"
             fill="#18BC78"
@@ -4659,7 +6361,13 @@ export default function SvgIcon(props) {
       break;
     case 'warning_green':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M1.33301 14.6667L7.99967 2L14.6663 14.6667H1.33301Z"
             stroke="#18BC78"
@@ -4668,7 +6376,13 @@ export default function SvgIcon(props) {
             strokeLinecap="square"
             strokeLinejoin="round"
           />
-          <path d="M8 7.33398V10.0007" stroke="#18BC78" strokeWidth="1.3" strokeMiterlimit="10" strokeLinecap="round" />
+          <path
+            d="M8 7.33398V10.0007"
+            stroke="#18BC78"
+            strokeWidth="1.3"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+          />
           <path
             d="M7.99967 12.6673C8.36786 12.6673 8.66634 12.3688 8.66634 12.0007C8.66634 11.6325 8.36786 11.334 7.99967 11.334C7.63148 11.334 7.33301 11.6325 7.33301 12.0007C7.33301 12.3688 7.63148 12.6673 7.99967 12.6673Z"
             fill="#18BC78"
@@ -4678,7 +6392,13 @@ export default function SvgIcon(props) {
       break;
     case 'warning_yellow':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M1.33301 14.6667L7.99967 2L14.6663 14.6667H1.33301Z"
             stroke="#F2994A"
@@ -4687,7 +6407,13 @@ export default function SvgIcon(props) {
             strokeLinecap="square"
             strokeLinejoin="round"
           />
-          <path d="M8 7.33398V10.0007" stroke="#F2994A" strokeWidth="1.3" strokeMiterlimit="10" strokeLinecap="round" />
+          <path
+            d="M8 7.33398V10.0007"
+            stroke="#F2994A"
+            strokeWidth="1.3"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+          />
           <path
             d="M7.99967 12.6673C8.36786 12.6673 8.66634 12.3688 8.66634 12.0007C8.66634 11.6325 8.36786 11.334 7.99967 11.334C7.63148 11.334 7.33301 11.6325 7.33301 12.0007C7.33301 12.3688 7.63148 12.6673 7.99967 12.6673Z"
             fill="#F2994A"
@@ -4697,7 +6423,13 @@ export default function SvgIcon(props) {
       break;
     case 'warning_red':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M1.3335 14.6667L8.00016 2L14.6668 14.6667H1.3335Z"
             stroke="#BC2618"
@@ -4706,7 +6438,13 @@ export default function SvgIcon(props) {
             strokeLinecap="square"
             strokeLinejoin="round"
           />
-          <path d="M8 7.33398V10.0007" stroke="#BC2618" strokeWidth="1.3" strokeMiterlimit="10" strokeLinecap="round" />
+          <path
+            d="M8 7.33398V10.0007"
+            stroke="#BC2618"
+            strokeWidth="1.3"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+          />
           <path
             d="M8.00016 12.6673C8.36835 12.6673 8.66683 12.3688 8.66683 12.0007C8.66683 11.6325 8.36835 11.334 8.00016 11.334C7.63197 11.334 7.3335 11.6325 7.3335 12.0007C7.3335 12.3688 7.63197 12.6673 8.00016 12.6673Z"
             fill="#BC2618"
@@ -4716,7 +6454,13 @@ export default function SvgIcon(props) {
       break;
     case 'confirm-lw':
       iconElement = (
-        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle opacity="0.1" cx="24" cy="24" r="24" fill="#F57C00" />
           <path
             d="M14 32L24 13L34 32H14Z"
@@ -4726,7 +6470,13 @@ export default function SvgIcon(props) {
             strokeLinecap="square"
             strokeLinejoin="round"
           />
-          <path d="M24 21V25" stroke="#F57C00" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" />
+          <path
+            d="M24 21V25"
+            stroke="#F57C00"
+            strokeWidth="2"
+            strokeMiterlimit="10"
+            strokeLinecap="round"
+          />
           <path
             d="M24 29C24.5523 29 25 28.5523 25 28C25 27.4477 24.5523 27 24 27C23.4477 27 23 27.4477 23 28C23 28.5523 23.4477 29 24 29Z"
             fill="#F57C00"
@@ -4736,7 +6486,13 @@ export default function SvgIcon(props) {
       break;
     case 'file-text':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M4 6H2V20C2 21.1 2.9 22 4 22H18V20H4V6ZM20 2H8C6.9 2 6 2.9 6 4V16C6 17.1 6.9 18 8 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H8V4H20V16ZM10 9H18V11H10V9ZM10 12H14V14H10V12ZM10 6H18V8H10V6Z"
             fill={fill || 'rgba(0, 0, 0, 0.5)'}
@@ -4763,7 +6519,13 @@ export default function SvgIcon(props) {
       break;
     case 'folder':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M9.17 6L11.17 8H20V18H4V6H9.17ZM10 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V8C22 6.9 21.1 6 20 6H12L10 4Z"
             fill="rgba(0, 0, 0, 0.5)"
@@ -4773,7 +6535,13 @@ export default function SvgIcon(props) {
       break;
     case 'vbm':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M7 15H14V17H7V15ZM7 11H17V13H7V11ZM7 7H17V9H7V7ZM19 3H14.82C14.4 1.84 13.3 1 12 1C10.7 1 9.6 1.84 9.18 3H5C4.86 3 4.73 3.01 4.6 3.04C4.21 3.12 3.86 3.32 3.59 3.59C3.41 3.77 3.26 3.99 3.16 4.23C3.06 4.46 3 4.72 3 5V19C3 19.27 3.06 19.54 3.16 19.78C3.26 20.02 3.41 20.23 3.59 20.42C3.86 20.69 4.21 20.89 4.6 20.97C4.73 20.99 4.86 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM12 2.75C12.41 2.75 12.75 3.09 12.75 3.5C12.75 3.91 12.41 4.25 12 4.25C11.59 4.25 11.25 3.91 11.25 3.5C11.25 3.09 11.59 2.75 12 2.75ZM19 19H5V5H19V19Z"
             fill="#626262"
@@ -4783,7 +6551,13 @@ export default function SvgIcon(props) {
       break;
     case 'people':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M16.67 13.1299C18.04 14.0599 19 15.3199 19 16.9999V19.9999H23V16.9999C23 14.8199 19.43 13.5299 16.67 13.1299Z"
             fill="rgba(0, 0, 0, 0.5)"
@@ -4805,25 +6579,52 @@ export default function SvgIcon(props) {
       break;
     case 'icon-confirm':
       iconElement = (
-        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M59.9994 26.6665C41.666 26.6665 26.666 41.6665 26.666 59.9998C26.666 78.3332 41.666 93.3332 59.9994 93.3332C78.3327 93.3332 93.3327 78.3332 93.3327 59.9998C93.3327 41.6665 78.3327 26.6665 59.9994 26.6665ZM59.9994 86.6665C45.2994 86.6665 33.3327 74.6998 33.3327 59.9998C33.3327 45.2998 45.2994 33.3332 59.9994 33.3332C74.6994 33.3332 86.666 45.2998 86.666 59.9998C86.666 74.6998 74.6994 86.6665 59.9994 86.6665ZM61.666 43.3332H56.666V63.3332L73.9994 73.9998L76.666 69.6665L61.666 60.6665V43.3332Z"
             fill="#E50500"
           />
-          <circle cx="60" cy="60" r="59.5" stroke="#E50500" strokeDasharray="5 5" />
+          <circle
+            cx="60"
+            cy="60"
+            r="59.5"
+            stroke="#E50500"
+            strokeDasharray="5 5"
+          />
         </svg>
       );
       break;
     case 'download':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19 9H15V3H9V9H5L12 16L19 9ZM11 11V5H13V11H14.17L12 13.17L9.83 11H11ZM5 18H19V20H5V18Z" fill="#00C968" />
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 9H15V3H9V9H5L12 16L19 9ZM11 11V5H13V11H14.17L12 13.17L9.83 11H11ZM5 18H19V20H5V18Z"
+            fill="#00C968"
+          />
         </svg>
       );
       break;
     case 'icon-system':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M16.66 4.51994L19.49 7.34994L16.66 10.1799L13.83 7.34994L16.66 4.51994ZM9 4.99994V8.99994H5V4.99994H9ZM19 14.9999V18.9999H15V14.9999H19ZM9 14.9999V18.9999H5V14.9999H9ZM16.66 1.68994L11 7.33994L16.66 12.9999L22.32 7.33994L16.66 1.68994ZM11 2.99994H3V10.9999H11V2.99994ZM21 12.9999H13V20.9999H21V12.9999ZM11 12.9999H3V20.9999H11V12.9999Z"
             fill="rgba(0, 0, 0)"
@@ -4833,7 +6634,13 @@ export default function SvgIcon(props) {
       break;
     case 'icon-tool':
       iconElement = (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M17.4298 10.98C17.4698 10.66 17.4998 10.34 17.4998 10C17.4998 9.66 17.4698 9.34 17.4298 9.02L19.5398 7.37C19.7298 7.22 19.7798 6.95 19.6598 6.73L17.6598 3.27C17.5698 3.11 17.3998 3.02 17.2198 3.02C17.1598 3.02 17.0998 3.03 17.0498 3.05L14.5598 4.05C14.0398 3.65 13.4798 3.32 12.8698 3.07L12.4898 0.42C12.4598 0.18 12.2498 0 11.9998 0H7.99984C7.74984 0 7.53984 0.18 7.50984 0.42L7.12984 3.07C6.51984 3.32 5.95984 3.66 5.43984 4.05L2.94984 3.05C2.88984 3.03 2.82984 3.02 2.76984 3.02C2.59984 3.02 2.42984 3.11 2.33984 3.27L0.339839 6.73C0.209839 6.95 0.26984 7.22 0.45984 7.37L2.56984 9.02C2.52984 9.34 2.49984 9.67 2.49984 10C2.49984 10.33 2.52984 10.66 2.56984 10.98L0.45984 12.63C0.26984 12.78 0.219839 13.05 0.339839 13.27L2.33984 16.73C2.42984 16.89 2.59984 16.98 2.77984 16.98C2.83984 16.98 2.89984 16.97 2.94984 16.95L5.43984 15.95C5.95984 16.35 6.51984 16.68 7.12984 16.93L7.50984 19.58C7.53984 19.82 7.74984 20 7.99984 20H11.9998C12.2498 20 12.4598 19.82 12.4898 19.58L12.8698 16.93C13.4798 16.68 14.0398 16.34 14.5598 15.95L17.0498 16.95C17.1098 16.97 17.1698 16.98 17.2298 16.98C17.3998 16.98 17.5698 16.89 17.6598 16.73L19.6598 13.27C19.7798 13.05 19.7298 12.78 19.5398 12.63L17.4298 10.98ZM15.4498 9.27C15.4898 9.58 15.4998 9.79 15.4998 10C15.4998 10.21 15.4798 10.43 15.4498 10.73L15.3098 11.86L16.1998 12.56L17.2798 13.4L16.5798 14.61L15.3098 14.1L14.2698 13.68L13.3698 14.36C12.9398 14.68 12.5298 14.92 12.1198 15.09L11.0598 15.52L10.8998 16.65L10.6998 18H9.29984L9.10984 16.65L8.94984 15.52L7.88984 15.09C7.45984 14.91 7.05984 14.68 6.65984 14.38L5.74984 13.68L4.68984 14.11L3.41984 14.62L2.71984 13.41L3.79984 12.57L4.68984 11.87L4.54984 10.74C4.51984 10.43 4.49984 10.2 4.49984 10C4.49984 9.8 4.51984 9.57 4.54984 9.27L4.68984 8.14L3.79984 7.44L2.71984 6.6L3.41984 5.39L4.68984 5.9L5.72984 6.32L6.62984 5.64C7.05984 5.32 7.46984 5.08 7.87984 4.91L8.93984 4.48L9.09984 3.35L9.29984 2H10.6898L10.8798 3.35L11.0398 4.48L12.0998 4.91C12.5298 5.09 12.9298 5.32 13.3298 5.62L14.2398 6.32L15.2998 5.89L16.5698 5.38L17.2698 6.59L16.1998 7.44L15.3098 8.14L15.4498 9.27ZM9.99984 6C7.78984 6 5.99984 7.79 5.99984 10C5.99984 12.21 7.78984 14 9.99984 14C12.2098 14 13.9998 12.21 13.9998 10C13.9998 7.79 12.2098 6 9.99984 6ZM9.99984 12C8.89984 12 7.99984 11.1 7.99984 10C7.99984 8.9 8.89984 8 9.99984 8C11.0998 8 11.9998 8.9 11.9998 10C11.9998 11.1 11.0998 12 9.99984 12Z"
             fill="#626262"
@@ -4843,7 +6650,13 @@ export default function SvgIcon(props) {
       break;
     case 'eye':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M12 6.5C15.79 6.5 19.17 8.63 20.82 12C19.17 15.37 15.8 17.5 12 17.5C8.2 17.5 4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5ZM12 9.5C13.38 9.5 14.5 10.62 14.5 12C14.5 13.38 13.38 14.5 12 14.5C10.62 14.5 9.5 13.38 9.5 12C9.5 10.62 10.62 9.5 12 9.5ZM12 7.5C9.52 7.5 7.5 9.52 7.5 12C7.5 14.48 9.52 16.5 12 16.5C14.48 16.5 16.5 14.48 16.5 12C16.5 9.52 14.48 7.5 12 7.5Z"
             fill="#08B7DD"
@@ -4853,7 +6666,13 @@ export default function SvgIcon(props) {
       break;
     case 'eye-green':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0_8502_15911)">
             <path
               d="M12 6.5C15.79 6.5 19.17 8.63 20.82 12C19.17 15.37 15.8 17.5 12 17.5C8.2 17.5 4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5ZM12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5ZM12 9.5C13.38 9.5 14.5 10.62 14.5 12C14.5 13.38 13.38 14.5 12 14.5C10.62 14.5 9.5 13.38 9.5 12C9.5 10.62 10.62 9.5 12 9.5ZM12 7.5C9.52 7.5 7.5 9.52 7.5 12C7.5 14.48 9.52 16.5 12 16.5C14.48 16.5 16.5 14.48 16.5 12C16.5 9.52 14.48 7.5 12 7.5Z"
@@ -4870,14 +6689,28 @@ export default function SvgIcon(props) {
       break;
     case 'download-grey':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
             d="M11.0028 12.0759C11.001 12.0508 11 12.0255 11 12V4C11 3.448 11.447 3 12 3C12.553 3 13 3.448 13 4V11.9998L15.4 10.2C15.842 9.867 16.469 9.958 16.8 10.4C17.132 10.842 17.042 11.469 16.6 11.8L12.6 14.8C12.423 14.933 12.211 15 12 15C11.799 15 11.598 14.939 11.425 14.818L7.425 12.004C6.973 11.686 6.864 11.062 7.182 10.611C7.5 10.159 8.123 10.05 8.575 10.368L11.0028 12.0759ZM6 17V18H18V17C18 16.45 18.45 16 19 16C19.55 16 20 16.45 20 17V19C20 19.55 19.55 20 19 20H5C4.45 20 4 19.55 4 19V17C4 16.45 4.45 16 5 16C5.55 16 6 16.45 6 17Z"
             fill="#757575"
           />
-          <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="4" y="3" width="16" height="17">
+          <mask
+            id="mask0"
+            mask-type="alpha"
+            maskUnits="userSpaceOnUse"
+            x="4"
+            y="3"
+            width="16"
+            height="17"
+          >
             <path
               fillRule="evenodd"
               clipRule="evenodd"
@@ -4890,25 +6723,49 @@ export default function SvgIcon(props) {
       break;
     case 'warning-cancel':
       iconElement = (
-        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 120 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M83.3334 41.3666L78.6334 36.6666L60.0001 55.3L41.3667 36.6666L36.6667 41.3666L55.3001 60L36.6667 78.6333L41.3667 83.3333L60.0001 64.7L78.6334 83.3333L83.3334 78.6333L64.7001 60L83.3334 41.3666Z"
             fill="#E50500"
           />
-          <circle cx="60" cy="60" r="59.5" stroke="#E50500" strokeDasharray="5 5" />
+          <circle
+            cx="60"
+            cy="60"
+            r="59.5"
+            stroke="#E50500"
+            strokeDasharray="5 5"
+          />
         </svg>
       );
       break;
     case 'blue-circle':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="12" cy="12" r="12" fill="#303F9F" />
         </svg>
       );
       break;
     case 'sign_success':
       iconElement = (
-        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="64"
+          height="64"
+          viewBox="0 0 64 64"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <circle cx="32" cy="32" r="32" fill="#373839" />
           <path
             d="M20 32L28 40L44 24"
@@ -4923,14 +6780,28 @@ export default function SvgIcon(props) {
       break;
     case 'eye_orange':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
             d="M12 10.4996C11.173 10.4996 10.5 11.1726 10.5 11.9996C10.5 12.8266 11.173 13.4996 12 13.4996C12.827 13.4996 13.5 12.8266 13.5 11.9996C13.5 11.1726 12.827 10.4996 12 10.4996ZM12 15.4996C10.07 15.4996 8.5 13.9296 8.5 11.9996C8.5 10.0696 10.07 8.49964 12 8.49964C13.93 8.49964 15.5 10.0696 15.5 11.9996C15.5 13.9296 13.93 15.4996 12 15.4996ZM21.868 11.5016C21.229 10.3896 17.706 4.81564 11.729 5.00264C6.202 5.14364 2.986 10.0136 2.132 11.5016C1.956 11.8106 1.956 12.1886 2.132 12.4976C2.762 13.5946 6.162 18.9996 12.025 18.9996C12.106 18.9996 12.188 18.9986 12.271 18.9966C17.798 18.8556 21.014 13.9856 21.868 12.4976C22.044 12.1886 22.044 11.8106 21.868 11.5016Z"
             fill="#F7941E"
           />
-          <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="4" width="20" height="15">
+          <mask
+            id="mask0"
+            mask-type="alpha"
+            maskUnits="userSpaceOnUse"
+            x="2"
+            y="4"
+            width="20"
+            height="15"
+          >
             <path
               fillRule="evenodd"
               clipRule="evenodd"
@@ -4943,14 +6814,28 @@ export default function SvgIcon(props) {
       break;
     case 'download_orange':
       iconElement = (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
             d="M11.0028 12.0759C11.001 12.0508 11 12.0255 11 12V4C11 3.448 11.447 3 12 3C12.553 3 13 3.448 13 4V11.9998L15.4 10.2C15.842 9.867 16.469 9.958 16.8 10.4C17.132 10.842 17.042 11.469 16.6 11.8L12.6 14.8C12.423 14.933 12.211 15 12 15C11.799 15 11.598 14.939 11.425 14.818L7.425 12.004C6.973 11.686 6.864 11.062 7.182 10.611C7.5 10.159 8.123 10.05 8.575 10.368L11.0028 12.0759ZM6 17V18H18V17C18 16.45 18.45 16 19 16C19.55 16 20 16.45 20 17V19C20 19.55 19.55 20 19 20H5C4.45 20 4 19.55 4 19V17C4 16.45 4.45 16 5 16C5.55 16 6 16.45 6 17Z"
             fill="#F7941E"
           />
-          <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="4" y="3" width="16" height="17">
+          <mask
+            id="mask0"
+            mask-type="alpha"
+            maskUnits="userSpaceOnUse"
+            x="4"
+            y="3"
+            width="16"
+            height="17"
+          >
             <path
               fillRule="evenodd"
               clipRule="evenodd"
@@ -4963,7 +6848,13 @@ export default function SvgIcon(props) {
       break;
     case 'sign_in':
       iconElement = (
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M13 14H10.375C10.1687 14 10 13.8313 10 13.625V12.375C10 12.1687 10.1687 12 10.375 12H13C13.5531 12 14 11.5531 14 11V5C14 4.44688 13.5531 4 13 4H10.375C10.1687 4 10 3.83125 10 3.625V2.375C10 2.16875 10.1687 2 10.375 2H13C14.6562 2 16 3.34375 16 5V11C16 12.6562 14.6562 14 13 14ZM11.5312 7.71875L6.28125 2.46875C5.8125 2 5 2.32812 5 3V6H0.75C0.334375 6 0 6.33437 0 6.75V9.75C0 10.1656 0.334375 10.5 0.75 10.5H5V13.5C5 14.1719 5.8125 14.5 6.28125 14.0312L11.5312 8.78125C11.8219 8.4875 11.8219 8.0125 11.5312 7.71875Z"
             fill="white"
@@ -4973,7 +6864,13 @@ export default function SvgIcon(props) {
       break;
     case 'user_login':
       iconElement = (
-        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="14"
+          height="16"
+          viewBox="0 0 14 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M7 8C9.20938 8 11 6.20937 11 4C11 1.79063 9.20938 0 7 0C4.79063 0 3 1.79063 3 4C3 6.20937 4.79063 8 7 8ZM9.8 9H9.27812C8.58437 9.31875 7.8125 9.5 7 9.5C6.1875 9.5 5.41875 9.31875 4.72188 9H4.2C1.88125 9 0 10.8813 0 13.2V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V13.2C14 10.8813 12.1187 9 9.8 9Z"
             fill="#9A9A9A"
@@ -4983,7 +6880,13 @@ export default function SvgIcon(props) {
       break;
     case 'lock_login':
       iconElement = (
-        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="14"
+          height="16"
+          viewBox="0 0 14 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M12.5 7H11.75V4.75C11.75 2.13125 9.61875 0 7 0C4.38125 0 2.25 2.13125 2.25 4.75V7H1.5C0.671875 7 0 7.67188 0 8.5V14.5C0 15.3281 0.671875 16 1.5 16H12.5C13.3281 16 14 15.3281 14 14.5V8.5C14 7.67188 13.3281 7 12.5 7ZM9.25 7H4.75V4.75C4.75 3.50938 5.75938 2.5 7 2.5C8.24063 2.5 9.25 3.50938 9.25 4.75V7Z"
             fill="#9E9E9E"
@@ -4993,7 +6896,13 @@ export default function SvgIcon(props) {
       break;
     case 'copy':
       iconElement = (
-        <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="19"
+          height="22"
+          viewBox="0 0 19 22"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M14 0H2C0.9 0 0 0.9 0 2V16H2V2H14V0ZM13 4H6C4.9 4 4.01 4.9 4.01 6L4 20C4 21.1 4.89 22 5.99 22H17C18.1 22 19 21.1 19 20V10L13 4ZM6 20V6H12V11H17V20H6Z"
             fill="#08B7DD"
@@ -5003,7 +6912,13 @@ export default function SvgIcon(props) {
       break;
     case 'addRowAbove':
       iconElement = (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M3.33464 4.99935H1.66797V16.666C1.66797 17.5827 2.41797 18.3327 3.33464 18.3327H15.0013V16.666H3.33464V4.99935ZM16.668 1.66602H6.66797C5.7513 1.66602 5.0013 2.41602 5.0013 3.33268V13.3327C5.0013 14.2493 5.7513 14.9993 6.66797 14.9993H16.668C17.5846 14.9993 18.3346 14.2493 18.3346 13.3327V3.33268C18.3346 2.41602 17.5846 1.66602 16.668 1.66602ZM16.668 13.3327H6.66797V3.33268H16.668V13.3327ZM10.8346 12.4993H12.5013V9.16602H15.8346V7.49935H12.5013V4.16602H10.8346V7.49935H7.5013V9.16602H10.8346V12.4993Z"
             fill="#A8B1BD"
@@ -5013,7 +6928,13 @@ export default function SvgIcon(props) {
       break;
     case 'addRowBelow':
       iconElement = (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M16.6654 15.0007H18.332L18.332 3.33398C18.332 2.41732 17.582 1.66732 16.6654 1.66732H4.9987V3.33398L16.6654 3.33398V15.0007ZM3.33203 18.334L13.332 18.334C14.2487 18.334 14.9987 17.584 14.9987 16.6673L14.9987 6.66732C14.9987 5.75065 14.2487 5.00065 13.332 5.00065L3.33203 5.00065C2.41536 5.00065 1.66536 5.75065 1.66536 6.66732V16.6673C1.66536 17.584 2.41536 18.334 3.33203 18.334ZM3.33203 6.66732L13.332 6.66732L13.332 16.6673H3.33203L3.33203 6.66732ZM9.16536 7.50065H7.4987V10.834L4.16536 10.834L4.16536 12.5007L7.4987 12.5007V15.834H9.16536V12.5007H12.4987V10.834H9.16536V7.50065Z"
             fill="#A8B1BD"
@@ -5024,7 +6945,13 @@ export default function SvgIcon(props) {
 
     case 'deleteRow':
       iconElement = (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M13.3346 7.5V15.8333H6.66797V7.5H13.3346ZM12.0846 2.5H7.91797L7.08464 3.33333H4.16797V5H15.8346V3.33333H12.918L12.0846 2.5ZM15.0013 5.83333H5.0013V15.8333C5.0013 16.75 5.7513 17.5 6.66797 17.5H13.3346C14.2513 17.5 15.0013 16.75 15.0013 15.8333V5.83333Z"
             fill="#A8B1BD"
@@ -5034,7 +6961,13 @@ export default function SvgIcon(props) {
       break;
     case 'approve':
       iconElement = (
-        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="26"
+          height="26"
+          viewBox="0 0 26 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g clipPath="url(#clip0_7970_19502)">
             <path
               d="M19.5002 7.58341L17.9727 6.05591L11.1043 12.9242L12.6318 14.4517L19.5002 7.58341ZM24.0935 6.05591L12.6318 17.5176L8.1035 13.0001L6.576 14.5276L12.6318 20.5834L25.6318 7.58341L24.0935 6.05591ZM0.444336 14.5276L6.50017 20.5834L8.02767 19.0559L1.98267 13.0001L0.444336 14.5276Z"
@@ -5052,7 +6985,13 @@ export default function SvgIcon(props) {
 
     case 'addDepartment':
       iconElement = (
-        <svg width="18" height="18" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 14 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path d="M14 8H8V14H6V8H0V6H6V0H8V6H14V8Z" fill="#219653" />
         </svg>
       );
@@ -5068,7 +7007,10 @@ export default function SvgIcon(props) {
   }
   return (
     // eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions
-    <span className={`d-flex align-item-center justify-content-center ${className}`} onClick={onClick}>
+    <span
+      className={`d-flex align-item-center justify-content-center ${className}`}
+      onClick={onClick}
+    >
       {iconElement}
     </span>
   );

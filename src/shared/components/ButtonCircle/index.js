@@ -6,11 +6,11 @@ import Button from '../Button';
 
 ButtonCircle.propTypes = {
   title: PropTypes.string,
-  iconname: PropTypes.element,
+  iconname: PropTypes.string,
   enable: PropTypes.bool,
   onClick: PropTypes.func,
   className: PropTypes.string,
-  clsName: PropTypes.string,
+  clsname: PropTypes.string,
   placement: PropTypes.string,
   btntype: PropTypes.string,
 };
@@ -27,7 +27,7 @@ export default function ButtonCircle(props) {
     enable,
     onClick,
     className,
-    clsName,
+    clsname,
     placement,
     btntype,
   } = props;
@@ -44,7 +44,7 @@ export default function ButtonCircle(props) {
         shape="circle"
         iconname={iconname}
         className={className}
-        clsName={clsName}
+        clsname={clsname}
         disabled={!enable}
         onClick={(e) => {
           e.stopPropagation();

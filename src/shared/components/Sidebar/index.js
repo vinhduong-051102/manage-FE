@@ -11,6 +11,16 @@ const DotSubItem = () => (
   </span>
 );
 
+const getItem = (label, key, icon, children, type) => {
+  return {
+    key,
+    icon,
+    children,
+    label,
+    type,
+  };
+};
+
 const Sidebar = ({
   isExpand,
   minWidth,
@@ -20,12 +30,57 @@ const Sidebar = ({
   onClickMenu,
   pathname,
 }) => {
+  const [items, setItems] = useState([]);
   const [collapsedWidth, setCollapsedWidth] = useState(minWidth);
   const [expand, setExpand] = useState(isExpand);
+
+  useEffect(() => {
+    if (permissionArray !== undefined) {
+      setItems(() => {
+        return _.flatMap(dataMenu, (itemMenu) => {
+          if (itemMenu.child) {
+            if (permissionArray.includes(itemMenu.key)) {
+              return getItem(
+                itemMenu.label,
+                itemMenu.key,
+                <IconSider src={itemMenu.icon} />,
+                _.flatMap(itemMenu.child, (subItem) => {
+                  return permissionArray.includes(subItem.key)
+                    ? getItem(subItem.label, subItem.key, <DotSubItem />)
+                    : null;
+                }),
+              );
+            } else {
+              return null;
+            }
+          } else {
+            return permissionArray.includes(itemMenu.key)
+              ? getItem(
+                  itemMenu.label,
+                  itemMenu.key,
+                  <IconSider src={itemMenu.icon} />,
+                )
+              : null;
+          }
+        });
+      });
+    } else {
+      setItems(() => {
+        return _.flatMap(dataMenu, (itemMenu) => {
+          return getItem(
+            itemMenu.label,
+            itemMenu.key,
+            <IconSider src={itemMenu.icon} />,
+          );
+        });
+      });
+    }
+  }, [dataMenu, permissionArray]);
+
   useEffect(() => {
     setCollapsedWidth(isExpand ? maxWidth : minWidth);
     setExpand(isExpand);
-  }, [isExpand]);
+  }, [isExpand, maxWidth, minWidth]);
 
   const getSelectedKeys = () => {
     if (pathname !== undefined) {
@@ -66,61 +121,21 @@ const Sidebar = ({
         onMouseEnter={() => setExpand(isExpand ? expand : !expand)}
         onMouseLeave={() => setExpand(isExpand ? expand : false)}
       >
-        <MenuCustom mode="inline" selectedKeys={`${getSelectedKeys()}`}>
-          {_.flatMap(dataMenu, (itemMenu) =>
-            permissionArray !== undefined ? (
-              itemMenu.child ? (
-                permissionArray.includes(itemMenu.key) ? (
-                  <MenuCustom.SubMenu
-                    key={itemMenu.key}
-                    icon={<IconSider src={itemMenu.icon} />}
-                    title={itemMenu.label}
-                  >
-                    {_.flatMap(itemMenu.child, (subItem) =>
-                      permissionArray.includes(subItem.key) ? (
-                        <MenuCustom.Item
-                          key={subItem.key}
-                          onClick={
-                            onClickMenu !== undefined
-                              ? () => onClickMenu(subItem)
-                              : null
-                          }
-                        >
-                          <DotSubItem />
-                          {subItem.label}
-                        </MenuCustom.Item>
-                      ) : null,
-                    )}
-                  </MenuCustom.SubMenu>
-                ) : null
-              ) : permissionArray.includes(itemMenu.key) ? (
-                <MenuCustom.Item
-                  key={itemMenu.key}
-                  icon={<IconSider src={itemMenu.icon} />}
-                  title={null}
-                  onClick={
-                    onClickMenu !== undefined
-                      ? () => onClickMenu(itemMenu)
-                      : null
-                  }
-                >
-                  {itemMenu.label}
-                </MenuCustom.Item>
-              ) : null
-            ) : (
-              <MenuCustom.Item
-                key={itemMenu.key}
-                icon={<IconSider src={itemMenu.icon} />}
-                title={null}
-                onClick={
-                  onClickMenu !== undefined ? () => onClickMenu(itemMenu) : null
+        <MenuCustom
+          mode="inline"
+          selectedKeys={`${getSelectedKeys()}`}
+          items={items}
+          onSelect={
+            onClickMenu !== undefined
+              ? (data) => {
+                  const itemSelect = dataMenu.find(
+                    (item) => item.key === data.key,
+                  );
+                  onClickMenu(itemSelect);
                 }
-              >
-                {itemMenu.label}
-              </MenuCustom.Item>
-            ),
-          )}
-        </MenuCustom>
+              : null
+          }
+        />
       </SiderCustom>
     </ContainerSider>
   );

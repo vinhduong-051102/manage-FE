@@ -1,19 +1,27 @@
 import styled from 'styled-components';
 import { Input, InputNumber } from 'antd';
-export const TreeSelectWrapper = styled.div`
+export const TreeSelectWrapper = styled.div<{
+  isAll: boolean;
+  isFocus: boolean;
+  bgColor: string;
+}>`
   .ant-select-selection-item-remove {
-    display: ${props => (props.isAll ? 'none !important' : 'flex')};
+    display: ${(props) => (props.isAll ? 'none !important' : 'flex')};
   }
   .ant-select {
     border-radius: 8px;
-    background-color: ${props => (props.isFocus ? '#fff !important' : 'transparent')};
+    background-color: ${(props) =>
+      props.isFocus ? '#fff !important' : 'transparent'};
   }
   label {
-    background-color: ${props => props.bgcolor || '#fff'} !important;
+    background-color: ${(props) => props.bgColor || '#fff'} !important;
   }
 `;
 
-export const FlWrapper = styled.div`
+export const FlWrapper = styled.div<{
+  disabled?: boolean;
+  checkPropsPL?: boolean;
+}>`
   position: relative;
   background: transparent;
   border-radius: 8px;
@@ -24,11 +32,13 @@ export const FlWrapper = styled.div`
   }
   input {
     z-index: 3;
-    background-color: ${props => (props.disabled ? '#f5f5f5' : '#fff !important')};
+    background-color: ${(props) =>
+      props.disabled ? '#f5f5f5' : '#fff !important'};
   }
   .ant-select {
     z-index: 3;
-    background-color: ${props => (props.disabled ? '#f5f5f5' : '#fff !important')};
+    background-color: ${(props) =>
+      props.disabled ? '#f5f5f5' : '#fff !important'};
   }
   .ant-select-selector {
     background-color: transparent !important;
@@ -49,7 +59,12 @@ export const FlWrapper = styled.div`
   }
 
   .ant-input-affix-wrapper {
-    border: ${props => (!props.checkpropsPL ? undefined : props.placeholder ? '1px solid #868e96' : '1px solid #c5ced9')};
+    border: ${(props) =>
+      !props.checkPropsPL
+        ? undefined
+        : props.placeholder
+        ? '1px solid #868e96'
+        : '1px solid #c5ced9'};
     background: transparent;
     :hover {
       background: transparent;
@@ -151,15 +166,15 @@ export const FlWrapper = styled.div`
   }
 `;
 
-export const Label = styled.span`
+export const Label = styled.span<{ isFl?: boolean; bgColor?: string }>`
   position: absolute;
   cursor: text;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  top: ${props => (props.isFl ? '-7px' : '38%')};
-  font-size: ${props => (props.isFl ? '12px' : '14px')};
-  color: ${props => (props.isFl ? '#000' : '#868e96')};
-  z-index: ${props => (props.isFl ? 3 : 1)};
+  top: ${(props) => (props.isFl ? '-7px' : '38%')};
+  font-size: ${(props) => (props.isFl ? '12px' : '14px')};
+  color: ${(props) => (props.isFl ? '#000' : '#868e96')};
+  z-index: ${(props) => (props.isFl ? 3 : 1)};
   font-weight: normal;
   left: 10.8px;
   line-height: 10px;
@@ -176,7 +191,7 @@ export const Label = styled.span`
     content: ' ';
     display: block;
     position: absolute;
-    background-color: white ;//${props => props.bgcolor || 'transparent'};
+    background-color: white; //${(props) => props.bgColor || 'transparent'};
     height: 5px;
     top: 40%;
     left: -0.1em;

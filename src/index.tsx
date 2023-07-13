@@ -4,13 +4,12 @@ import { Provider } from 'react-redux';
 import { store } from './store';
 import App from './containers/App/App';
 import reportWebVitals from './reportWebVitals';
-import './bootstrap.css';
-import './antd.css';
 import i18n from './i18n';
 import { I18nextProvider } from 'react-i18next';
 import { BrowserRouter as Browser } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { defaultTheme } from '@/shared/themes/defaultTheme';
+import './index.css';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);

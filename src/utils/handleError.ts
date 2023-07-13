@@ -1,7 +1,5 @@
-import { logOut } from '@/shared/commonFunction';
-
-import { ERROR } from '@/utils/constants';
 import Notice from '@/shared/components/Notice';
+import { logOut } from '@/shared/commonFunction';
 
 export const handleError = (errorBody: any) => {
   const { data } = errorBody;
@@ -17,10 +15,19 @@ export const handleError = (errorBody: any) => {
       Notice({ msg: data, isSuccess: false });
       break;
     case 403:
+      Notice({
+        msg: 'Phiên đăng nhập hết hạn, hãy đăng nhập lại',
+        isSuccess: false,
+      });
+      logOut();
+      break;
+    case 500:
+      Notice({ msg: data, isSuccess: false });
+      logOut();
       break;
     default:
       // Xu ly khi khong co ma loi
-      console.log(data);
+      Notice({ msg: data, isSuccess: false });
       break;
   }
 };

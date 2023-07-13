@@ -1,6 +1,5 @@
 import * as constants from './constants';
-import { takeLatest, put, call } from 'redux-saga/effects';
-import type { PayloadAction } from '@reduxjs/toolkit';
+import { takeLatest, call } from 'redux-saga/effects';
 import { axiosPost } from '@/utils/request';
 
 function* logout(action: any) {

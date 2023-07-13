@@ -1,8 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
-import { FlWrapper, InputCustom, InputPasswordCustom, InputTextAreaCustom, Label, RedStar } from '../styled';
+import {
+  FlWrapper,
+  InputCustom,
+  InputPasswordCustom,
+  InputTextAreaCustom,
+  Label,
+  RedStar,
+} from '../styled';
 
-const FloatingLabel = props => {
+const FloatingLabel = (props) => {
   const {
     label,
     disabled,
@@ -10,7 +17,7 @@ const FloatingLabel = props => {
     bgcolor,
     defaultValueInput,
     isPass,
-    fixlabel,
+    isfixlabel,
     onFocus,
     onBlur,
     textArea,
@@ -31,8 +38,13 @@ const FloatingLabel = props => {
   delete dataProps.isRequired;
   delete dataProps.isPass;
   useEffect(() => {
-    const inputDom = FlRef.current && (FlRef.current.querySelector('input') || FlRef.current.querySelector('textarea'));
-    const valueEmptySelect = FlRef.current && FlRef.current.querySelector('.ant-select-selection-placeholder');
+    const inputDom =
+      FlRef.current &&
+      (FlRef.current.querySelector('input') ||
+        FlRef.current.querySelector('textarea'));
+    const valueEmptySelect =
+      FlRef.current &&
+      FlRef.current.querySelector('.ant-select-selection-placeholder');
 
     inputDom.addEventListener(
       'focus',
@@ -47,8 +59,12 @@ const FloatingLabel = props => {
     };
 
     inputDom.onblur = () => {
-      const valueSelect = FlRef.current && FlRef.current.querySelector('.ant-select-selection-item');
-      const valueInput = inputDom.getAttribute('value') || FlRef.current.querySelector('textarea').value;
+      const valueSelect =
+        FlRef.current &&
+        FlRef.current.querySelector('.ant-select-selection-item');
+      const valueInput =
+        inputDom.getAttribute('value') ||
+        FlRef.current.querySelector('textarea')?.value;
       setFl(!!valueSelect || !!valueInput);
     };
 
@@ -68,8 +84,13 @@ const FloatingLabel = props => {
   }, []);
 
   useEffect(() => {
-    const inputDom = FlRef.current && (FlRef.current.querySelector('input') || FlRef.current.querySelector('textarea'));
-    const valueSelection = FlRef.current && FlRef.current.querySelector('.ant-select-selection-item');
+    const inputDom =
+      FlRef.current &&
+      (FlRef.current.querySelector('input') ||
+        FlRef.current.querySelector('textarea'));
+    const valueSelection =
+      FlRef.current &&
+      FlRef.current.querySelector('.ant-select-selection-item');
     const valueInput = inputDom.getAttribute('value');
 
     setTimeout(() => {
@@ -134,8 +155,12 @@ const FloatingLabel = props => {
       {!!label && (
         <Label
           onClick={() => inputRef.current.focus()}
-          bgcolor={disabled && !isFocus && !isFl && !fixlabel && !value ? 'transparent' : bgcolor}
-          isFl={dataProps.placeholder || isFl || !!fixlabel || !!value}
+          bgcolor={
+            disabled && !isFocus && !isFl && !isfixlabel && !value
+              ? 'transparent'
+              : bgcolor
+          }
+          isFl={dataProps.placeholder || isFl || !!isfixlabel || !!value}
           className="fl-label"
           style={{ color: disabled && '#A8B1BD' }}
         >
@@ -151,7 +176,7 @@ FloatingLabel.propTypes = {
   label: PropTypes.string,
   bgcolor: PropTypes.string,
   isRequired: PropTypes.bool,
-  fixlabel: PropTypes.bool,
+  isfixlabel: PropTypes.bool,
   children: PropTypes.node,
   disabled: PropTypes.bool,
   defaultValueInput: PropTypes.string,
@@ -162,14 +187,7 @@ FloatingLabel.propTypes = {
   value: PropTypes.string,
   autoFocus: PropTypes.bool,
   checkpropsPL: PropTypes.bool,
-};
-
-FloatingLabel.defaultProps = {
-  label: undefined,
-  bgcolor: 'white',
-  isRequired: false,
-  fixlabel: false,
-  children: null,
+  onChange: PropTypes.func,
 };
 
 export default FloatingLabel;

@@ -65,14 +65,15 @@ const LayoutLogged = ({
 
   const ACCOUNT_INFO: {
     image: string;
-    username: string;
+    email: string;
     fullName: string;
+    role: string;
   } = {
     image: avatarDefault,
-    username:
-      (Cookies.get(COOKIES.username) && Cookies.get(COOKIES.username)) || '',
+    email: (Cookies.get(COOKIES.email) && Cookies.get(COOKIES.email)) || '',
     fullName:
       (Cookies.get(COOKIES.fullName) && Cookies.get(COOKIES.fullName)) || '',
+    role: (Cookies.get(COOKIES.role) && Cookies.get(COOKIES.role)) || '',
   };
 
   const MENU_DATA = [
@@ -96,11 +97,14 @@ const LayoutLogged = ({
     },
   ];
 
-  const PERMISSION_MENU = [
-    MENU_DASHBOARD_PERMISSION,
-    MENU_COURSE_PERMISSION,
-    MENU_STUDENT_PERMISSION,
-  ];
+  const PERMISSION_MENU =
+    ACCOUNT_INFO.role === 'ADMIN'
+      ? [
+          MENU_DASHBOARD_PERMISSION,
+          MENU_COURSE_PERMISSION,
+          MENU_STUDENT_PERMISSION,
+        ]
+      : [];
 
   useEffect(() => {
     if (token) {
@@ -111,7 +115,7 @@ const LayoutLogged = ({
       }
     }
     setIsShowSearch(showSearch);
-  }, [Component]);
+  }, [Component, showSearch, token]);
 
   const [menuExpand, setMenuExpand] = useState<boolean>(true);
   const [openPopoverAccount, setOpenPopoverAccount] = useState<boolean>(false);
@@ -141,7 +145,7 @@ const LayoutLogged = ({
   const contentHoverAvatar = () => (
     <AvatarHoverLayout>
       <UserNameView style={{ marginTop: '0px' }}>
-        {ACCOUNT_INFO.username}
+        {ACCOUNT_INFO.email}
       </UserNameView>
       <FullNameView>{ACCOUNT_INFO.fullName}</FullNameView>
     </AvatarHoverLayout>
@@ -161,7 +165,7 @@ const LayoutLogged = ({
 
   useEffect(() => {
     setIsShowSearch(showSearch);
-  }, [Component]);
+  }, [Component, showSearch]);
 
   return token ? (
     <Layout style={{ height: '100%' }}>
@@ -208,7 +212,9 @@ const LayoutLogged = ({
           permissionArray={PERMISSION_MENU}
           dataMenu={MENU_DATA}
           pathname={location.pathname}
-          onClickMenu={(data) => navigate(data.path)}
+          onClickMenu={(data) => {
+            navigate(data.path);
+          }}
         />
         <Content>
           <Component

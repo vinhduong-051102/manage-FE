@@ -1,4 +1,23 @@
 {
   "placeholder": "Tìm kiếm theo tên học sinh",
-  "name": "Tên học sinh"
+  "name": "Tên học sinh",
+  "addNew": "Thêm mới học sinh",
+  "email": "Email",
+  "address": "Địa chỉ",
+  "addNewTitle": "Thêm mới học sinh",
+  "nameIsRequired": "Tên học sinh không được để trống",
+  "emailIsRequired": "Email không được để trống",
+  "addressIsRequired": "Địa chỉ không được để trống",
+  "emailIsValid": "Email không đúng định dạng",
+  "province": "Tỉnh/Thành phố",
+  "district": "Quận/Huyện",
+  "ward": "Phường/Xã",
+  "provinceIsRequired": "Tỉnh/Thành phố không được để trống",
+  "districtIsRequired": "Quận/Huyện không được để trống",
+  "wardIsRequired": "Phường/Xã không được để trống",
+  "duplicateEmail": "Email đã tồn tại",
+  "status": "Trạng thái",
+  "active": "Đã kích hoạt",
+  "inActive": "Chưa kích hoạt",
+  "totalRecord": "Số lượng học sinh"
 }

@@ -2,14 +2,16 @@ import React, { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import { FlWrapper, Label, RedStar } from './styled';
 
-const FloatingLabel = props => {
-  const { label, isRequired, bgcolor, children, fixlabel, isFocus } = props;
+const FloatingLabel = (props) => {
+  const { label, isRequired, bgcolor, children, isfixlabel, isFocus } = props;
   const FlRef = useRef(null);
   const [isFl, setFl] = useState(false);
 
   useEffect(() => {
     const inputDom = FlRef.current && FlRef.current.querySelector('input');
-    const valueEmptySelect = FlRef.current && FlRef.current.querySelector('.ant-select-selection-placeholder');
+    const valueEmptySelect =
+      FlRef.current &&
+      FlRef.current.querySelector('.ant-select-selection-placeholder');
 
     inputDom.addEventListener(
       'focus',
@@ -24,7 +26,9 @@ const FloatingLabel = props => {
     };
 
     inputDom.onblur = () => {
-      const valueSelect = FlRef.current && FlRef.current.querySelector('.ant-select-selection-item');
+      const valueSelect =
+        FlRef.current &&
+        FlRef.current.querySelector('.ant-select-selection-item');
       const valueInput = inputDom.getAttribute('value');
       setFl(!!valueSelect || !!valueInput);
     };
@@ -46,7 +50,9 @@ const FloatingLabel = props => {
 
   useEffect(() => {
     const inputDom = FlRef.current && FlRef.current.querySelector('input');
-    const valueSelection = FlRef.current && FlRef.current.querySelector('.ant-select-selection-item');
+    const valueSelection =
+      FlRef.current &&
+      FlRef.current.querySelector('.ant-select-selection-item');
     const value = inputDom.getAttribute('value');
 
     setTimeout(() => {
@@ -67,14 +73,22 @@ const FloatingLabel = props => {
 
   const renderLabel = () =>
     !!label && (
-      <Label bgcolor={bgcolor} isFl={children?.props?.placeholder || isFl || !!fixlabel} className="fl-label">
+      <Label
+        bgcolor={bgcolor}
+        isFl={children?.props?.placeholder || isFl || !!isfixlabel}
+        className="fl-label"
+      >
         {label}
         {isRequired && <RedStar>*</RedStar>}
       </Label>
     );
   return (
     <FlWrapper ref={FlRef}>
-      {React.cloneElement(children, { ...dataElement }, children.props.children)}
+      {React.cloneElement(
+        children,
+        { ...dataElement },
+        children.props.children,
+      )}
       {renderLabel()}
     </FlWrapper>
   );
@@ -84,7 +98,7 @@ FloatingLabel.propTypes = {
   label: PropTypes.string,
   bgcolor: PropTypes.string,
   isRequired: PropTypes.bool,
-  fixlabel: PropTypes.bool,
+  isfixlabel: PropTypes.bool,
   children: PropTypes.node,
   isFocus: PropTypes.bool,
 };
@@ -93,7 +107,7 @@ FloatingLabel.defaultProps = {
   label: undefined,
   bgcolor: 'white',
   isRequired: false,
-  fixlabel: false,
+  isfixlabel: false,
   children: null,
 };
 

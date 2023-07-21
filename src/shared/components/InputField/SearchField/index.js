@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tooltip } from 'antd';
 import PropTypes from 'prop-types';
-
+import { useTranslation } from 'react-i18next';
 import SvgIcon from '../../../../images/SvgIcon';
 import Button from '../../Button';
 import MyAutoComplete from '../MyAutoComplete';
@@ -41,6 +41,8 @@ export default function SearchField(props) {
     pathSuggestSearch,
     ...rest
   } = props;
+
+  const [t] = useTranslation();
 
   return (
     <InputFieldWrapper>
@@ -89,14 +91,16 @@ export default function SearchField(props) {
         <Tooltip
           placement="bottom"
           mouseLeaveDelay={0}
-          title="Tìm kiếm nâng cao"
+          title={t('common.advanceSearch')}
         >
-          <Button
-            btntype="filter"
-            shape="circle"
-            iconname="filter-white"
-            onClick={onClick}
-          />
+          <div>
+            <Button
+              btntype="filter"
+              shape="circle"
+              iconname="filter-white"
+              onClick={onClick}
+            />
+          </div>
         </Tooltip>
       )}
     </InputFieldWrapper>

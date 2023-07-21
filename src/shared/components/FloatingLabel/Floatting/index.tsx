@@ -5,7 +5,7 @@ import { RedStar } from '@/shared/components/FloatingLabel/styled';
 interface PropsType {
   children: any;
   label: string;
-  value: string;
+  value: string | null | undefined;
   isRequired?: boolean;
 }
 

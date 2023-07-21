@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Select } from 'antd';
 import Floating from '../Floatting';
 import { SelectFloatStyle } from './style';
@@ -8,24 +8,32 @@ const { Option } = Select;
 
 interface PropsType {
   allowClear?: boolean;
-  dataSelect: any[];
-  onChangeSelect: (value: any) => void;
+  dataSelect: {
+    label: string;
+    value: string;
+  }[];
+  onChangeSelect?: (value: any) => void;
   label: string;
-  valueSelect?: string;
+  valueSelect?: string | null;
   isRequired?: boolean;
   disabled?: boolean;
+  defaultValue?: string;
 }
 
 const SelectFloat = ({
   allowClear,
   dataSelect,
-  onChangeSelect,
+  onChangeSelect = () => {},
   label,
   valueSelect,
   isRequired,
   disabled,
+  defaultValue,
 }: PropsType) => {
   const [selectValue, setSelectValue] = useState<any>(null);
+  useEffect(() => {
+    setSelectValue(null);
+  }, [dataSelect]);
   return (
     <Floating
       label={label}
@@ -41,6 +49,7 @@ const SelectFloat = ({
         value={valueSelect}
         allowClear={allowClear}
         disabled={disabled}
+        defaultValue={defaultValue}
       >
         {dataSelect.map((item, index) => (
           <Option key={index} value={item.value}>

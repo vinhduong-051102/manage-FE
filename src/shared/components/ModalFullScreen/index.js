@@ -26,6 +26,8 @@ const ModalFullScreen = ({
   nameContinue,
   nameClose,
   nameButtonLeft,
+  visible,
+  forceRender,
 }) => {
   const { t } = useTranslation();
 
@@ -44,6 +46,40 @@ const ModalFullScreen = ({
     }
   };
 
+  const Footer = () => {
+    return (
+      <DivFooter>
+        <DivFooterLeft>
+          {isButtonLeft && (
+            <Button btntype="gray" onClick={onClickButtonLeft}>
+              {nameButtonLeft || t('common.retrieveProfile')}
+            </Button>
+          )}
+        </DivFooterLeft>
+        <DivFooterRight>
+          <Button onClick={onClickCancel}>
+            {nameClose || t('common.closeModal')}
+          </Button>
+          {isSaveAndReset && (
+            <Button onClick={onSaveAndReset}>
+              {nameSaveAndReset || t('common.saveAndNext')}
+            </Button>
+          )}
+          {!isDisableSave && (
+            <Button onClick={onSave}>
+              {nameSave || t('common.saveModal')}
+            </Button>
+          )}
+          {isContinue && (
+            <Button onClick={onContinue}>
+              {nameContinue || t('common.continue')}
+            </Button>
+          )}
+        </DivFooterRight>
+      </DivFooter>
+    );
+  };
+
   useEffect(() => {
     document.addEventListener('keydown', onKeyDownListener);
     return () => {
@@ -54,39 +90,10 @@ const ModalFullScreen = ({
   return (
     <ModalWrapper
       title={title}
-      visible
+      open={visible}
       onCancel={onClickCancel}
-      footer={[
-        <DivFooter>
-          <DivFooterLeft>
-            {isButtonLeft && (
-              <Button btntype="gray" onClick={onClickButtonLeft}>
-                {nameButtonLeft || t('common.retrieveProfile')}
-              </Button>
-            )}
-          </DivFooterLeft>
-          <DivFooterRight>
-            <Button onClick={onClickCancel}>
-              {nameClose || t('common.closeModal')}
-            </Button>
-            {isSaveAndReset && (
-              <Button onClick={onSaveAndReset}>
-                {nameSaveAndReset || t('common.saveAndNext')}
-              </Button>
-            )}
-            {!isDisableSave && (
-              <Button onClick={onSave}>
-                {nameSave || t('common.saveModal')}
-              </Button>
-            )}
-            {isContinue && (
-              <Button onClick={onContinue}>
-                {nameContinue || t('common.continue')}
-              </Button>
-            )}
-          </DivFooterRight>
-        </DivFooter>,
-      ]}
+      forceRender={forceRender}
+      footer={<Footer />}
     >
       {children}
     </ModalWrapper>
@@ -109,6 +116,8 @@ ModalFullScreen.propTypes = {
   nameContinue: PropTypes.string,
   nameClose: PropTypes.string,
   nameButtonLeft: PropTypes.string,
+  visible: PropTypes.bool,
+  forceRender: PropTypes.bool,
 };
 
 export default ModalFullScreen;

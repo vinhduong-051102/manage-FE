@@ -31,3 +31,9 @@ export const RESET_LOCATION = `${KEY}/resetLocation`;
 export const CHECK_EMAIL_ACTION = `${KEY}/checkEmail`;
 
 export const SET_VALID_EMAIL = `${KEY}/setValidEmail`;
+
+export const EASY_SEARCH_ACTION = `${KEY}/easySearch`;
+
+export const DELETE_STUDENT_ACTION = `${KEY}/deleteStudent`;
+
+export const EDIT_STUDENT_ACTION = `${KEY}/editStudent`;

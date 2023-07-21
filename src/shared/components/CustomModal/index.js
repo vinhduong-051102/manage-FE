@@ -2,7 +2,13 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { Tooltip } from 'antd';
-import { ButtonSave, DivFooter, ModalTitle, ModalWrapper, StyleButtonClose } from './styled';
+import {
+  ButtonSave,
+  DivFooter,
+  ModalTitle,
+  ModalWrapper,
+  StyleButtonClose,
+} from './styled';
 
 export default function CustomModal({
   disableSaveMessage,
@@ -24,7 +30,7 @@ export default function CustomModal({
 }) {
   const { t } = useTranslation();
 
-  const onKeyDownListener = e => {
+  const onKeyDownListener = (e) => {
     if (e.key === 'Escape') {
       e.preventDefault();
       onClickCancel(false);
@@ -80,9 +86,11 @@ export default function CustomModal({
                       </ButtonSave>
                     ) : (
                       <Tooltip title={disableSaveMessage}>
-                        <ButtonSave loading={isLoading} disable>
-                          {nameSaveAndReset || t('common.saveAndNext')}
-                        </ButtonSave>
+                        <div>
+                          <ButtonSave loading={isLoading} disable>
+                            {nameSaveAndReset || t('common.saveAndNext')}
+                          </ButtonSave>
+                        </div>
                       </Tooltip>
                     ))}
                   {!disableSaveButton ? (
@@ -91,9 +99,11 @@ export default function CustomModal({
                     </ButtonSave>
                   ) : (
                     <Tooltip title={disableSaveMessage}>
-                      <ButtonSave loading={isLoading} disable>
-                        {nameSave || t('common.saveModal')}
-                      </ButtonSave>
+                      <div>
+                        <ButtonSave loading={isLoading} disable>
+                          {nameSave || t('common.saveModal')}
+                        </ButtonSave>
+                      </div>
                     </Tooltip>
                   )}
                 </DivFooter>

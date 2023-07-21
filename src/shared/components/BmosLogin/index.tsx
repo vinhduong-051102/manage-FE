@@ -184,10 +184,7 @@ const BmosLogin = ({
             <DivError>{textError}</DivError>
             <DivOption>
               <Checkbox onChange={(e) => setKeepLogin(e.target.checked)}>
-                <SpanKeepingLogin
-                  /*@ts-ignore*/
-                  style={keepLogin ? { color: ' #212529' } : null}
-                >
+                <SpanKeepingLogin keepLogin={keepLogin}>
                   {TEXT_KEEP_LOGIN || textKeepLogin}
                 </SpanKeepingLogin>
               </Checkbox>

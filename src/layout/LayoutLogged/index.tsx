@@ -37,6 +37,7 @@ interface PropsType {
   placeholderSearch?: string;
   pathSuggestSearch?: string;
   hideFilter?: boolean;
+  isSearchSimple?: boolean;
 }
 
 export interface ComponentPropsType {
@@ -55,6 +56,7 @@ const LayoutLogged = ({
   placeholderSearch = '',
   pathSuggestSearch = '',
   hideFilter = false,
+  isSearchSimple = true,
 }: PropsType) => {
   const { t } = useTranslation();
   const location = useLocation();
@@ -116,6 +118,12 @@ const LayoutLogged = ({
     }
     setIsShowSearch(showSearch);
   }, [Component, showSearch, token]);
+
+  useEffect(() => {
+    setEasyTextSearch('');
+    setCategoryId(0);
+    setObjectId(0);
+  }, [Component]);
 
   const [menuExpand, setMenuExpand] = useState<boolean>(true);
   const [openPopoverAccount, setOpenPopoverAccount] = useState<boolean>(false);
@@ -183,13 +191,19 @@ const LayoutLogged = ({
           />
         }
         searchSimple={{
-          isSearchSimple: false,
+          isSearchSimple: isSearchSimple,
           value: easyTextSearch,
-          onChange: (e) => {
+          onChange: (
+            e: Event & {
+              target: HTMLInputElement;
+            },
+          ) => {
             if (isEmpty(get(e, 'target.value', '').trim())) {
               setEasyTextSearch('');
               setCategoryId(0);
               setObjectId(0);
+            } else {
+              setEasyTextSearch(e.target.value);
             }
           },
         }}

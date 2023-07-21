@@ -52,6 +52,7 @@ const App = () => {
               component={Student}
               showSearch
               placeholderSearch={t('student.placeholder') as string}
+              pathSuggestSearch={'/student'}
             />
           }
         />

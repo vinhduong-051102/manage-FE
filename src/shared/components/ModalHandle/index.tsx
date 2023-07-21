@@ -132,9 +132,11 @@ export default function ModalHandle({
                       </ButtonSave>
                     ) : (
                       <Tooltip title={disableSaveMessage}>
-                        <ButtonSave loading={isLoading} disable>
-                          {nameSaveAndReset || t('common.saveAndNext')}
-                        </ButtonSave>
+                        <div>
+                          <ButtonSave loading={isLoading} disable>
+                            {nameSaveAndReset || t('common.saveAndNext')}
+                          </ButtonSave>
+                        </div>
                       </Tooltip>
                     ))}
                   {isShowSaveButton &&
@@ -144,9 +146,11 @@ export default function ModalHandle({
                       </ButtonSave>
                     ) : (
                       <Tooltip title={disableSaveMessage}>
-                        <ButtonSave loading={isLoading} disable>
-                          {nameSave || t('common.saveModal')}
-                        </ButtonSave>
+                        <div>
+                          <ButtonSave loading={isLoading} disable>
+                            {nameSave || t('common.saveModal')}
+                          </ButtonSave>
+                        </div>
                       </Tooltip>
                     ))}
                 </>

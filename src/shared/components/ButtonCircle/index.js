@@ -39,19 +39,21 @@ export default function ButtonCircle(props) {
       title={title}
       overlayStyle={{ maxWidth: 500 }}
     >
-      <Button
-        btntype={btntype}
-        shape="circle"
-        iconname={iconname}
-        className={className}
-        clsname={clsname}
-        disabled={!enable}
-        onClick={(e) => {
-          e.stopPropagation();
-          // eslint-disable-next-line no-unused-expressions
-          !!onClick && onClick();
-        }}
-      />
+      <div>
+        <Button
+          btntype={btntype}
+          shape="circle"
+          iconname={iconname}
+          className={className}
+          clsname={clsname}
+          disabled={!enable}
+          onClick={(e) => {
+            e.stopPropagation();
+            // eslint-disable-next-line no-unused-expressions
+            !!onClick && onClick();
+          }}
+        />
+      </div>
     </Tooltip>
   );
 }

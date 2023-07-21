@@ -133,7 +133,7 @@ export const ListIcon = [
   'expire-date-sign',
   'zoom-in',
   'zoom-out',
-
+  'delete',
   'edittimes1',
   'editpen1',
   'arrow-down-primary',

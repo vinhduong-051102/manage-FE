@@ -40,7 +40,11 @@ interface PropsType {
   searchSimple: {
     isSearchSimple: boolean;
     value: string;
-    onChange: (e: React.KeyboardEvent<HTMLInputElement>) => void;
+    onChange: (
+      e: Event & {
+        target: HTMLInputElement;
+      },
+    ) => void;
   };
   handleSearch: () => void;
   hideFilter?: boolean;
@@ -101,7 +105,9 @@ const Header = ({
               color="white"
               overlayStyle={{ maxWidth: '407px' }}
             >
-              <IconUser alt="" src={userData.image} />
+              <div>
+                <IconUser alt="" src={userData.image} />
+              </div>
             </Tooltip>
           ) : (
             <IconUser alt="" src={userData.image} />

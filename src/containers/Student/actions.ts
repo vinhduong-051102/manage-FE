@@ -9,6 +9,19 @@ export interface CreateStudentPayload {
   username: string;
   email: string;
   address: string;
+  provinceCode: string;
+  districtCode: string;
+  wardCode: string;
+}
+
+export interface EditStudentPayload {
+  id: number;
+  name: string;
+  address: string;
+  provinceCode: string;
+  districtCode: string;
+  wardCode: string;
+  email: string;
 }
 
 export interface GetLocationResponse {
@@ -65,3 +78,16 @@ export const resetLocation = createAction(constants.RESET_LOCATION);
 export const checkEmail = createAction<string>(constants.CHECK_EMAIL_ACTION);
 
 export const setValidEmail = createAction<boolean>(constants.SET_VALID_EMAIL);
+
+export const easySearch = createAction<{
+  keySearch: string;
+  pageable: DefaultPayloadGetListType;
+}>(constants.EASY_SEARCH_ACTION);
+
+export const deleteStudent = createAction<number>(
+  constants.DELETE_STUDENT_ACTION,
+);
+
+export const editStudent = createAction<EditStudentPayload>(
+  constants.EDIT_STUDENT_ACTION,
+);

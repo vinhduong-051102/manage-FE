@@ -31,18 +31,26 @@ import Select from '@/shared/components/FloatingLabel/SelectFloat';
 import Button from '@/shared/components/Button';
 import { CreateStudentPayload } from './actions';
 import TableFunction from '@/shared/components/TableOtherView/TableFunction';
+import ModalFullScreen from '@/shared/components/ModalFullScreen/Loadable';
+import ViewDetail from '@/containers/Student/components/ViewDetail';
+import SelectFloat from '@/shared/components/FloatingLabel/SelectFloat';
 
 export interface StudentType {
   id: number;
   name: string;
   address: string;
+  provinceCode: string;
+  districtCode: string;
+  wardCode: string;
   email: string;
   isActive: boolean;
+  locationString: string;
 }
 
 const Student = ({
   showAdvanceSearch,
   onCloseAdvanceSearch,
+  textSearch,
 }: ComponentPropsType) => {
   const dispatch = useAppDispatch();
   const [form] = Form.useForm();
@@ -62,9 +70,21 @@ const Student = ({
   const [codeProvinceSelect, setCodeProvinceSelect] = useState('');
   const [codeDistrictSelect, setCodeDistrictSelect] = useState('');
   const [codeWardSelect, setCodeWardSelect] = useState('');
-  const [nameProvinceSelect, setNameProvinceSelect] = useState('');
-  const [nameDistrictSelect, setNameDistrictSelect] = useState('');
-  const [nameWardSelect, setNameWardSelect] = useState('');
+  const [isOpenModalViewDetail, setIsOpenModalViewDetail] = useState(false);
+  const [recordSelected, setRecordSelected] = useState<StudentType>({
+    address: '',
+    email: '',
+    isActive: false,
+    name: '',
+    id: 0,
+    districtCode: '0',
+    provinceCode: '0',
+    wardCode: '0',
+    locationString: '',
+  });
+  const [isEdit, setIsEdit] = useState(false);
+  const [currentEmail, setCurrentEmail] = useState('');
+  const [currentUserId, setCurrentUserId] = useState(0);
 
   const TABLE_COLUMNS: ColumnsType<StudentType> = [
     {
@@ -73,7 +93,9 @@ const Student = ({
       key: 'stt',
       width: '5%',
       align: 'center',
-      render: (text, record, index) => (currentPage - 1) * pageSize + index + 1,
+      render: (text, record, index) => (
+        <b>{(currentPage - 1) * pageSize + index + 1}</b>
+      ),
     },
     {
       title: t('student.name'),
@@ -99,7 +121,7 @@ const Student = ({
       key: 'studentAddress',
       width: '40%',
       render(text, record) {
-        return <div>{record.address}</div>;
+        return <div>{record.locationString}</div>;
       },
     },
     {
@@ -114,8 +136,8 @@ const Student = ({
           titleEdit={t('common.tooltipEdit') as string}
           titleDelete={t('common.tooltipDelete') as string}
           titleHistory={t('common.tooltipHistory') as string}
-          onClickEdit={() => {}}
-          onClickDelete={() => {}}
+          onClickEdit={() => handleEdit(record)}
+          onClickDelete={() => handleDeleteStudent(record.id)}
           onClickHistory={() => {}}
         />
       ),
@@ -127,7 +149,9 @@ const Student = ({
     onCloseAdvanceSearch();
   };
 
-  const handleResetFilter = () => {};
+  const handleResetFilter = () => {
+    form.resetFields();
+  };
 
   const handleSubmitForm = () => {
     form
@@ -136,9 +160,26 @@ const Student = ({
         const payload: CreateStudentPayload = {
           username: data.name,
           email: data.email,
-          address: `${nameProvinceSelect}, ${nameDistrictSelect}, ${nameWardSelect}, ${data.address}`,
+          address: data.address,
+          provinceCode: codeProvinceSelect,
+          districtCode: codeDistrictSelect,
+          wardCode: codeWardSelect,
         };
-        dispatch(actions.createStudent(payload));
+        if (isEdit) {
+          const { username, ...rest } = payload;
+          dispatch(
+            actions.editStudent({
+              id: currentUserId,
+              ...rest,
+              name: username,
+            }),
+          );
+          setIsEdit(false);
+          setCurrentUserId(0);
+          setCurrentEmail('');
+        } else {
+          dispatch(actions.createStudent(payload));
+        }
         handleCloseModalAddNew();
       })
       .catch((error) => {
@@ -155,24 +196,46 @@ const Student = ({
     setCodeProvinceSelect('');
   };
 
-  useEffect(() => {
-    dispatch(
-      actions.getListStudent({
-        ...DEFAULT_GET_LIST_PARAMS,
-      }),
-    );
-    if (isOpenModalAddNew) {
-      dispatch(actions.getListProvince());
-    } else {
-      dispatch(actions.setValidEmail(true));
-    }
-  }, [dispatch, isOpenModalAddNew]);
+  const handleDeleteStudent = (id: number) => {
+    dispatch(actions.deleteStudent(id));
+  };
+
+  const handleEdit = (record: StudentType) => {
+    const { address, id, email, name, provinceCode, districtCode, wardCode } =
+      record;
+    form.setFieldValue('email', email);
+    form.setFieldValue('name', name);
+    form.setFieldValue('address', address);
+    form.setFieldValue('province', provinceCode);
+    form.setFieldValue('district', districtCode);
+    form.setFieldValue('ward', wardCode);
+    setCodeProvinceSelect(provinceCode);
+    setCodeDistrictSelect(districtCode);
+    setCodeWardSelect(wardCode);
+    setCurrentEmail(email);
+    setCurrentUserId(id);
+    setIsOpenModalAddNew(true);
+    setIsEdit(true);
+  };
 
   useEffect(() => {
     if (codeProvinceSelect) {
       dispatch(actions.getListDistrict({ code: codeProvinceSelect }));
     }
   }, [codeProvinceSelect, dispatch]);
+
+  useEffect(() => {
+    dispatch(
+      actions.getListStudent({
+        ...DEFAULT_GET_LIST_PARAMS,
+      }),
+    );
+    if (isOpenModalAddNew || showAdvanceSearch) {
+      dispatch(actions.getListProvince());
+    } else if (!isOpenModalAddNew) {
+      dispatch(actions.setValidEmail(true));
+    }
+  }, [dispatch, isOpenModalAddNew, showAdvanceSearch]);
 
   useEffect(() => {
     if (codeDistrictSelect) {
@@ -189,16 +252,14 @@ const Student = ({
     }
   }, [isValidEmail, form]);
 
-  const getNameSelected = (
-    list: {
-      fullName: string;
-      code: string;
-    }[],
-    codeSelected: string,
-  ) => {
-    const itemSelected = list.find((item) => item.code === codeSelected);
-    return itemSelected ? itemSelected.fullName : '';
-  };
+  useEffect(() => {
+    dispatch(
+      actions.easySearch({
+        keySearch: textSearch,
+        pageable: DEFAULT_GET_LIST_PARAMS,
+      }),
+    );
+  }, [textSearch, dispatch]);
 
   return (
     <Container>
@@ -226,7 +287,10 @@ const Student = ({
             loadingIcon={loadingIcon}
             pagination
             totalRecord={totalRecord}
-            onClickRow={() => {}}
+            onClickRow={(record) => {
+              setIsOpenModalViewDetail(true);
+              setRecordSelected(record);
+            }}
           />
         </ContentWrapper>
         {showAdvanceSearch && (
@@ -235,7 +299,7 @@ const Student = ({
               <Tooltip title={t('common.close')}>
                 <img
                   src={iconCloseAdvance}
-                  alt={t('profile.close') as string}
+                  alt={t('common.close') as string}
                   onClick={handleCloseAdvanceSearch}
                 />
               </Tooltip>
@@ -253,13 +317,47 @@ const Student = ({
               </Tooltip>
             </HeaderAdvanceView>
             <ContentAdvanceView>
-              <Form form={form}>dsad</Form>
+              <Form form={form}>
+                <Form.Item name="isActive" initialValue={null}>
+                  <SelectFloat
+                    dataSelect={[
+                      {
+                        label: t('student.active'),
+                        value: '0',
+                      },
+                      {
+                        label: t('student.inActive'),
+                        value: '1',
+                      },
+                    ]}
+                    label={t('student.status')}
+                  />
+                </Form.Item>
+                <Form.Item name="isEnroll" initialValue={null}>
+                  <SelectFloat
+                    dataSelect={[
+                      {
+                        label: t('student.enrolled'),
+                        value: '0',
+                      },
+                      {
+                        label: t('student.isNotEnrolled'),
+                        value: '1',
+                      },
+                    ]}
+                    label={t('student.enrollStatus')}
+                  />
+                </Form.Item>
+              </Form>
             </ContentAdvanceView>
           </AdvanceSearchWrapper>
         )}
-
         <ModalHandle
-          title={t('student.addNew') as string}
+          title={
+            isEdit
+              ? (t('student.edit') as string)
+              : (t('student.addNew') as string)
+          }
           visible={isOpenModalAddNew}
           isLoading={isLoading}
           onClickCancel={handleCloseModalAddNew}
@@ -293,7 +391,10 @@ const Student = ({
                         if (!REGEX_EMAIL.test(value)) {
                           return Promise.reject(t('student.emailIsValid'));
                         }
-                        if (!isValidEmail) {
+                        if (!isEdit && !isValidEmail) {
+                          return Promise.reject(t('student.duplicateEmail'));
+                        }
+                        if (isEdit && value !== currentEmail && !isValidEmail) {
                           return Promise.reject(t('student.duplicateEmail'));
                         }
                         return Promise.resolve();
@@ -334,10 +435,15 @@ const Student = ({
                     })}
                     onChangeSelect={(value) => {
                       form.setFieldValue('province', value);
+                      form.setFieldValue('district', '');
+                      form.setFieldValue('ward', '');
                       setCodeProvinceSelect(value);
-                      const nameSelected = getNameSelected(listProvince, value);
-                      setNameProvinceSelect(nameSelected);
+                      setCodeDistrictSelect('');
+                      setCodeWardSelect('');
+                      dispatch(actions.getListDistrictSuccess([]));
+                      dispatch(actions.getListWardSuccess([]));
                     }}
+                    valueSelect={codeProvinceSelect}
                   />
                 </Form.Item>
               </Col>
@@ -362,11 +468,13 @@ const Student = ({
                     })}
                     onChangeSelect={(value) => {
                       form.setFieldValue('district', value);
+                      form.setFieldValue('ward', '');
                       setCodeDistrictSelect(value);
-                      const nameSelected = getNameSelected(listDistrict, value);
-                      setNameDistrictSelect(nameSelected);
+                      setCodeWardSelect('');
+                      dispatch(actions.getListWardSuccess([]));
                     }}
                     disabled={listDistrict.length === 0}
+                    valueSelect={codeDistrictSelect}
                   />
                 </Form.Item>
               </Col>
@@ -392,10 +500,9 @@ const Student = ({
                     onChangeSelect={(value) => {
                       form.setFieldValue('ward', value);
                       setCodeWardSelect(value);
-                      const nameSelected = getNameSelected(listWard, value);
-                      setNameWardSelect(nameSelected);
                     }}
                     disabled={listWard.length === 0}
+                    valueSelect={codeWardSelect}
                   />
                 </Form.Item>
               </Col>
@@ -419,6 +526,12 @@ const Student = ({
             </Row>
           </Form>
         </ModalHandle>
+        <ModalFullScreen
+          visible={isOpenModalViewDetail}
+          onClickCancel={() => setIsOpenModalViewDetail(false)}
+        >
+          <ViewDetail data={recordSelected} />
+        </ModalFullScreen>
       </Content>
     </Container>
   );

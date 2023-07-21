@@ -116,6 +116,7 @@ const DivOption = styled.div`
   @media only screen and (min-width: 650px) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 `;
 const KeepingLogin = styled.div`
@@ -128,12 +129,12 @@ const InputRadio = styled.input`
   border: 1px solid rgba(215, 215, 215, 0.75);
   box-sizing: border-box;
 `;
-const SpanKeepingLogin = styled.span`
+const SpanKeepingLogin = styled.span<{ keepLogin: boolean }>`
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
   line-height: 19px;
-  color: rgba(0, 0, 0, 0.25);
+  color: ${(props) => (props.keepLogin ? '#212529' : 'rgba(0, 0, 0, 0.25)')};
   :hover {
     color: #212529;
   }

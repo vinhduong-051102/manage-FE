@@ -19,5 +19,13 @@
   "status": "Trạng thái",
   "active": "Đã kích hoạt",
   "inActive": "Chưa kích hoạt",
-  "totalRecord": "Số lượng học sinh"
+  "totalRecord": "Số lượng học sinh",
+  "id": "ID",
+  "detailTitle": "Thông tin chi tiết học sinh",
+  "courseEnroll": "Môn học đã đăng kí",
+  "courseNotEnroll": "Môn học chưa đăng kí",
+  "enrollStatus": "Trạng thái đăng kí môn học",
+  "enrolled": "Đã đăng kí môn học",
+  "isNotEnrolled": "Chưa đăng kí môn học",
+  "edit": "Cập nhập thông tin học sinh"
 }

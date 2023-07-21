@@ -61,13 +61,15 @@ const InputLogin = ({
             visible ? (
               <div>
                 <Tooltip mouseLeaveDelay={0} title="Ẩn mật khẩu">
-                  <EyeTwoTone />
+                  <EyeTwoTone rev={undefined} />
                 </Tooltip>
               </div>
             ) : (
               <div>
                 <Tooltip mouseLeaveDelay={0} title="Hiển thị mật khẩu">
-                  <EyeInvisibleOutlined />
+                  <div>
+                    <EyeInvisibleOutlined rev={undefined} />
+                  </div>
                 </Tooltip>
               </div>
             )

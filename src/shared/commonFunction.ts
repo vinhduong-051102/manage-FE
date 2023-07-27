@@ -111,6 +111,17 @@ export const formatFullDateTime = (time: number | string, type: string) => {
   )}:${format(valueTime.getMinutes())}:${valueTime.getSeconds()}`;
 };
 
+export const getDateFromTimeStamp = (timestamp: number) => {
+  const dateObject = new Date(timestamp);
+  const day = dateObject.getDate();
+  const month = dateObject.getMonth() + 1; // Tháng bắt đầu từ 0, nên cần cộng thêm 1.
+  const year = dateObject.getFullYear();
+
+  return `${day < 10 ? '0' : ''}${day}-${
+    month < 10 ? '0' : ''
+  }${month}-${year}`;
+};
+
 /* Hàm đăng xuất */
 export const logOut = () => {
   Cookies.remove(COOKIES.accessToken);

@@ -29,6 +29,11 @@ export interface GetLocationResponse {
   code: string;
 }
 
+export interface GetListStudentEnrollCourseIdType
+  extends DefaultPayloadGetListType {
+  id: number;
+}
+
 export const resetRedux = createAction(constants.RESET_REDUX_ACTION);
 
 export const getListStudent = createAction<DefaultPayloadGetListType>(
@@ -91,3 +96,8 @@ export const deleteStudent = createAction<number>(
 export const editStudent = createAction<EditStudentPayload>(
   constants.EDIT_STUDENT_ACTION,
 );
+
+export const getListStudentEnrollCourse =
+  createAction<GetListStudentEnrollCourseIdType>(
+    constants.GET_LIST_STUDENT_ENROLL_COURSE,
+  );

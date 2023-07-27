@@ -1,22 +1,13 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import type { RootState } from '@/store';
 import { DefaultResponseGetListType } from '@/utils/constants';
-import { CourseType } from '@/containers/Course/index';
+import { CourseType, PeriodType, WeekdayType } from '@/containers/Course/index';
 
 interface initialStateType extends DefaultResponseGetListType {
   isLoading: boolean;
   data: CourseType[];
-  listWeekday: {
-    id: number;
-    name: string;
-    no: number;
-  }[];
-  listPeriod: {
-    id: number;
-    period: number;
-    beginAt: string;
-    endAt: string;
-  }[];
+  listWeekday: WeekdayType[];
+  listPeriod: PeriodType[];
 }
 
 const initialState: initialStateType = {
@@ -67,7 +58,7 @@ const courseSlice = createSlice({
 });
 
 export const selectIsLoading = (state: RootState) =>
-  state.studentReducer.isLoading;
+  state.courseReducer.isLoading;
 
 export const selectListCourse = (state: RootState) => state.courseReducer.data;
 

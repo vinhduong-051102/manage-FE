@@ -37,3 +37,5 @@ export const EASY_SEARCH_ACTION = `${KEY}/easySearch`;
 export const DELETE_STUDENT_ACTION = `${KEY}/deleteStudent`;
 
 export const EDIT_STUDENT_ACTION = `${KEY}/editStudent`;
+
+export const GET_LIST_STUDENT_ENROLL_COURSE = `${KEY}/getListStudentEnrollCourse`;

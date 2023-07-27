@@ -22,5 +22,13 @@
   "tooltipCopy": "Sao chép",
   "tooltipDownload": "Tải xuống",
   "tooltipHistory": "Xem lịch sử",
-  "tooltipDelete": "Xoá"
+  "tooltipDelete": "Xoá",
+  "sunday": "Chủ nhật",
+  "monday": "Thứ 2",
+  "tuesday": "Thứ 3",
+  "wednesday": "Thứ 4",
+  "thursday": "Thứ 5",
+  "friday": "Thứ 6",
+  "saturday": "Thứ 7",
+  "all": "Tất cả"
 }

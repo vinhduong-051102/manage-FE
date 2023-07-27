@@ -63,6 +63,7 @@ const App = () => {
               component={Course}
               showSearch
               placeholderSearch={t('course.placeholder') as string}
+              pathSuggestSearch={'/course'}
             />
           }
         />

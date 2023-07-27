@@ -12,6 +12,7 @@ import {
 import {
   CreateStudentPayload,
   EditStudentPayload,
+  GetListStudentEnrollCourseIdType,
   GetLocationResponse,
 } from './actions';
 import Notice from '@/shared/components/Notice';
@@ -163,6 +164,23 @@ function* deleteStudent(action: PayloadAction<number>) {
   }
 }
 
+function* getListStudentEnrollCourse(
+  action: PayloadAction<GetListStudentEnrollCourseIdType>,
+) {
+  const { payload } = action;
+  const path = `/student/list?page=${payload.pageNumber}&size=${payload.pageSize}&courseId=${payload.id}`;
+  yield put(actions.actionStart());
+  try {
+    const res: AxiosResponse = yield call(axiosGet, path);
+    if (res.status === 200) {
+      yield put(actions.getListStudentSuccess(res.data));
+      yield put(actions.actionEnd());
+    }
+  } catch (error) {
+    yield put(actions.actionEnd());
+  }
+}
+
 export default function* () {
   yield takeLatest(constants.GET_LIST_STUDENT_ACTION, getListStudent);
   yield takeLatest(constants.CREATE_STUDENT_ACTION, createStudent);
@@ -173,4 +191,8 @@ export default function* () {
   yield debounce(400, constants.EASY_SEARCH_ACTION, easySearch);
   yield takeLatest(constants.DELETE_STUDENT_ACTION, deleteStudent);
   yield takeLatest(constants.EDIT_STUDENT_ACTION, editStudent);
+  yield takeLatest(
+    constants.GET_LIST_STUDENT_ENROLL_COURSE,
+    getListStudentEnrollCourse,
+  );
 }

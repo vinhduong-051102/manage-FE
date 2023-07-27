@@ -5,7 +5,7 @@ import { RedStar } from '@/shared/components/FloatingLabel/styled';
 interface PropsType {
   children: any;
   label: string;
-  value: string | null | undefined;
+  value: string | null | undefined | number;
   isRequired?: boolean;
 }
 
@@ -21,7 +21,7 @@ const Floating = ({ children, label, value, isRequired }: PropsType) => {
       }}
     >
       {children}
-      {focus || (value && value.length !== 0) ? (
+      {focus || value ? (
         <FloatingLabel>
           {isRequired ? (
             <>

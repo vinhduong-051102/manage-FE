@@ -11,12 +11,12 @@ import {
 
 interface PropsType {
   disableSaveButton?: boolean;
-  children?: ReactElement;
+  children: ReactElement;
   width?: number;
-  onClickCancel?: () => void;
+  onClickCancel: () => void;
   isCustomFooter?: boolean;
   buttonCustom?: ReactElement;
-  title?: string;
+  title: string;
   isLoading?: boolean;
   nameCancel?: string;
   nameSave?: string;
@@ -31,7 +31,7 @@ interface PropsType {
   isLeftButton?: boolean;
   onClickLeftButton?: () => void;
   nameLeftButton?: string | ReactElement;
-  visible?: boolean;
+  visible: boolean;
   isShowSaveButton?: boolean;
   forceRender?: boolean;
 }

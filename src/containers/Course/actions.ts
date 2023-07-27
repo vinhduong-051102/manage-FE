@@ -16,6 +16,10 @@ export interface CreateCourseType {
   endDate: number;
 }
 
+export interface GetListById extends DefaultPayloadGetListType {
+  id: number;
+}
+
 export interface EditCourseType extends CreateCourseType {
   id: number;
 }
@@ -62,4 +66,12 @@ export const editCourse = createAction<EditCourseType>(
 
 export const easySearch = createAction<EasySearchType>(
   constants.EASY_SEARCH_ACTION,
+);
+
+export const getListCourseByStudentId = createAction<GetListById>(
+  constants.GET_LIST_COURSE_BY_STUDENT_ID,
+);
+
+export const getListCourseIsNotContainStudentId = createAction<GetListById>(
+  constants.GET_LIST_COURSE_IS_NOT_CONTAIN_STUDENT_ID,
 );

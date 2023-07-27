@@ -128,7 +128,7 @@ const Student = ({
       title: t('student.status'),
       dataIndex: 'studentStatusId',
       key: 'studentStatusId',
-      width: 80,
+      width: '15%',
       render: (text, record) => (
         <TableFunction
           text={record.isActive ? t('student.active') : t('student.inActive')}

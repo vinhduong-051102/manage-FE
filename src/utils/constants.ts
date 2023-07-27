@@ -315,6 +315,7 @@ export const PATH_LOGIN = '/login';
 export const PATH_DASHBOARD = '/dashboard';
 export const PATH_COURSE = '/course';
 export const PATH_STUDENT = '/student';
+export const PATH_ACTIVE_ACCOUNT = '/active';
 export const MENU_DASHBOARD_PERMISSION = '1';
 export const MENU_COURSE_PERMISSION = '2';
 export const MENU_STUDENT_PERMISSION = '3';

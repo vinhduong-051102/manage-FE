@@ -33,6 +33,7 @@ export const FilterContainer = styled.div`
 
 export const TableContainer = styled.div<{ isFilterLeft: boolean }>`
   margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   div:first-child {

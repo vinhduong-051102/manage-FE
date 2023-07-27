@@ -10,7 +10,12 @@ import * as actions from './actions';
 import { AxiosResponse } from 'axios';
 import { axiosDelete, axiosGet, axiosPost, axiosPut } from '@/utils/request';
 import { PeriodType, WeekdayType } from '@/containers/Course/index';
-import { CreateCourseType, EasySearchType, EditCourseType } from './actions';
+import {
+  CreateCourseType,
+  EasySearchType,
+  EditCourseType,
+  GetListById,
+} from './actions';
 import Notice from '@/shared/components/Notice';
 
 function* getListCourse(action: PayloadAction<DefaultPayloadGetListType>) {
@@ -124,6 +129,44 @@ function* easySearch(action: PayloadAction<EasySearchType>) {
   }
 }
 
+function* getListCourseIsNotContainStudentId(
+  action: PayloadAction<GetListById>,
+) {
+  const { id, pageSize, pageNumber } = action.payload;
+  const path = `/course/except?studentId=${id}&page=${pageNumber}&size=${pageSize}`;
+  yield put(actions.actionStart());
+  try {
+    const res: AxiosResponse<DefaultResponseGetListType> = yield call(
+      axiosGet,
+      path,
+    );
+    if (res.status === 200) {
+      yield put(actions.getListCourseSuccess(res.data));
+      yield put(actions.actionEnd());
+    }
+  } catch (error) {
+    yield put(actions.actionEnd());
+  }
+}
+
+function* getListCourseById(action: PayloadAction<GetListById>) {
+  const { id, pageSize, pageNumber } = action.payload;
+  const path = `/course/contain?studentId=${id}&page=${pageNumber}&size=${pageSize}`;
+  yield put(actions.actionStart());
+  try {
+    const res: AxiosResponse<DefaultResponseGetListType> = yield call(
+      axiosGet,
+      path,
+    );
+    if (res.status === 200) {
+      yield put(actions.getListCourseSuccess(res.data));
+      yield put(actions.actionEnd());
+    }
+  } catch (error) {
+    yield put(actions.actionEnd());
+  }
+}
+
 export default function* () {
   yield takeLatest(constants.GET_LIST_COURSE_ACTION, getListCourse);
   yield takeLatest(constants.GET_LIST_WEEKDAY, getListWeekday);
@@ -132,4 +175,9 @@ export default function* () {
   yield takeLatest(constants.DELETE_COURSE_ACTION, deleteCourse);
   yield takeLatest(constants.EDIT_COURSE_ACTION, editCourse);
   yield debounce(400, constants.EASY_SEARCH_ACTION, easySearch);
+  yield takeLatest(constants.GET_LIST_COURSE_BY_STUDENT_ID, getListCourseById);
+  yield takeLatest(
+    constants.GET_LIST_COURSE_IS_NOT_CONTAIN_STUDENT_ID,
+    getListCourseIsNotContainStudentId,
+  );
 }

@@ -13,12 +13,14 @@ import Student from '@/containers/Student/Loadable';
 import Login from '@/containers/Login/Loadable';
 import LayoutLogged from '@/layout/LayoutLogged';
 import {
+  COOKIES,
   PATH_COURSE,
   PATH_DASHBOARD,
   PATH_LOGIN,
   PATH_ROOT,
   PATH_STUDENT,
 } from '@/utils/constants';
+import Cookies from 'js-cookie';
 
 const App = () => {
   const [t] = useTranslation();
@@ -26,6 +28,7 @@ const App = () => {
   const [api, contextHolder] = notification.useNotification();
   const messageAndStatus = useAppSelector(selectMessageAndStatus);
   const { message, status } = messageAndStatus;
+  const role = Cookies.get(COOKIES.role);
   useEffect(() => {
     if (message !== '') {
       api[status]({
@@ -40,33 +43,52 @@ const App = () => {
   return (
     <>
       <Routes>
-        <Route path={PATH_ROOT} element={<Navigate to={'/dashboard'} />} />
-        <Route
-          path={PATH_DASHBOARD}
-          element={<LayoutLogged component={DashBoard} />}
-        />
-        <Route
-          path={PATH_STUDENT}
-          element={
-            <LayoutLogged
-              component={Student}
-              showSearch
-              placeholderSearch={t('student.placeholder') as string}
-              pathSuggestSearch={'/student'}
+        {role === 'ADMIN' ? (
+          <>
+            <Route path={PATH_ROOT} element={<Navigate to={'/dashboard'} />} />
+            <Route
+              path={PATH_DASHBOARD}
+              element={<LayoutLogged component={DashBoard} />}
             />
-          }
-        />
-        <Route
-          path={PATH_COURSE}
-          element={
-            <LayoutLogged
-              component={Course}
-              showSearch
-              placeholderSearch={t('course.placeholder') as string}
-              pathSuggestSearch={'/course'}
+            <Route
+              path={PATH_STUDENT}
+              element={
+                <LayoutLogged
+                  component={Student}
+                  showSearch
+                  placeholderSearch={t('student.placeholder') as string}
+                  pathSuggestSearch={'/student'}
+                />
+              }
             />
-          }
-        />
+            <Route
+              path={PATH_COURSE}
+              element={
+                <LayoutLogged
+                  component={Course}
+                  showSearch
+                  placeholderSearch={t('course.placeholder') as string}
+                  pathSuggestSearch={'/course'}
+                />
+              }
+            />
+          </>
+        ) : (
+          <>
+            <Route
+              path={PATH_COURSE}
+              element={
+                <LayoutLogged
+                  component={Course}
+                  showSearch
+                  placeholderSearch={t('course.placeholder') as string}
+                  pathSuggestSearch={'/course'}
+                />
+              }
+            />
+          </>
+        )}
+
         <Route path={PATH_LOGIN} element={<Login />} />
         <Route path="*" element={<ErrorPage code={404} />} />
       </Routes>

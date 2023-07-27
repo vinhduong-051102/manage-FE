@@ -23,3 +23,7 @@ export const DELETE_COURSE_ACTION = `${KEY}/deleteCourse`;
 export const EDIT_COURSE_ACTION = `${KEY}/editCourse`;
 
 export const EASY_SEARCH_ACTION = `${KEY}/easySearch`;
+
+export const GET_LIST_COURSE_BY_STUDENT_ID = `${KEY}/getListCourseById`;
+
+export const GET_LIST_COURSE_IS_NOT_CONTAIN_STUDENT_ID = `${KEY}/getListCourseIsNotContainStudentId`;

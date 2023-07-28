@@ -34,11 +34,11 @@ import Select from '@/shared/components/FloatingLabel/SelectFloat';
 import MultiSelect from '@/shared/components/FloatingLabel/MultiSelectFloat';
 import { CreateCourseType } from './actions';
 import ModalFullScreen from '@/shared/components/ModalFullScreen';
-import ViewDetail from '@/containers/Course/components/ViewDetail';
+import ViewDetail from '@/containers/admin/Course/components/ViewDetail';
 import { DatePicker } from 'antd';
 import vi from 'antd/lib/locale/vi_VN';
 import dayjs from 'dayjs';
-import { IStyled } from '@/containers/Course/components/ViewDetail/style';
+import { IStyled } from '@/containers/admin/Course/components/ViewDetail/style';
 import { getDateFromTimeStamp } from '@/shared/commonFunction';
 
 export interface WeekdayType {
@@ -272,11 +272,14 @@ const Course = ({
 
   const handleCloseModalAddNew = () => {
     setIsOpenModalAddNew(false);
+    form.resetFields();
+    setListPeriodSelected([]);
+    setWeekdaySelected('');
+    setIsEdit(false);
   };
 
   const handleSubmitForm = () => {
     form.validateFields().then((data) => {
-      console.log(data.date[0].$d);
       const payload: CreateCourseType = {
         name: data.name,
         shortDescription: data.shortDescription,
@@ -341,15 +344,6 @@ const Course = ({
     dispatch(actions.getListWeekday());
     dispatch(actions.getListPeriod());
   }, [dispatch]);
-
-  useEffect(() => {
-    if (!isOpenModalAddNew) {
-      form.resetFields();
-      setListPeriodSelected([]);
-      setWeekdaySelected('');
-      setIsEdit(false);
-    }
-  }, [isOpenModalAddNew, form]);
 
   useEffect(() => {
     dispatch(

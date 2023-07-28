@@ -32,7 +32,7 @@ import Button from '@/shared/components/Button';
 import { CreateStudentPayload } from './actions';
 import TableFunction from '@/shared/components/TableOtherView/TableFunction';
 import ModalFullScreen from '@/shared/components/ModalFullScreen/Loadable';
-import ViewDetail from '@/containers/Student/components/ViewDetail';
+import ViewDetail from '@/containers/admin/Student/components/ViewDetail';
 import SelectFloat from '@/shared/components/FloatingLabel/SelectFloat';
 
 export interface StudentType {
@@ -194,6 +194,7 @@ const Student = ({
     setCodeWardSelect('');
     setCodeDistrictSelect('');
     setCodeProvinceSelect('');
+    setIsEdit(false);
   };
 
   const handleDeleteStudent = (id: number) => {

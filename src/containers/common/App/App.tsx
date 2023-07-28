@@ -3,14 +3,14 @@ import { Route, Routes, Navigate } from 'react-router-dom';
 import ErrorPage from '@/shared/components/ErrorPage';
 import { notification } from 'antd';
 import { useAppDispatch, useAppSelector } from '@/hooks';
-import { selectMessageAndStatus } from '@/containers/App/appSlice';
+import { selectMessageAndStatus } from '@/containers/common/App/appSlice';
 import { useTranslation } from 'react-i18next';
-import { resetRedux } from '@/containers/App/actions';
+import { resetRedux } from '@/containers/common/App/actions';
 import GlobalStyle from '@/global-styles';
-import DashBoard from '@/containers/Dashboard/Loadable';
-import Course from '@/containers/Course/Loadable';
-import Student from '@/containers/Student/Loadable';
-import Login from '@/containers/Login/Loadable';
+import DashBoard from '@/containers/admin/Dashboard/Loadable';
+import Course from '@/containers/admin/Course/Loadable';
+import Student from '@/containers/admin/Student/Loadable';
+import Login from '@/containers/common/Login/Loadable';
 import LayoutLogged from '@/layout/LayoutLogged';
 import {
   COOKIES,
@@ -75,11 +75,12 @@ const App = () => {
           </>
         ) : (
           <>
+            <Route path={PATH_ROOT} element={<Navigate to={'/dashboard'} />} />
             <Route
-              path={PATH_COURSE}
+              path={PATH_DASHBOARD}
               element={
                 <LayoutLogged
-                  component={Course}
+                  component={() => <>123</>}
                   showSearch
                   placeholderSearch={t('course.placeholder') as string}
                   pathSuggestSearch={'/course'}

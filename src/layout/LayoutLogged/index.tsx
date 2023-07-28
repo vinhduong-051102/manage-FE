@@ -17,13 +17,13 @@ import {
   PATH_STUDENT,
   STORAGE,
 } from '@/utils/constants';
-import Account from '@/containers/Account';
+import Account from '@/containers/admin/Account';
 import { useAppDispatch } from '@/hooks';
 import { getMsgClient, logOut } from '@/shared/commonFunction';
-import * as actions from '@/containers/App/actions';
+import * as actions from '@/containers/common/App/actions';
 import { isEmpty, get } from 'lodash';
 import { AvatarHoverLayout } from './styles';
-import { UserNameView, FullNameView } from '@/containers/Account/style';
+import { UserNameView, FullNameView } from '@/containers/admin/Account/style';
 import menuDashboard from '@/images/menuDashboard.svg';
 import iconStudent from '@/images/icon-role.svg';
 import menuPartner from '@/images/menuPartner.svg';

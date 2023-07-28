@@ -1,5 +1,5 @@
 import { createAction } from '@reduxjs/toolkit';
-import * as constants from '@/containers/Student/constants';
+import * as constants from '@/containers/admin/Student/constants';
 import {
   DefaultPayloadGetListType,
   DefaultResponseGetListType,

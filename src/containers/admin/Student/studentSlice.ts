@@ -1,8 +1,8 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import type { RootState } from '@/store';
-import { StudentType } from '@/containers/Student/index';
+import { StudentType } from '@/containers/admin/Student/index';
 import { DefaultResponseGetListType } from '@/utils/constants';
-import { GetLocationResponse } from '@/containers/Student/actions';
+import { GetLocationResponse } from '@/containers/admin/Student/actions';
 
 interface initialStateType extends DefaultResponseGetListType {
   isLoading: boolean;

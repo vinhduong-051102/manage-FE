@@ -1,23 +1,23 @@
-import { StudentType } from '@/containers/Student';
+import { StudentType } from '@/containers/admin/Student';
 import {
   DescriptionsStyled,
   StatusLabel,
   TableContainer,
   FilterContainer,
-} from '@/containers/Student/components/ViewDetail/style';
+} from '@/containers/admin/Student/components/ViewDetail/style';
 import { useTranslation } from 'react-i18next';
 import SelectFloat from '@/shared/components/FloatingLabel/SelectFloat';
 import { useEffect, useState } from 'react';
 import Table from '@/shared/components/Table';
 import loadingIcon from '@/images/loading.svg';
 import { useAppSelector, useAppDispatch } from '@/hooks';
-import * as selectors from '@/containers/Course/courseSlice';
-import * as actions from '@/containers/Course/actions';
+import * as selectors from '@/containers/admin/Course/courseSlice';
+import * as actions from '@/containers/admin/Course/actions';
 import { ColumnsType } from 'antd/es/table';
-import { IStyled } from '@/containers/Course/components/ViewDetail/style';
+import { IStyled } from '@/containers/admin/Course/components/ViewDetail/style';
 import { getDateFromTimeStamp } from '@/shared/commonFunction';
 import TableFunction from '@/shared/components/TableOtherView/TableFunction';
-import { CourseType } from '@/containers/Course';
+import { CourseType } from '@/containers/admin/Course';
 import { DEFAULT_GET_LIST_PARAMS } from '@/utils/constants';
 
 const ViewDetail = ({ data }: { data: StudentType }) => {

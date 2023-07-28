@@ -1,7 +1,7 @@
 import { combineReducers } from '@reduxjs/toolkit';
-import appReducer from './containers/App/appSlice';
-import studentReducer from './containers/Student/studentSlice';
-import courseReducer from '@/containers/Course/courseSlice';
+import appReducer from './containers/common/App/appSlice';
+import studentReducer from './containers/admin/Student/studentSlice';
+import courseReducer from '@/containers/admin/Course/courseSlice';
 
 export const rootReducer = combineReducers({
   appReducer,

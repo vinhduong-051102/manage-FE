@@ -9,7 +9,7 @@ import * as constants from './constants';
 import * as actions from './actions';
 import { AxiosResponse } from 'axios';
 import { axiosDelete, axiosGet, axiosPost, axiosPut } from '@/utils/request';
-import { PeriodType, WeekdayType } from '@/containers/Course/index';
+import { PeriodType, WeekdayType } from '@/containers/admin/Course/index';
 import {
   CreateCourseType,
   EasySearchType,

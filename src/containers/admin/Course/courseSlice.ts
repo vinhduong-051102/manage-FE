@@ -1,7 +1,11 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import type { RootState } from '@/store';
 import { DefaultResponseGetListType } from '@/utils/constants';
-import { CourseType, PeriodType, WeekdayType } from '@/containers/Course/index';
+import {
+  CourseType,
+  PeriodType,
+  WeekdayType,
+} from '@/containers/admin/Course/index';
 
 interface initialStateType extends DefaultResponseGetListType {
   isLoading: boolean;

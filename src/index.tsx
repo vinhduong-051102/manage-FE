@@ -2,7 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './store';
-import App from './containers/App/App';
+import App from './containers/common/App/App';
 import reportWebVitals from './reportWebVitals';
 import i18n from './i18n';
 import { I18nextProvider } from 'react-i18next';

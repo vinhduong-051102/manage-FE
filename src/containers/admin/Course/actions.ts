@@ -4,7 +4,7 @@ import {
   DefaultPayloadGetListType,
   DefaultResponseGetListType,
 } from '@/utils/constants';
-import { PeriodType, WeekdayType } from '@/containers/Course/index';
+import { PeriodType, WeekdayType } from '@/containers/admin/Course/index';
 
 export interface CreateCourseType {
   weekDay: string;

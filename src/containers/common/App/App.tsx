@@ -7,9 +7,8 @@ import { selectMessageAndStatus } from '@/containers/common/App/appSlice';
 import { useTranslation } from 'react-i18next';
 import { resetRedux } from '@/containers/common/App/actions';
 import GlobalStyle from '@/global-styles';
-import DashBoard from '@/containers/admin/Dashboard/Loadable';
-import Course from '@/containers/admin/Course/Loadable';
-import Student from '@/containers/admin/Student/Loadable';
+import * as AdminComponent from '@/containers/admin';
+import * as StudentComponent from '@/containers/student';
 import Login from '@/containers/common/Login/Loadable';
 import LayoutLogged from '@/layout/LayoutLogged';
 import {
@@ -17,8 +16,10 @@ import {
   PATH_COURSE,
   PATH_DASHBOARD,
   PATH_LOGIN,
+  PATH_REGISTER,
   PATH_ROOT,
   PATH_STUDENT,
+  PATH_ACTIVE,
 } from '@/utils/constants';
 import Cookies from 'js-cookie';
 
@@ -29,6 +30,11 @@ const App = () => {
   const messageAndStatus = useAppSelector(selectMessageAndStatus);
   const { message, status } = messageAndStatus;
   const role = Cookies.get(COOKIES.role);
+  const isActive = !(
+    Cookies.get(COOKIES.isActive) === 'undefined' ||
+    Cookies.get(COOKIES.isActive) === 'false'
+  );
+
   useEffect(() => {
     if (message !== '') {
       api[status]({
@@ -48,13 +54,13 @@ const App = () => {
             <Route path={PATH_ROOT} element={<Navigate to={'/dashboard'} />} />
             <Route
               path={PATH_DASHBOARD}
-              element={<LayoutLogged component={DashBoard} />}
+              element={<LayoutLogged component={AdminComponent.Dashboard} />}
             />
             <Route
               path={PATH_STUDENT}
               element={
                 <LayoutLogged
-                  component={Student}
+                  component={AdminComponent.Student}
                   showSearch
                   placeholderSearch={t('student.placeholder') as string}
                   pathSuggestSearch={'/student'}
@@ -65,7 +71,7 @@ const App = () => {
               path={PATH_COURSE}
               element={
                 <LayoutLogged
-                  component={Course}
+                  component={AdminComponent.Course}
                   showSearch
                   placeholderSearch={t('course.placeholder') as string}
                   pathSuggestSearch={'/course'}
@@ -73,17 +79,40 @@ const App = () => {
               }
             />
           </>
-        ) : (
+        ) : isActive ? (
           <>
             <Route path={PATH_ROOT} element={<Navigate to={'/dashboard'} />} />
             <Route
               path={PATH_DASHBOARD}
               element={
                 <LayoutLogged
-                  component={() => <>123</>}
-                  showSearch
-                  placeholderSearch={t('course.placeholder') as string}
-                  pathSuggestSearch={'/course'}
+                  component={StudentComponent.Dashboard}
+                  showSearch={false}
+                  hideFilter
+                />
+              }
+            />
+            <Route
+              path={PATH_REGISTER}
+              element={
+                <LayoutLogged
+                  component={StudentComponent.Register}
+                  showSearch={false}
+                  hideFilter
+                />
+              }
+            />
+          </>
+        ) : (
+          <>
+            <Route path={PATH_ROOT} element={<Navigate to={'/active'} />} />
+            <Route
+              path={PATH_ACTIVE}
+              element={
+                <LayoutLogged
+                  component={StudentComponent.Active}
+                  showSearch={false}
+                  hideFilter
                 />
               }
             />

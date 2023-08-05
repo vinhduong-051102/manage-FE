@@ -1,0 +1,11 @@
+{
+  "activeAccount": "Kích hoạt tài khoản",
+  "newPasswordPlaceholder": "Nhập mật khẩu mới",
+  "confirmPasswordPlaceholder": "Nhập lại mật khẩu",
+  "confirm": "Xác nhận",
+  "newPasswordIsRequired": "Mật khẩu mới là bắt buộc",
+  "confirmPasswordIsRequired": "Mật khẩu xác nhận là bắt buộc",
+  "max": "Mật khẩu tối đa 10 ký tự",
+  "confirmPasswordIsNotMatch": "Mật khẩu không khớp",
+  "activeSuccess": "Kích hoạt thành công, vui lòng đăng nhập lại"
+}

@@ -35,7 +35,6 @@ const DivRight = styled.div`
   width: 60%;
   height: 100vh;
   background-image: url(${(props) => {
-    console.log(props.background);
     return props.background;
   }});
   /* Small Devices, Tablets */

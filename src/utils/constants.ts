@@ -23,25 +23,19 @@ export const REGEX_NUMBER = /^[0-9]*$/g;
 export const REGEX_ONLY_NUMBER = /^\d{10}$/;
 
 export const COOKIES = {
+  id: 'userId',
   accessToken: 'accessToken',
   refreshToken: 'refreshToken',
   role: 'role',
   email: 'email',
   fullName: 'fullName',
+  isActive: 'isActive',
 };
 
 export const STORAGE = {
   userInfo: 'userInfo',
   tokenId: 'tokenId',
   expandMenu: 'expandMenu',
-};
-
-export const REDUX_KEY = {
-  app: 'app',
-  login: 'login',
-  accountManagement: 'accountManagement',
-  partner: 'partner',
-  profile: 'profile',
 };
 
 export const TIME_ALL = '1';
@@ -310,15 +304,22 @@ export const LIST_CREATE_TIME = [
   },
 ];
 
+// path
 export const PATH_ROOT = '/';
 export const PATH_LOGIN = '/login';
 export const PATH_DASHBOARD = '/dashboard';
 export const PATH_COURSE = '/course';
 export const PATH_STUDENT = '/student';
-export const PATH_ACTIVE_ACCOUNT = '/active';
-export const MENU_DASHBOARD_PERMISSION = '1';
-export const MENU_COURSE_PERMISSION = '2';
-export const MENU_STUDENT_PERMISSION = '3';
+export const PATH_REGISTER = '/register';
+export const PATH_ACTIVE = '/active';
+// Danh sách menu cho admin
+export const ADMIN_MENU_DASHBOARD_PERMISSION = '1';
+export const ADMIN_MENU_COURSE_PERMISSION = '2';
+export const ADMIN_MENU_STUDENT_PERMISSION = '3';
+// Danh sách menu cho học sinh
+export const STUDENT_MENU_REGISTER_PERMISSION = '4';
+export const STUDENT_MENU_DASHBOARD_PERMISSION = '5';
+export const STUDENT_MENU_ACTIVE_PERMISSION = '6';
 
 export const SUCCESS = {
   type: 'success',

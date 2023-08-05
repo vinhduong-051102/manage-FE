@@ -129,9 +129,24 @@ export const logOut = () => {
   Cookies.remove(COOKIES.fullName);
   Cookies.remove(COOKIES.email);
   Cookies.remove(COOKIES.role);
+  Cookies.remove(COOKIES.isActive);
+  Cookies.remove(COOKIES.id);
   localStorage.clear();
   history.push(PATH_LOGIN);
   window.location.reload();
+};
+
+export const getBooleanFromString = (string: string) => {
+  switch (string) {
+    case 'undefined':
+      return false;
+    case 'false':
+      return false;
+    case 'null':
+      return false;
+    default:
+      return true;
+  }
 };
 
 /* Ham lay thoi gian bat dau cua mot ngay */

@@ -4,26 +4,35 @@ import Header from '@/shared/components/Header';
 import Sidebar from '@/shared/components/Sidebar';
 import React, { useEffect, useState } from 'react';
 import iconMenu from '@/images/iconMenu.svg';
-import logo from '@/images/logo.svg';
+import logo from '@/images/logoLogged.svg';
 import avatarDefault from '@/images/avatarDefault.svg';
 import {
   COOKIES,
-  MENU_COURSE_PERMISSION,
-  MENU_DASHBOARD_PERMISSION,
-  MENU_STUDENT_PERMISSION,
+  ADMIN_MENU_COURSE_PERMISSION,
+  ADMIN_MENU_DASHBOARD_PERMISSION,
+  ADMIN_MENU_STUDENT_PERMISSION,
   PATH_COURSE,
   PATH_DASHBOARD,
   PATH_LOGIN,
   PATH_STUDENT,
   STORAGE,
+  STUDENT_MENU_REGISTER_PERMISSION,
+  PATH_REGISTER,
+  STUDENT_MENU_DASHBOARD_PERMISSION,
+  PATH_ACTIVE,
+  STUDENT_MENU_ACTIVE_PERMISSION,
 } from '@/utils/constants';
-import Account from '@/containers/admin/Account';
+import Account from '@/containers/common/Account';
 import { useAppDispatch } from '@/hooks';
-import { getMsgClient, logOut } from '@/shared/commonFunction';
+import {
+  getBooleanFromString,
+  getMsgClient,
+  logOut,
+} from '@/shared/commonFunction';
 import * as actions from '@/containers/common/App/actions';
 import { isEmpty, get } from 'lodash';
 import { AvatarHoverLayout } from './styles';
-import { UserNameView, FullNameView } from '@/containers/admin/Account/style';
+import { UserNameView, FullNameView } from '@/containers/common/Account/style';
 import menuDashboard from '@/images/menuDashboard.svg';
 import iconStudent from '@/images/icon-role.svg';
 import menuPartner from '@/images/menuPartner.svg';
@@ -70,43 +79,76 @@ const LayoutLogged = ({
     email: string;
     fullName: string;
     role: string;
+    isActive: boolean | string;
   } = {
     image: avatarDefault,
     email: (Cookies.get(COOKIES.email) && Cookies.get(COOKIES.email)) || '',
     fullName:
       (Cookies.get(COOKIES.fullName) && Cookies.get(COOKIES.fullName)) || '',
     role: (Cookies.get(COOKIES.role) && Cookies.get(COOKIES.role)) || '',
+    isActive: getBooleanFromString(Cookies.get(COOKIES.isActive) as string),
   };
 
-  const MENU_DATA = [
-    {
-      key: MENU_DASHBOARD_PERMISSION,
-      path: PATH_DASHBOARD,
-      icon: menuDashboard,
-      label: t('common.dashBoard'),
-    },
-    {
-      key: MENU_COURSE_PERMISSION,
-      path: PATH_COURSE,
-      icon: menuPartner,
-      label: t('common.course'),
-    },
-    {
-      key: MENU_STUDENT_PERMISSION,
-      path: PATH_STUDENT,
-      icon: iconStudent,
-      label: t('common.student'),
-    },
-  ];
+  const MENU_DATA =
+    // Menu cho admin
+    ACCOUNT_INFO.role === 'ADMIN'
+      ? [
+          {
+            key: ADMIN_MENU_DASHBOARD_PERMISSION,
+            path: PATH_DASHBOARD,
+            icon: menuDashboard,
+            label: t('common.dashBoard'),
+          },
+          {
+            key: ADMIN_MENU_COURSE_PERMISSION,
+            path: PATH_COURSE,
+            icon: menuPartner,
+            label: t('common.course'),
+          },
+          {
+            key: ADMIN_MENU_STUDENT_PERMISSION,
+            path: PATH_STUDENT,
+            icon: iconStudent,
+            label: t('common.student'),
+          },
+        ]
+      : // Menu cho học sinh
+      ACCOUNT_INFO.isActive
+      ? // Menu khi đã kích hoạt tài khoản
+        [
+          {
+            key: STUDENT_MENU_DASHBOARD_PERMISSION,
+            path: PATH_DASHBOARD,
+            icon: menuDashboard,
+            label: t('common.dashBoard'),
+          },
+          {
+            key: STUDENT_MENU_REGISTER_PERMISSION,
+            path: PATH_REGISTER,
+            icon: menuPartner,
+            label: t('common.registerCourse'),
+          },
+        ]
+      : // Menu khi chưa kích hoạt tài khoản
+        [
+          {
+            key: STUDENT_MENU_ACTIVE_PERMISSION,
+            path: PATH_ACTIVE,
+            icon: menuDashboard,
+            label: t('common.activeAccount'),
+          },
+        ];
 
   const PERMISSION_MENU =
     ACCOUNT_INFO.role === 'ADMIN'
       ? [
-          MENU_DASHBOARD_PERMISSION,
-          MENU_COURSE_PERMISSION,
-          MENU_STUDENT_PERMISSION,
+          ADMIN_MENU_DASHBOARD_PERMISSION,
+          ADMIN_MENU_COURSE_PERMISSION,
+          ADMIN_MENU_STUDENT_PERMISSION,
         ]
-      : [];
+      : ACCOUNT_INFO.isActive
+      ? [STUDENT_MENU_REGISTER_PERMISSION, STUDENT_MENU_DASHBOARD_PERMISSION]
+      : [STUDENT_MENU_ACTIVE_PERMISSION];
 
   useEffect(() => {
     if (token) {

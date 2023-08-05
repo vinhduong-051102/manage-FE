@@ -110,6 +110,7 @@ const Course = ({
     'all' | '0' | '1'
   >('all');
   const [weekdayFilter, setWeekdayFilter] = useState<string>('all');
+  const [listPeriodByCase, setListPeriodByCase] = useState<PeriodType[]>([]);
 
   const TABLE_COLUMNS: ColumnsType<CourseType> = [
     {
@@ -354,6 +355,32 @@ const Course = ({
     );
   }, [textSearch, dispatch]);
 
+  useEffect(() => {
+    if (listPeriodSelected.length) {
+      if ([1, 2, 3, 4, 5].includes(Number(listPeriodSelected[0]))) {
+        setListPeriodByCase(() => {
+          return listPeriod.filter((period) =>
+            [1, 2, 3, 4, 5].includes(period.id),
+          );
+        });
+      } else if ([6, 7, 8, 9, 10].includes(Number(listPeriodSelected[0]))) {
+        setListPeriodByCase(() => {
+          return listPeriod.filter((period) =>
+            [6, 7, 8, 9, 10].includes(period.id),
+          );
+        });
+      } else {
+        setListPeriodByCase(() => {
+          return listPeriod.filter((period) =>
+            [11, 12, 13, 14].includes(period.id),
+          );
+        });
+      }
+    } else {
+      setListPeriodByCase(listPeriod);
+    }
+  }, [listPeriod, listPeriodSelected]);
+
   return (
     <Container>
       <Content>
@@ -585,7 +612,7 @@ const Course = ({
                   ]}
                 >
                   <MultiSelect
-                    dataSelect={listPeriod.map((item) => ({
+                    dataSelect={listPeriodByCase.map((item) => ({
                       label: t('course.period') + ' ' + item.period,
                       value: `${item.id}`,
                     }))}

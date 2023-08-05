@@ -26,6 +26,7 @@ const Table = ({
   minWidth,
   isExpand,
   isTablePopup,
+  bordered,
 }) => {
   const [page, setPage] = useState(1);
   const [size, setPageSize] = useState(50);
@@ -84,6 +85,7 @@ const Table = ({
       <TableEtn
         isTablePopup={isTablePopup}
         rowSelection={rowSelection}
+        bordered={bordered}
         columns={columns}
         rowKey={(row) => {
           return row.id;
@@ -158,7 +160,7 @@ Table.propTypes = {
   columns: PropTypes.array,
   data: PropTypes.array,
   pagination: PropTypes.bool,
-  rowSelection: PropTypes.bool,
+  rowSelection: PropTypes.object,
   onChangePagination: PropTypes.func,
   isLoading: PropTypes.bool,
   onChangeSorter: PropTypes.func,
@@ -172,5 +174,6 @@ Table.propTypes = {
   minWidth: PropTypes.number,
   isExpand: PropTypes.bool,
   isTablePopup: PropTypes.bool,
+  bordered: PropTypes.bool,
 };
 export default Table;

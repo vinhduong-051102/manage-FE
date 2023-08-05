@@ -30,5 +30,11 @@
   "thursday": "Thứ 5",
   "friday": "Thứ 6",
   "saturday": "Thứ 7",
-  "all": "Tất cả"
+  "all": "Tất cả",
+  "loginSuccessfully": "Đăng nhập thành công",
+  "registerCourse": "Đăng kí môn học",
+  "activeAccount": "Kích hoạt tài khoản",
+  "morning": "Sáng",
+  "afternoon": "Chiều",
+  "night": "Tối"
 }
